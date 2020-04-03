@@ -1,6 +1,0 @@
-
-
-/[Ll]ibrary/
-/[Ll]ogs/
-/[Tt]emp/
-
