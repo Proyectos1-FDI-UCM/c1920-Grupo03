@@ -43,7 +43,7 @@ public class Arquer : MonoBehaviour
             {
                 Instantiate(flecha, transform.position, Quaternion.identity, transform);
                 tiempoDisparos = disparos;
-                nhijos = transform.GetChildCount();
+                nhijos = transform.childCount;
                 dirFlecha = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
                 flechaHija = transform.GetChild(nhijos - 1).gameObject;
                 flechaHija.transform.SetParent(null);

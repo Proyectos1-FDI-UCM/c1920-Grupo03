@@ -24,7 +24,7 @@ public class Movimiento8D : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+
         rb.velocity = dir * Time.fixedDeltaTime * velocidad * 100;
     }
 
