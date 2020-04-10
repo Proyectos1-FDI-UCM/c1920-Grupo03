@@ -18,7 +18,7 @@ public class Lluvia : MonoBehaviour
     {
         mov = GetComponent<MovEnemig1>();
         hijo1 = transform.GetChild(0).gameObject;
-        hijo2 = transform.GetChild(5).gameObject;
+        hijo2 = transform.GetChild(1).gameObject;
         hijo3 = transform.GetChild(2).gameObject;
         hijo4 = transform.GetChild(3).gameObject;
         hijo5 = transform.GetChild(4).gameObject;

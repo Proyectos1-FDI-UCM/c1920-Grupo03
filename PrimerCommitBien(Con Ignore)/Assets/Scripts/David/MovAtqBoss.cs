@@ -10,10 +10,10 @@ public class MovAtqBoss : MonoBehaviour
     public float disparos;
     private float tiempoDisparos;
     public GameObject flecha;
-    public GameObject player;
+    GameObject player;
     private Rigidbody2D rb;
     Vector2 dir;
-    public Transform lugarDisparo;
+
 
     void Start()
     {
@@ -24,6 +24,14 @@ public class MovAtqBoss : MonoBehaviour
         tiempoDisparos = disparos;
     }
 
+    public void CogeJugador(GameObject jugador)
+    {
+        player = jugador;
+    }
+    int nhijos;
+    Vector2 dirFlecha;
+    GameObject flechaHija;
+    Rigidbody2D flechaHijaRB;
     private void Update()
     {
         if (player != null)
@@ -33,8 +41,18 @@ public class MovAtqBoss : MonoBehaviour
             transform.up = dir;
             if (tiempoDisparos <= 0)
             {
-                Instantiate(flecha, lugarDisparo.position, Quaternion.identity);
+                Instantiate(flecha, transform.position, Quaternion.identity, transform);
                 tiempoDisparos = disparos;
+                nhijos = transform.childCount;
+                dirFlecha = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
+                flechaHija = transform.GetChild(nhijos - 1).gameObject;
+                flechaHija.transform.SetParent(null);
+                flechaHijaRB = flechaHija.GetComponent<Rigidbody2D>();
+                flechaHijaRB.velocity = dirFlecha * 100 * Time.deltaTime;
+
+
+
+
             }
             else
             {
@@ -69,4 +87,3 @@ public class MovAtqBoss : MonoBehaviour
 
     }
 }
-
