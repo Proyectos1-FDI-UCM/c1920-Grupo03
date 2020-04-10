@@ -25,12 +25,20 @@ public class BossManager2 : MonoBehaviour
 
 
     }
+
+    private void OnEnable()
+    {
+        CambiaEstado("Nromal");
+
+    }
     private void Update()
     {
         if (estado == Estados.Normal && !lluviaAct)
         {
             lluviaAct = true;
             Invoke("lluviaAtq", Random.Range(15f, 17f));
+
+         
         }
 
     }
@@ -53,14 +61,16 @@ public class BossManager2 : MonoBehaviour
                 lluvia.enabled = false;
                 movAtqBoss.enabled = true;
                 mirarJugadorScript.enabled = true;
+                
                 break;
 
 
-            case "Embistiendo":
+            case "Lluvia":
                 estado = Estados.Lluvia;
                 movAtqBoss.enabled = false;
                 lluvia.enabled = true;
                 mirarJugadorScript.enabled = true;
+              
                 break;
 
 
@@ -69,7 +79,7 @@ public class BossManager2 : MonoBehaviour
                 break;
         }
 
-        Debug.Log(estado);
+        Debug.Log("Estado "+ estado);
 
     }
 }

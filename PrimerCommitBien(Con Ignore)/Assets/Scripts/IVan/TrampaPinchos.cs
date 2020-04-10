@@ -5,16 +5,23 @@ using UnityEngine;
 public class TrampaPinchos : MonoBehaviour
 {
     private Renderer cambiaColor;
-
+    private bool pinchando;
     void Start()
     {
         cambiaColor = GetComponent<Renderer>();
+        pinchando = false;
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Invoke("Advertencia", 0f);
-        Invoke("Ataque", 3f);
-        Invoke("ColorInicial", 3.5f);
+        if (!pinchando)
+        {
+            pinchando = true;
+            Invoke("Advertencia", 0f);
+            Invoke("Ataque", 3f);
+            Invoke("ColorInicial", 3.5f);
+
+        }
+
 
     }
 
@@ -31,5 +38,7 @@ public class TrampaPinchos : MonoBehaviour
     void Ataque()
     {
         cambiaColor.material.color = Color.magenta;
+        GameManager.instance.TakeDamage(15);
+        pinchando = false;
     }
 }

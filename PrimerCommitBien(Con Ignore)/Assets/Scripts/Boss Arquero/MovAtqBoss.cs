@@ -15,6 +15,11 @@ public class MovAtqBoss : MonoBehaviour
     Vector2 dir;
 
 
+    public void CogerJugador(GameObject juga)
+    {
+        player = juga;
+        Debug.Log("Pilla jugador el script MovAtaBoss");
+    }
     void Start()
     {
 
@@ -23,7 +28,7 @@ public class MovAtqBoss : MonoBehaviour
 
         tiempoDisparos = disparos;
     }
-
+   
     public void CogeJugador(GameObject jugador)
     {
         player = jugador;
