@@ -9,6 +9,9 @@ public class Lluvia : MonoBehaviour
     Rigidbody2D rb;
     public float tiempoataque;
     public GameObject prefabLluvia;
+    GameObject boss;
+    
+    
  
    
     
@@ -20,6 +23,7 @@ public class Lluvia : MonoBehaviour
     {
         bossManager2 = GetComponent<BossManager2>();
         rb = GetComponent<Rigidbody2D>();
+        boss = GetComponent<GameObject>();
     }
 
 
@@ -37,9 +41,9 @@ public class Lluvia : MonoBehaviour
 
         if (player != null && !estadoLLoviendo)
         {
-
-            estadoLLoviendo = true;
             rb.velocity = new Vector2(0, 0);
+            estadoLLoviendo = true;
+            
 
             //para hacer más grande el circulo que indica la explosión
              
@@ -48,13 +52,14 @@ public class Lluvia : MonoBehaviour
                
                 
 
-                Invoke("Ataca", tiempoataque);
+                Invoke("Ataca", 1f);
             
                 //gameObject.tag = "Invencible";
 
 
             
         }
+        estadoLLoviendo = false;
 
 
 
@@ -66,6 +71,11 @@ public class Lluvia : MonoBehaviour
 
         if (enabled)//si el script está activa, para que no ataque si está embistiendo
         {
+            
+            for (int i=0; i<Random.Range(3, 6); i++)
+            {
+                Instantiate(prefabLluvia, new Vector3(Random.Range(-5, 5), Random.Range(-4, 4), -3), Quaternion.identity);
+            }
             
           
        

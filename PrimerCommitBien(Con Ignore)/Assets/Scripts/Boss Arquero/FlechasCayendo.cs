@@ -7,6 +7,7 @@ public class FlechasCayendo : MonoBehaviour
     private Renderer cambiaColor;
     private bool cayendo;
     bool playerDentro;
+    
     void Start()
     {
         cambiaColor = GetComponent<Renderer>();
@@ -35,15 +36,12 @@ public class FlechasCayendo : MonoBehaviour
             
             cayendo = true;
             Invoke("Advertencia", 0f);
-            Invoke("Ataque", 3f);
-            Invoke("ColorInicial", 3.5f);
-
+            Invoke("Ataque", 1.5f);
+            
         }
+        
     }
-    void ColorInicial()
-    {
-        cambiaColor.material.color = Color.black;
-    }
+
 
     void Advertencia()
     {
@@ -53,8 +51,18 @@ public class FlechasCayendo : MonoBehaviour
     void Ataque()
     {
         cambiaColor.material.color = Color.magenta;
-       if(playerDentro) GameManager.instance.TakeDamage(15);
-        cayendo = false;
+        if (playerDentro) 
+        {
+            GameManager.instance.TakeDamage(15);
+            cayendo = false;
+            
+        }
+        Invoke("Destruir", 2f);
+
+
+    }
+    void Destruir()
+    {
         Destroy(this.gameObject);
     }
 }

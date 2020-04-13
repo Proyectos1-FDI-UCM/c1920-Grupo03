@@ -9,14 +9,16 @@ public class BossManager2 : MonoBehaviour
     MovAtqBoss movAtqBoss;
     MirarJugador mirarJugadorScript;
     Lluvia lluvia;
+    FlechasCayendo flechasCayendo;
     bool lluviaAct;
 
 
     void Start()
     {
+        lluvia = GetComponent<Lluvia>();
         movAtqBoss = GetComponent<MovAtqBoss>();
         mirarJugadorScript = GetComponent<MirarJugador>();
-        lluvia = GetComponent<Lluvia>();
+        flechasCayendo = GetComponent<FlechasCayendo>();
         CambiaEstado("Normal");
 
         //Invoke("embestir", 0f);
@@ -28,7 +30,7 @@ public class BossManager2 : MonoBehaviour
 
     private void OnEnable()
     {
-        CambiaEstado("Nromal");
+        CambiaEstado("Normal");
 
     }
     private void Update()
@@ -36,7 +38,7 @@ public class BossManager2 : MonoBehaviour
         if (estado == Estados.Normal && !lluviaAct)
         {
             lluviaAct = true;
-            Invoke("lluviaAtq", Random.Range(15f, 17f));
+            Invoke("lluviaAtq", Random.Range(10f, 11f));
 
          
         }
@@ -58,19 +60,17 @@ public class BossManager2 : MonoBehaviour
         {
             case "Normal":
                 estado = Estados.Normal;
-                lluvia.enabled = false;
+                lluvia.enabled=false;
                 movAtqBoss.enabled = true;
                 mirarJugadorScript.enabled = true;
-                
                 break;
 
 
             case "Lluvia":
                 estado = Estados.Lluvia;
-                movAtqBoss.enabled = false;
                 lluvia.enabled = true;
+                movAtqBoss.enabled = false;
                 mirarJugadorScript.enabled = true;
-              
                 break;
 
 
