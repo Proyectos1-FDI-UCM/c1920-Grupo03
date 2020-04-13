@@ -40,7 +40,7 @@ public class BossArqueroSala : MonoBehaviour
         {
             Debug.Log("Entro");
 
-            //es un bucle que va decrementando la x ya que van saliendo los hijos
+            
             boss = transform.GetChild(0).gameObject;
             if (boss != null)
             {

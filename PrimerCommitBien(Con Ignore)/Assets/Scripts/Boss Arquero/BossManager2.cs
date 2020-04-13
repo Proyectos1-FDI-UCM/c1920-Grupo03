@@ -60,17 +60,17 @@ public class BossManager2 : MonoBehaviour
         {
             case "Normal":
                 estado = Estados.Normal;
-                lluvia.enabled=false;
-                movAtqBoss.enabled = true;
-                mirarJugadorScript.enabled = true;
+                if(lluvia!=null)lluvia.enabled=false;
+                if(movAtqBoss!=null)movAtqBoss.enabled = true;
+                if(mirarJugadorScript!=null)mirarJugadorScript.enabled = true;
                 break;
 
 
             case "Lluvia":
                 estado = Estados.Lluvia;
-                lluvia.enabled = true;
-                movAtqBoss.enabled = false;
-                mirarJugadorScript.enabled = true;
+                if(lluvia!=null)lluvia.enabled = true;
+                if(movAtqBoss!=null)movAtqBoss.enabled = false;
+                if(mirarJugadorScript!=null)mirarJugadorScript.enabled = true;
                 break;
 
 

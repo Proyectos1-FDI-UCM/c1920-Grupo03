@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoataque: 3
+  prefabLluvia: {fileID: 6305653624617953882, guid: 14daaa2013fc142428ad6ca86f36e4c0,
+    type: 3}
+  sala: {fileID: 3222781130433837732}
 --- !u!114 &850620380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,12 +131,12 @@ PrefabInstance:
     - target: {fileID: 1506639960726633417, guid: 1491c24b0c02faf499fdc8eb02c35236,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0019009715
+      value: -0.306
       objectReference: {fileID: 0}
     - target: {fileID: 1506639960726633417, guid: 1491c24b0c02faf499fdc8eb02c35236,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.16625127
+      value: 0.086
       objectReference: {fileID: 0}
     - target: {fileID: 1506639960726633417, guid: 1491c24b0c02faf499fdc8eb02c35236,
         type: 3}
@@ -215,6 +218,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8932909905880062677, guid: 19cc0929fde86e147873d5ed7a22219e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 12.67
+      objectReference: {fileID: 0}
     - target: {fileID: 8932909906699898810, guid: 19cc0929fde86e147873d5ed7a22219e,
         type: 3}
       propertyPath: m_Name
@@ -223,12 +231,12 @@ PrefabInstance:
     - target: {fileID: 8932909906699898811, guid: 19cc0929fde86e147873d5ed7a22219e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.81
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8932909906699898811, guid: 19cc0929fde86e147873d5ed7a22219e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0161792
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8932909906699898811, guid: 19cc0929fde86e147873d5ed7a22219e,
         type: 3}

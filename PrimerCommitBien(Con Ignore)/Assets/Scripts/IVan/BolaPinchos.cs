@@ -9,17 +9,19 @@ public class BolaPinchos : MonoBehaviour
 
     [SerializeField] float fuerza = 100f;
     public bool ejeX = true;
-    private Vector2 dirX = new Vector2(-1, 0);
-    private Vector2 dirY = new Vector2(0, -1);
+    public float velocidad;
+    private Vector2 dirX = new Vector2(1, 0);
+    private Vector2 dirY = new Vector2(0, 1);
 
 
     private void Update()
     {
+
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (ejeX)
-            rb.velocity = dirX;
+            rb.velocity = dirX*velocidad;
         else
-            rb.velocity = dirY;
+            rb.velocity = dirY*velocidad;
 
     }
 
@@ -61,13 +63,14 @@ public class BolaPinchos : MonoBehaviour
         }
         if (collision.gameObject.tag == "Mapa")
         {
+            Debug.Log("ChocaPared");
             if (ejeX)
             {
-                dirX = dirX * -1;
+                dirX = dirX  * -1;
             }
 
             else
-                dirY = dirY * -1;
+                dirY = dirY  * -1;
         }
 
     }
