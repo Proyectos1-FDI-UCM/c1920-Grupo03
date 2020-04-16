@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             currentHealth -= damage;
             theUIManager.CambiarVida(currentHealth);
 
-            Debug.Log(currentHealth);
+           // Debug.Log(currentHealth);
         }
 
         else player.GetComponent<DiePlayer>().Call();

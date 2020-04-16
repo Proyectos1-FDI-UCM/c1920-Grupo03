@@ -13,6 +13,17 @@ public class Movimiento8D : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+
+    public float GetVel()
+    {
+        return velocidad;
+    }
+    public void CambiaVel(float x)
+    {
+
+        velocidad = x;
+
+    }
     // Update is called once per frame
     void Update()
     {

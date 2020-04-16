@@ -47,7 +47,7 @@ public class EnemigosSala : MonoBehaviour
         if (mov8d != null)
         {
            
-            Debug.Log("Entro");
+           // Debug.Log("Entro");
             x = transform.childCount;
             //es un bucle que va decrementando la x ya que van saliendo los hijos
             while (x > 0)
@@ -75,8 +75,8 @@ public class EnemigosSala : MonoBehaviour
 
 
                 hijo.transform.SetParent(null);
-                Debug.Log("Enciende hijo" + x);
-                Debug.Log(x);
+                //Debug.Log("Enciende hijo" + x);
+               // Debug.Log(x);
                 x = transform.childCount;
 
             }

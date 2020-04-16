@@ -17,7 +17,7 @@ public class ControlEnemigos : MonoBehaviour
     public void MinusEnemy()
     {
         enemigosVivos--;
-        Debug.Log("Numero enemigos = " + enemigosVivos);
+       // Debug.Log("Numero enemigos = " + enemigosVivos);
         if(enemigosVivos == 0)        
            puertas.ActivarPuertas(false);
         

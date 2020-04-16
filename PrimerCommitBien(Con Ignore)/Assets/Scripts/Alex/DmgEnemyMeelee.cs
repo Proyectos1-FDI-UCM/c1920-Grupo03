@@ -15,7 +15,7 @@ public class DmgEnemyMeelee : MonoBehaviour
 
         if (cooldown != null && !cooldown.GetStatus()) //Si existe cooldown, sabemos que el otro GameObject es el jugador. Si no está activo dicho cooldown...
         {
-            Debug.Log("enter if");
+           // Debug.Log("enter if");
 
             GameManager.instance.TakeDamage(amount); //..hacemos daño al jugador...
             cooldown.Call(); //...y llamamos al cooldown.
