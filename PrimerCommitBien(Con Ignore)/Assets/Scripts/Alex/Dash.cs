@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Dash : MonoBehaviour
 {
     public float dashDistanceMax = 2f;
@@ -13,11 +15,13 @@ public class Dash : MonoBehaviour
     bool dashPressed;
 
     RaycastHit2D raycastResult;
+    public LayerMask raycastMask;
 
     private void Awake()
     {
         dashPressed = false;
         playerRigidbody = GetComponent<Rigidbody2D>();
+
     }
 
     private void Update()
@@ -38,7 +42,7 @@ public class Dash : MonoBehaviour
 
     void Call()
     {
-        raycastResult = Physics2D.Raycast(raycastOrigin.transform.position, playerDir, dashDistanceMax);
+        raycastResult = Physics2D.Raycast(raycastOrigin.transform.position, playerDir, dashDistanceMax, raycastMask);
 
         Collider2D other = raycastResult.collider;
         Vector2 distanceVector;
@@ -49,12 +53,13 @@ public class Dash : MonoBehaviour
 
             distanceVector.x = raycastResult.point.x - raycastOrigin.transform.position.x;
             distanceVector.y = raycastResult.point.y - raycastOrigin.transform.position.y;
-            dashDistance = distanceVector.magnitude;
+            dashDistance = distanceVector.magnitude - (transform.localScale.x / 2);
         }
 
         else dashDistance = dashDistanceMax;
 
-        playerRigidbody.position = new Vector2(playerRigidbody.position.x + playerDir.x * dashDistance, playerRigidbody.position.y + playerDir.y * dashDistance);
+        playerRigidbody.position =
+            new Vector2(playerRigidbody.position.x + playerDir.x * dashDistance, playerRigidbody.position.y + playerDir.y * dashDistance);
     }
 
 }
