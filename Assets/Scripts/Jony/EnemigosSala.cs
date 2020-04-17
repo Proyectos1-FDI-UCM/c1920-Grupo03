@@ -38,7 +38,7 @@ public class EnemigosSala : MonoBehaviour
 
     }
 
-    Puertas puertas;
+  
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

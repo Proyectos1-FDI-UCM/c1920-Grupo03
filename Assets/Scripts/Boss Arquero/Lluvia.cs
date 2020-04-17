@@ -78,7 +78,7 @@ public class Lluvia : MonoBehaviour
             {
                 float spawnPosX =  (salatransform.transform.localScale.x / 2 - prefabLluvia.transform.localScale.x / 2);
                 float spawnPosY = (salatransform.transform.localScale.y / 2 - prefabLluvia.transform.localScale.y / 2);
-                Instantiate(prefabLluvia, new Vector3(Random.Range(salatransform.position.x - spawnPosX, salatransform.position.x + spawnPosX), Random.Range(salatransform.position.y -spawnPosY, salatransform.position.y + spawnPosY), -3), Quaternion.identity);
+                Instantiate(prefabLluvia, new Vector3(Random.Range(salatransform.position.x - spawnPosX, salatransform.position.x + spawnPosX), Random.Range(salatransform.position.y -spawnPosY, salatransform.position.y + spawnPosY), -8), Quaternion.identity);
                 
             }
             
