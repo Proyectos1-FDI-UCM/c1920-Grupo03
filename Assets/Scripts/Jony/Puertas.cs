@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class Puertas : MonoBehaviour
 {
-    BoxCollider2D[] Paredes;
+    //GameObject[] Paredes;
+
+    int puertas = 0;
     // Start is called before the first frame update
     void Start()
     {
-        Paredes = this.gameObject.GetComponents<BoxCollider2D>();
-        for(int x = 0; x < Paredes.Length; x++)
+        puertas = this.transform.childCount;
+        
+        for(int x = 0; x < puertas; x++)
         {
-            Paredes[x].enabled = false;
+            transform.GetChild(x).gameObject.SetActive(false);
         }
     }
 
     public void ActivarPuertas(bool abiertas)
     {
-        for (int x = 0; x < Paredes.Length; x++)
+        for (int x = 0; x < puertas; x++)
         {
-            Paredes[x].enabled = abiertas;
+            transform.GetChild(x).gameObject.SetActive(abiertas);
         }
     }
 
