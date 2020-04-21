@@ -14,12 +14,17 @@ public class ControlEnemigos : MonoBehaviour
         puertas = GetComponentInParent<SalaIndividual>();
         enemigosVivos = this.transform.childCount;
         if (enemigosVivos > 0) ActP();
+        //else if (enemigosVivos == 0) DeshP();
     }
 
     void ActP()
     {
         puertas.Accionar(true);
     }
+    /*void DeshP()
+    {
+        puertas.Accionar(false);
+    }*/
     public void MinusEnemy()
     {
         enemigosVivos--;

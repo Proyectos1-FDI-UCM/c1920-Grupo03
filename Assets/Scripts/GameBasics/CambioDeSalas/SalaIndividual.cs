@@ -8,7 +8,7 @@ public class SalaIndividual : MonoBehaviour
     Deshabilitado desh;
     void Start()
     {
-        puertas = GetComponentInParent<Puertas>();
+        puertas = GetComponentInChildren<Puertas>();
         desh = GetComponentInChildren<Deshabilitado>();
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +19,7 @@ public class SalaIndividual : MonoBehaviour
 
             puertas.ActivarPuertas(true);
            
-            GameManager.instance.AddRoom();
+            //GameManager.instance.AddRoom();
             Debug.Log("Hola he chocado");
             Destroy(this);
         }
@@ -32,6 +32,7 @@ public class SalaIndividual : MonoBehaviour
 
     public void Accionar(bool estado)
     {
+        
         puertas.ActivarPuertas(estado);
     }
 }

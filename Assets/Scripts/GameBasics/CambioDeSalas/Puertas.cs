@@ -12,14 +12,15 @@ public class Puertas : MonoBehaviour
     {
         puertas = this.transform.childCount;
         
-        for(int x = 0; x < puertas; x++)
+        /*for(int x = 0; x < puertas; x++)
         {
             transform.GetChild(x).gameObject.SetActive(false);
-        }
+        }*/
     }
 
     public void ActivarPuertas(bool abiertas)
     {
+        
         for (int x = 0; x < puertas; x++)
         {
             transform.GetChild(x).gameObject.SetActive(abiertas);
