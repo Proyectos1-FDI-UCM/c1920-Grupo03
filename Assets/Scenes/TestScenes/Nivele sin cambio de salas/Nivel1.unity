@@ -5312,7 +5312,7 @@ PrefabInstance:
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.55
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
@@ -5405,7 +5405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f21427a77ae93459a3e6d50d63566f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duracion: 10
+  duracion: 2
+  cooldownTime: 5
   boost: 1.1
   player: {fileID: 2098603856}
 --- !u!1 &2140348815

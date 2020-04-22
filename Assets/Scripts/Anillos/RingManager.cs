@@ -9,6 +9,6 @@ public class RingManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T)) etereo.enabled = true;
+        if (Input.GetKeyDown(KeyCode.T) && etereo.IsReady()) etereo.Call();
     }
 }
