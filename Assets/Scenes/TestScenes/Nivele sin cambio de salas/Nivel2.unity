@@ -286,6 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!61 &21313193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -539,6 +541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!1 &57635105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1282,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.84
+      objectReference: {fileID: 0}
     - target: {fileID: 3230734380463401463, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1363,16 +1377,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.96
       objectReference: {fileID: 0}
-    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.84
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6568f377905c6c49bfaf03a7ce0a2e7, type: 3}
 --- !u!4 &170661053 stripped
@@ -1453,6 +1457,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.84
+      objectReference: {fileID: 0}
     - target: {fileID: 3230734380463401463, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1502,16 +1516,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.84
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6568f377905c6c49bfaf03a7ce0a2e7, type: 3}
@@ -1927,6 +1931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!61 &218943922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2360,6 +2366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!61 &273602433
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2950,11 +2958,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3019,6 +3022,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -3922,11 +3930,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3991,6 +3994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -5001,6 +5009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!4 &704354751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7301649778181016565, guid: be53f385a8e553142a4e59fc4acd9d23,
@@ -7867,11 +7877,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7936,6 +7941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -9545,6 +9555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!61 &1831578174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9749,6 +9761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!4 &1866949150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8932909906699898811, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
@@ -9798,11 +9812,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9867,6 +9876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -9978,6 +9992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!61 &1962230748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11310,12 +11326,12 @@ PrefabInstance:
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 57.78
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.76
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
@@ -11440,11 +11456,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.2
-      objectReference: {fileID: 0}
     - target: {fileID: 3230734380935462576, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
         type: 3}
       propertyPath: player
@@ -11494,6 +11505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5537021925452753383, guid: e6568f377905c6c49bfaf03a7ce0a2e7, type: 3}
