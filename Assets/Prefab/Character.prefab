@@ -465,10 +465,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashDistanceMax: 2
-  raycastOrigin: {fileID: 0}
+  raycastOrigin: {fileID: 2182528140662116466}
   raycastMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 53248
 --- !u!114 &2817475915876907267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duracion: 10
   boost: 1.1
-  player: {fileID: 0}
+  player: {fileID: 3316560627137726507}
 --- !u!114 &8128780170799197728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,4 +521,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a086763d360417c4e9ba92e3db612779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etereo: {fileID: 0}
+  etereo: {fileID: 7072495211507574093}

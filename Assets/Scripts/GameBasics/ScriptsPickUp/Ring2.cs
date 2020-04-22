@@ -6,13 +6,19 @@ public class Ring2 : MonoBehaviour
 {
     private bool recogible;
     private GameObject player;
-
+    private ObjetosRecogibles recogibles;
 
     void Start()
     {
-        if (recogible && Input.GetKey(KeyCode.E)) PickUp();
+        recogibles = GetComponentInParent<ObjetosRecogibles>();
+        recogible = false;
     }
+    void Update()
+    {
 
+        if (recogible && Input.GetKey(KeyCode.E)) PickUp();
+
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Movimiento8D>() != null)
@@ -28,6 +34,8 @@ public class Ring2 : MonoBehaviour
     }
     void PickUp()
     {
+        recogibles.Puertas();
         //player.GetComponent<AnilloDos>().enabled = true;
+        Destroy(this.gameObject);
     }
 }
