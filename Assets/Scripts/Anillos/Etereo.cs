@@ -33,8 +33,9 @@ public class Etereo : MonoBehaviour
     {
         Invoke("DisableEffect", duracion);
 
-        Physics2D.IgnoreLayerCollision(10, 12); //ignora paredes
-        Physics2D.IgnoreLayerCollision(10, 9); //ignora enemigos (para no recibir ataques)
+        Physics2D.IgnoreLayerCollision(10, 15); //ignora columnas
+        Physics2D.IgnoreLayerCollision(10, 9); 
+        Physics2D.IgnoreLayerCollision(10, 11); //ignora enemigos (para no recibir ataques)
 
         oldSpeed = speed; //Guarda la velocidad antes de activarse el anillo
         speed *= boost; //Cambia la velocidad
@@ -44,8 +45,9 @@ public class Etereo : MonoBehaviour
 
     private void DisableEffect()
     {
-        Physics2D.IgnoreLayerCollision(10, 12, false); //detecta paredes
-        Physics2D.IgnoreLayerCollision(10, 9, false); //detecta enemigos
+        Physics2D.IgnoreLayerCollision(10, 15, false); //detecta paredes
+        Physics2D.IgnoreLayerCollision(10, 9, false);
+        Physics2D.IgnoreLayerCollision(10, 11, false); //detecta enemigos
 
         speed = oldSpeed; //vuelve a la velocidad inicial
 
