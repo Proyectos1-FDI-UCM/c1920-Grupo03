@@ -6,9 +6,10 @@ public class Spear : MonoBehaviour
 {
     private bool recogible;
     private GameObject player;
-
+    private ObjetosRecogibles recogibles;
     void Start()
     {
+        recogibles = GetComponentInParent<ObjetosRecogibles>();
         recogible = false;
     }
     void Update()
@@ -32,6 +33,8 @@ public class Spear : MonoBehaviour
     }
     void PickUp()
     {
+        recogibles.Puertas();
         //player.GetComponent<Lanza>().enabled = true;
+        Destroy(this.gameObject);
     }
 }

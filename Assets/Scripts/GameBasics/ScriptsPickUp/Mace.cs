@@ -6,9 +6,11 @@ public class Mace : MonoBehaviour
 {
     private bool recogible;
     private GameObject player;
+    private ObjetosRecogibles recogibles;
 
     void Start()
     {
+        recogibles = GetComponentInParent<ObjetosRecogibles>();
         recogible = false;
     }
     void Update()
@@ -33,6 +35,8 @@ public class Mace : MonoBehaviour
     }
     void PickUp()
     {
-       // player.GetComponent<Maza>().enabled = true;
+        recogibles.Puertas();
+        // player.GetComponent<Maza>().enabled = true;
+        Destroy(this.gameObject);
     }
 }

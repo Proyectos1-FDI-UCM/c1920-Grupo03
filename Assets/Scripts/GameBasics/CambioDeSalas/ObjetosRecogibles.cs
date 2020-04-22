@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class ObjetosRecogibles : MonoBehaviour
 {
-    // Start is called before the first frame update
+    SalaIndividual sala;
     void Start()
     {
-        
+        sala = GetComponentInParent<SalaIndividual>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Puertas()
     {
-        
+        sala.Accionar(false);
     }
 }

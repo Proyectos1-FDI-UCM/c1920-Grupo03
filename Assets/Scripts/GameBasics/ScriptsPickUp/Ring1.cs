@@ -6,9 +6,11 @@ public class Ring1 : MonoBehaviour
 {
     private bool recogible;
     private GameObject player;
+    private ObjetosRecogibles recogibles;
 
     void Start()
     {
+        recogibles = GetComponentInParent<ObjetosRecogibles>();
         recogible = false;
     }
     void Update()
@@ -35,7 +37,8 @@ public class Ring1 : MonoBehaviour
     }
     void PickUp()
     {
-        
+        recogibles.Puertas();
         player.GetComponent<AnilloUno>().enabled = true;
+        Destroy(this.gameObject);
     }
 }
