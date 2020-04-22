@@ -1194,11 +1194,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1263,6 +1258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -1986,11 +1986,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2055,6 +2050,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -3896,11 +3896,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3965,6 +3960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -4680,11 +4680,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 218943918}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4749,6 +4744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.09475136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505765, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -5359,10 +5359,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-      propertyPath: fuerza
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 2817475915876907277, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: raycastMask.m_Bits
@@ -5378,6 +5374,29 @@ PrefabInstance:
       propertyPath: etereo
       value: 
       objectReference: {fileID: 2098603858}
+    - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: fuerza
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817475914817887767, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817475914817887762, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7072495211507574093, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
@@ -5550,6 +5569,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.99
+      objectReference: {fileID: 0}
     - target: {fileID: 3230734380935462576, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
         type: 3}
       propertyPath: player
@@ -5599,11 +5623,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8059507748585680706, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.99
       objectReference: {fileID: 0}
     - target: {fileID: 8059507748585680717, guid: e6568f377905c6c49bfaf03a7ce0a2e7,
         type: 3}

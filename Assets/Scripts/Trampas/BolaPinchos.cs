@@ -10,19 +10,106 @@ public class BolaPinchos : MonoBehaviour
     [SerializeField] float fuerza = 100f;
     public bool ejeX = true;
     public float velocidad;
-    private Vector2 dirX = new Vector2(1, 0);
-    private Vector2 dirY = new Vector2(0, 1);
+    
+   
+    Vector2 posIni, posFin, posMid, dir;
+    Rigidbody2D rb;
+    float distanciaTotalAlCentro, distanciaAlCentro;
+    
 
+    private void Start()
+    {
+        posIni = transform.GetChild(0).position;//al principio coge la localizacion de inicio y fin y no lo modifica, por lo que no importa que luego se mueva la bola con sus hijo
+        posFin = transform.GetChild(1).position;
+        posMid = (posIni + posFin) / 2;
 
+        dir = (posFin - posIni);
+        distanciaTotalAlCentro = Mathf.Sqrt(Mathf.Pow(dir.x, 2) + Mathf.Pow(dir.y, 2));
+        dir = dir.normalized;
+        
+        rb = GetComponent<Rigidbody2D>();
+        gameObject.transform.position = new Vector3(posIni.x, posIni.y, -3) ;
+        rb.velocity = velocidad * dir;
+        Debug.Log(dir);
+        Debug.Log(posIni);
+        Debug.Log(posFin);
+        Debug.Log(posMid);
+    }
     private void Update()
     {
+        Vector2 pos = new Vector2(transform.position.x, transform.position.y);
+        Vector2 distCentro = new Vector2(pos.x - posMid.x, pos.y -posMid.y);//Vector de la pos de la bola hacia el centro
 
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if (ejeX)
-            rb.velocity = dirX*velocidad;
-        else
-            rb.velocity = dirY*velocidad;
+       
 
+       
+
+        
+         if (posIni.x <= posFin.x)//si empieza de izqueirda a derecha
+         {
+             if(posIni.y >= posFin.y)//si va de arriba a abajo
+             {
+                 if (pos.x <= posIni.x || pos.x >= posFin.x || pos.y >= posIni.y || pos.y <= posFin.y)
+                 {
+                     dir *= -1;
+                     rb.velocity = 0.5f * dir;
+                     Debug.Log("CambiaVel");
+                 }
+                else
+                {
+                    distanciaAlCentro = Mathf.Sqrt(Mathf.Pow(distCentro.x, 2) + Mathf.Pow(distCentro.y, 2));
+                    rb.velocity = dir * velocidad * ( distanciaTotalAlCentro - distanciaAlCentro) /distanciaAlCentro;
+                }
+             }
+             else // de abajo a arriba
+             {
+                 if (pos.x <= posIni.x || pos.x >= posFin.x || pos.y <= posIni.y || pos.y >= posFin.y)
+                 {
+                     dir *= -1;
+                     rb.velocity = velocidad * dir;
+                     Debug.Log("CambiaVel");
+                 }
+                else
+                {
+                    distanciaAlCentro = Mathf.Sqrt(Mathf.Pow(distCentro.x, 2) + Mathf.Pow(distCentro.y, 2));
+                    rb.velocity = dir * velocidad * (distanciaTotalAlCentro - distanciaAlCentro) / distanciaAlCentro;
+                }
+            }
+         }
+
+         else//si empieza de derecha a izquierda
+         {
+             if (posIni.y >= posFin.y)//si va de arriba a abajo
+             {
+                 if (pos.x >= posIni.x || pos.x <= posFin.x || pos.y >= posIni.y || pos.y <= posFin.y)
+                 {
+                     dir *= -1;
+                     rb.velocity = velocidad * dir;
+                     Debug.Log("CambiaVel");
+                 }
+                else
+                {
+                    distanciaAlCentro = Mathf.Sqrt(Mathf.Pow(distCentro.x, 2) + Mathf.Pow(distCentro.y, 2));
+                    rb.velocity = dir * velocidad * (distanciaTotalAlCentro - distanciaAlCentro) / distanciaAlCentro;
+                }
+            }
+             else // de abajo a arriba
+             {
+                 if (pos.x >= posIni.x || pos.x <= posFin.x || pos.y <= posIni.y || pos.y >= posFin.y)
+                 {
+                     dir *= -1;
+                     rb.velocity = velocidad * dir;
+                     Debug.Log("CambiaVel");
+                 }
+                else
+                {
+                    distanciaAlCentro = Mathf.Sqrt(Mathf.Pow(distCentro.x, 2) + Mathf.Pow(distCentro.y, 2));
+                    rb.velocity = dir * velocidad * (distanciaTotalAlCentro - distanciaAlCentro) / distanciaAlCentro;
+                }
+            }
+         }
+
+         
     }
 
 
@@ -61,6 +148,7 @@ public class BolaPinchos : MonoBehaviour
 
             }
         }
+        /*
         if (collision.gameObject.tag == "Mapa")
         {
             Debug.Log("ChocaPared");
@@ -72,7 +160,7 @@ public class BolaPinchos : MonoBehaviour
             else
                 dirY = dirY  * -1;
         }
-
+        */
     }
 
     void ActivaMov8D()
