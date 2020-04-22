@@ -6,10 +6,16 @@ public class SalaIndividual : MonoBehaviour
 {
     Puertas puertas;
     Deshabilitado desh;
+    ObjetosRecogibles recogibles;
     void Start()
     {
         puertas = GetComponentInChildren<Puertas>();
         desh = GetComponentInChildren<Deshabilitado>();
+        if (GetComponentInChildren<ObjetosRecogibles>() != null)
+        {
+            puertas.ActivarPuertas(true);
+
+        }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {

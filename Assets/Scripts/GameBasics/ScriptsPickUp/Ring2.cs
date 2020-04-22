@@ -10,9 +10,14 @@ public class Ring2 : MonoBehaviour
 
     void Start()
     {
-        if (recogible && Input.GetKey(KeyCode.E)) PickUp();
+        recogible = false;
     }
+    void Update()
+    {
 
+        if (recogible && Input.GetKey(KeyCode.E)) PickUp();
+
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Movimiento8D>() != null)

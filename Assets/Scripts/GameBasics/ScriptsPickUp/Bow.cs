@@ -7,10 +7,15 @@ public class Bow : MonoBehaviour
     private bool recogible;
     private GameObject player;
 
-
     void Start()
     {
-        if (recogible && Input.GetKey(KeyCode.E)) PickUp();
+        recogible = false;
+    }
+    void Update()
+    {
+
+        if (recogible && Input.GetKey(KeyCode.Q)) PickUp();
+
     }
 
     void OnTriggerEnter2D(Collider2D other)

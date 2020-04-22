@@ -7,16 +7,22 @@ public class Ring1 : MonoBehaviour
     private bool recogible;
     private GameObject player;
 
-        
     void Start()
     {
-        if (recogible && Input.GetKey(KeyCode.E)) PickUp();
+        recogible = false;
+    }
+    void Update()
+    {
+        
+        if (recogible && Input.GetKey(KeyCode.E))   PickUp();
+        
     }
     
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.GetComponent<Movimiento8D>() != null)
         {
+            
             player = other.gameObject;
             recogible = true;
         }
@@ -24,10 +30,12 @@ public class Ring1 : MonoBehaviour
 
     void OnTriggerExit2D()
     {
+        
         recogible = false;
     }
     void PickUp()
     {
-        //player.GetComponent<AnilloUno>().enabled = true;
+        
+        player.GetComponent<AnilloUno>().enabled = true;
     }
 }
