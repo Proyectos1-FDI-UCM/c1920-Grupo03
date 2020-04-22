@@ -7,9 +7,12 @@ using UnityEngine;
 //y le dará un aumento de velocidad.
 public class Etereo : MonoBehaviour
 {
-    public float duracion = 10f; //Duración del efecto del anillo
-    public float boost = 1.1f; //Multiplicador de la velocidad del jugador
-    public GameObject player; //GameObject del jugador
+    [SerializeField]
+    float duracion = 10f; //Duración del efecto del anillo
+    [SerializeField]
+    float boost = 1.1f; //Multiplicador de la velocidad del jugador
+    [SerializeField]
+    GameObject player; //GameObject del jugador
 
     Movimiento8D playerMovement; //Componente que mueve el jugador, para acceder a su velocidad
     float speed, oldSpeed; //Velocidad a aplicar al jugador, y velocidad por defecto a la que volver cuando termine el efecto.

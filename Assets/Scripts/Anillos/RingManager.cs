@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RingManager : MonoBehaviour
 {
-    public Etereo etereo;
+    [SerializeField]
+    Etereo etereo;
 
     private void Update()
     {
