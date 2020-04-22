@@ -31,8 +31,7 @@ public class SalaIndividual : MonoBehaviour
     }*/
 
     public void Accionar(bool estado)
-    {
-        
+    {        
         puertas.ActivarPuertas(estado);
     }
 }
