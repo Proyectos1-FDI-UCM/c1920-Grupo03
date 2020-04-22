@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 100; //Puntos de vida con los que comienza el enemigo.
     int currentHealth; //Vida actual del enemigo.
-
+    int prob;
     void Start()
     {
         currentHealth = maxHealth; //La vida del enemigo comienza al máximo.
@@ -14,8 +14,19 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage) //Se llama cuando el jugador ataca al enemigo.
     {
-        Debug.Log("Ouch");
-        currentHealth -= damage; //Disminuye su vida.
+        prob = Random.Range(0, 10);
+
+        if (prob < 3)
+        {
+
+            Debug.Log("Critico");
+            currentHealth -= (damage * 3 / 2); //daño critico
+        }
+        else
+        {
+            Debug.Log("Ouch");
+            currentHealth -= damage; //daño normal
+        }
 
         if (currentHealth <= 0) Destroy(this.gameObject); //Si se queda sin vida matarlo.
     }
