@@ -11,6 +11,7 @@ public class Martillo : MonoBehaviour
     bool atacando;//si esta atacando
     bool ataque;//da la orden de atacar
     ListaEnemigosDentro lista;
+    public int damage;
     private void Start()
     {
         atacando = false;
@@ -60,7 +61,8 @@ public class Martillo : MonoBehaviour
                         movenemig.enabled = false;
                         Vector2 difference = enemigo.transform.position - transform.position;
                         enemy.AddForce(difference.normalized * fuerza, ForceMode2D.Impulse);
-
+                        EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
+                        vidaEnmigo.TakeDamage(damage);
                     }
                 }
 
