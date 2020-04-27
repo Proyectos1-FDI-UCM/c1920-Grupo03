@@ -48,7 +48,7 @@ public class Embestida : MonoBehaviour
             dir.Normalize();
             // rb.isKinematic = true;
             rb.freezeRotation = true;
-            rb.velocity = dir * vel;
+            rb.velocity = dir * vel; 
         }
        
         
