@@ -8,14 +8,14 @@ public class Puertas : MonoBehaviour
 
     int puertas = 0;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         puertas = this.transform.childCount;
         
-        /*for(int x = 0; x < puertas; x++)
+        for(int x = 0; x < puertas; x++)
         {
             transform.GetChild(x).gameObject.SetActive(false);
-        }*/
+        }
     }
 
     public void ActivarPuertas(bool abiertas)

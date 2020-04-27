@@ -7,6 +7,7 @@ public class SalaIndividual : MonoBehaviour
     Puertas puertas;
     Deshabilitado desh;
     ObjetoRecogible recogibles;
+    int enemigosViv = 0;
     void Start()
     {
         puertas = GetComponentInChildren<Puertas>();
@@ -22,14 +23,18 @@ public class SalaIndividual : MonoBehaviour
         if(collision.GetComponent<Movimiento8D>() != null)
         {
             desh.Deshabilitarse();
-
-            puertas.ActivarPuertas(true);
+            if (enemigosViv > 0)
+                Accionar(true);
            
             //GameManager.instance.AddRoom();
             Debug.Log("Hola he chocado");
             Destroy(this);
         }
         
+    }
+    public void RecibeEnemigos(int enemigos)
+    {
+        enemigosViv = enemigos;
     }
    /* void ActPuertas()
     {
