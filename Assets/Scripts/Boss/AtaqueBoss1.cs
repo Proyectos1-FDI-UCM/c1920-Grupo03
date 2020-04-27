@@ -84,6 +84,10 @@ public class AtaqueBoss1 : MonoBehaviour
         dentroTriggerMaza =  dentro;
         Debug.Log(dentroTriggerMaza);
     }
+
+
+
+    public int danyo;
     void Ataca()
     {
        
@@ -93,7 +97,7 @@ public class AtaqueBoss1 : MonoBehaviour
             if (dentroTriggerMaza)
             {
 
-                GameManager.instance.TakeDamage(10);
+                GameManager.instance.TakeDamage(danyo);
 
             }
             rb.freezeRotation = false;

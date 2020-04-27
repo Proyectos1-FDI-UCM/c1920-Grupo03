@@ -8,6 +8,7 @@ public class Martillo : MonoBehaviour
     float guardarVel;
     Movimiento8D movPlayer;
     MovEnemig movenemig;
+    MovEnemig1 movenemig1;
     public float fuerza = 300;
     bool atacando;//si esta atacando
     bool ataque;//da la orden de atacar
@@ -66,11 +67,22 @@ public class Martillo : MonoBehaviour
                     {
                         Debug.Log("Empuja");
                         movenemig = enemigo.GetComponent<MovEnemig>();
-                        movenemig.enabled = false;
-                        Vector2 difference = enemigo.transform.position - transform.position;
-                        enemy.AddForce(difference.normalized * fuerza, ForceMode2D.Impulse);
-                        EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
-                        vidaEnmigo.TakeDamage(damage);
+                        if(movenemig != null)
+                        {
+                            movenemig.enabled = false;
+                            Vector2 difference = enemigo.transform.position - transform.position;
+                            enemy.AddForce(difference.normalized * fuerza, ForceMode2D.Impulse);
+                            EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
+                            vidaEnmigo.TakeDamage(damage);
+                        }
+                        movenemig1 = enemigo.GetComponent<MovEnemig1>();
+                        if (movenemig1 != null)
+                        {
+                           
+                            EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
+                            vidaEnmigo.TakeDamage(damage);
+                        }
+
                     }
                 }
 

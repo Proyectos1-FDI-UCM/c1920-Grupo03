@@ -9,7 +9,7 @@ public class Embestida : MonoBehaviour
     Rigidbody2D rb, rbplayer;
     MirarJugador mirarJugador;
     MovEnemig1 movBoss;
- 
+    public float fuerza;
     Vector2 pos, dir;
     public float vel;
 
@@ -54,6 +54,7 @@ public class Embestida : MonoBehaviour
         
     }
 
+    public int danyo;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (enabled)//si no se pone esto da error cunado embestida esta desactivado
@@ -75,9 +76,11 @@ public class Embestida : MonoBehaviour
                
                 rb.velocity = Vector2.zero;//no es para quitar mov, es para que se pare en seco al chocar con algo
                 movPlayer.enabled = false;
-                rbplayer.AddForce(dir * 30, ForceMode2D.Impulse);
+                dir.Normalize();
+                rbplayer.AddForce(dir * fuerza, ForceMode2D.Impulse);
                 Invoke("CambiaMovPlayer", 0.5f);
                 Invoke("CambiaMov", 1f);
+                GameManager.instance.TakeDamage(danyo);
                 
 
             }
