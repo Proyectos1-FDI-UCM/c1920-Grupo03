@@ -22,7 +22,7 @@ public class PlayerArquero : MonoBehaviour
             Vector2 lugardisparo = new Vector2(cursorPosition.x - transform.position.x, cursorPosition.y - transform.position.y);
             GameObject arrow=Instantiate(flecha, lugar.position, Quaternion.identity);
             arrow.GetComponent<Rigidbody2D>().velocity = lugardisparo.normalized*10;
-           arrow.transform.Rotate(0, 0, Mathf.Atan2(lugardisparo.y, lugardisparo.x) * Mathf.Rad2Deg - 90);
+            arrow.transform.Rotate(0, 0, Mathf.Atan2(lugardisparo.y, lugardisparo.x) * Mathf.Rad2Deg - 90);
         }
     }
 }

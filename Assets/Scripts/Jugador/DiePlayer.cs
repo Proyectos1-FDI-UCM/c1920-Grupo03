@@ -13,6 +13,6 @@ public class DiePlayer : MonoBehaviour
     public void Call()
     {
         Destroy(this.gameObject);
-        SceneManager.LoadScene("Nivel1HUD");
+        GameManager.instance.CargarNivel("Nivel1HUD");
     }
 }

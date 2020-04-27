@@ -6094,7 +6094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50, y: 50.039993}
+  m_AnchoredPosition: {x: 50, y: 50.04004}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1205950403
@@ -7235,7 +7235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -147.4, y: -53.33}
+  m_AnchoredPosition: {x: -147.4, y: -53.329956}
   m_SizeDelta: {x: 189.58, y: 106.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1431682968
@@ -7420,7 +7420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 202.75, y: -40.7}
+  m_AnchoredPosition: {x: 202.75, y: -40.69995}
   m_SizeDelta: {x: 405.59, y: 81.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1498274977
@@ -8670,6 +8670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maxHealth
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 412532123771425910, guid: bccc968d5e175754892f7dc50ffa4007,
+        type: 3}
+      propertyPath: isBoss
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bccc968d5e175754892f7dc50ffa4007, type: 3}
