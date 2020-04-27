@@ -6,12 +6,12 @@ public class SalaIndividual : MonoBehaviour
 {
     Puertas puertas;
     Deshabilitado desh;
-    ObjetosRecogibles recogibles;
+    ObjetoRecogible recogibles;
     void Start()
     {
         puertas = GetComponentInChildren<Puertas>();
         desh = GetComponentInChildren<Deshabilitado>();
-        if (GetComponentInChildren<ObjetosRecogibles>() != null)
+        if (GetComponentInChildren<ObjetoRecogible>() != null)
         {
             puertas.ActivarPuertas(true);
 

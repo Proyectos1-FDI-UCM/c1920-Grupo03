@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjetosRecogibles : MonoBehaviour
+public class ObjetoRecogible : MonoBehaviour
 {
     SalaIndividual sala;
     void Start()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Martillo : MonoBehaviour
 {
+    Armas arma;
     float guardarVel;
     Movimiento8D movPlayer;
     MovEnemig movenemig;
@@ -12,10 +13,17 @@ public class Martillo : MonoBehaviour
     bool ataque;//da la orden de atacar
     ListaEnemigosDentro lista;
     public int damage;
+   /* void Awake()
+    {
+        arma = GetComponentInParent<Armas>();
+        Invoke("PasoGameObject", 0f);
+    }*/
     private void Start()
     {
         atacando = false;
+       
          lista = new ListaEnemigosDentro();
+        
         
     }
 
@@ -263,4 +271,15 @@ public class Martillo : MonoBehaviour
         atacando = false;
         Debug.Log("masRapido");
     }
+/*
+   public void PasoGameObject()
+    {
+        arma.Guardar(this.gameObject);
+    }
+
+    public void Activas()
+    {
+        this.gameObject.SetActive(true);
+    }
+    */
 }

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Mace : MonoBehaviour
 {
+    private Armas armas;
     private bool recogible;
     private GameObject player;
-    private ObjetosRecogibles recogibles;
+    private ObjetoRecogible recogibles;
 
     void Start()
     {
-        recogibles = GetComponentInParent<ObjetosRecogibles>();
+        recogibles = GetComponentInParent<ObjetoRecogible>();
         recogible = false;
     }
     void Update()
@@ -36,7 +37,8 @@ public class Mace : MonoBehaviour
     void PickUp()
     {
         recogibles.Puertas();
-        // player.GetComponent<Maza>().enabled = true;
+        armas = player.GetComponent<Armas>();
+        armas.ActivarArmas();
         Destroy(this.gameObject);
     }
 }

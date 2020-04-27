@@ -6,11 +6,11 @@ public class Ring2 : MonoBehaviour
 {
     private bool recogible;
     private GameObject player;
-    private ObjetosRecogibles recogibles;
+    private ObjetoRecogible recogibles;
 
     void Start()
     {
-        recogibles = GetComponentInParent<ObjetosRecogibles>();
+        recogibles = GetComponentInParent<ObjetoRecogible>();
         recogible = false;
     }
     void Update()
