@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Destruirse : MonoBehaviour
 {
+    public int tiempo = 5;
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("AutoDestruc", 5f);
+        Invoke("AutoDestruc", tiempo);
     }
         
     private void AutoDestruc()

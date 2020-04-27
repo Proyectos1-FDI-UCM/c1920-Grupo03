@@ -7,9 +7,11 @@ public class SalaIndividual : MonoBehaviour
     Puertas puertas;
     Deshabilitado desh;
     ObjetoRecogible recogibles;
+    //EnemigosSala enem;
     int enemigosViv = 0;
     void Start()
     {
+        //enem = GetComponentInChildren<EnemigosSala>();
         puertas = GetComponentInChildren<Puertas>();
         desh = GetComponentInChildren<Deshabilitado>();
         if (GetComponentInChildren<ObjetoRecogible>() != null)
@@ -22,6 +24,7 @@ public class SalaIndividual : MonoBehaviour
     {
         if(collision.GetComponent<Movimiento8D>() != null)
         {
+            //enem.ActivarEnemigos(this.gameObject);
             desh.Deshabilitarse();
             if (enemigosViv > 0)
                 Accionar(true);

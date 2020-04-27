@@ -38,7 +38,8 @@ public class EnemigosSala : MonoBehaviour
 
     }
 
-  
+  // hay que cambiar esto para que sea llamado por sala individual(por alguna razon)
+  // he probado y me daba error . Error: iba en linea recta una distancia exacta cada vez que se ejecutaba
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -47,7 +48,7 @@ public class EnemigosSala : MonoBehaviour
         if (mov8d != null)
         {
            
-           // Debug.Log("Entro");
+            Debug.Log("Entro");
             x = transform.childCount;
             //es un bucle que va decrementando la x ya que van saliendo los hijos
             while (x > 0)

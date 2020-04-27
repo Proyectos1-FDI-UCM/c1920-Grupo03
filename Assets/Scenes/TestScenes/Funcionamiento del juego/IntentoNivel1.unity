@@ -623,11 +623,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1315540426}
     m_Modifications:
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
-      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -692,6 +687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
