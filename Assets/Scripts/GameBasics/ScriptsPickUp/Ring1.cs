@@ -23,22 +23,20 @@ public class Ring1 : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.GetComponent<Movimiento8D>() != null)
-        {
-            
+        {            
             player = other.gameObject;
             recogible = true;
         }
     }
 
     void OnTriggerExit2D()
-    {
-        
+    {        
         recogible = false;
     }
     void PickUp()
     {
         recogibles.Puertas();
-        player.GetComponent<AnilloUno>().enabled = true;
+        player.GetComponent<Dash>().enabled = true;
         Destroy(this.gameObject);
     }
 }
