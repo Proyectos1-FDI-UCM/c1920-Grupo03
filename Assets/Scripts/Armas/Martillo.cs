@@ -14,6 +14,7 @@ public class Martillo : MonoBehaviour
     bool ataque;//da la orden de atacar
     ListaEnemigosDentro lista;
     public int damage;
+    Arquer arquero;
    /* void Awake()
     {
         arma = GetComponentInParent<Armas>();
@@ -67,7 +68,9 @@ public class Martillo : MonoBehaviour
                     {
                         Debug.Log("Empuja");
                         movenemig = enemigo.GetComponent<MovEnemig>();
-                        if(movenemig != null)
+                        movenemig1 = enemigo.GetComponent<MovEnemig1>();
+                        arquero = enemigo.GetComponent<Arquer>();
+                        if (movenemig != null)
                         {
                             movenemig.enabled = false;
                             Vector2 difference = enemigo.transform.position - transform.position;
@@ -75,14 +78,20 @@ public class Martillo : MonoBehaviour
                             EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
                             vidaEnmigo.TakeDamage(damage);
                         }
-                        movenemig1 = enemigo.GetComponent<MovEnemig1>();
-                        if (movenemig1 != null)
+                      
+                        else if (movenemig1 != null)
                         {
                            
                             EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
                             vidaEnmigo.TakeDamage(damage);
                         }
 
+                        else if (arquero != null)
+                        {
+                            EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
+                            vidaEnmigo.TakeDamage(damage);
+                            arquero.enabled = false;
+                        }
                     }
                 }
 
