@@ -12,6 +12,7 @@ public class Arquer : MonoBehaviour
     public GameObject flecha;
      GameObject player;
     private Rigidbody2D rb;
+    private Vector3 spawn;
     Vector2 dir;
 
     
@@ -41,8 +42,9 @@ public class Arquer : MonoBehaviour
             transform.up = dir;
             if (tiempoDisparos <= 0)
             {
+                spawn = this.transform.GetChild(1).gameObject.transform.position;
                 Quaternion rot =  this.gameObject.transform.rotation;
-                Instantiate(flecha, transform.position, rot, transform);
+                Instantiate(flecha, spawn, rot, transform);
                 
                 tiempoDisparos = disparos;
                 nhijos = transform.childCount;
@@ -50,10 +52,8 @@ public class Arquer : MonoBehaviour
                 flechaHija = transform.GetChild(nhijos - 1).gameObject;
                 flechaHija.transform.SetParent(null);
                 flechaHijaRB = flechaHija.GetComponent<Rigidbody2D>();
-                flechaHijaRB.velocity = dirFlecha * 100 * Time.deltaTime;
-
-
-
+                dirFlecha.Normalize();
+                flechaHijaRB.velocity = dirFlecha * 500 * Time.deltaTime;
 
             }
             else

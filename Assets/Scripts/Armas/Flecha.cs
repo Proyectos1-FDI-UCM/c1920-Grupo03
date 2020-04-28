@@ -9,6 +9,7 @@ public class Flecha : MonoBehaviour
     private Vector2 objetivo;
     private Rigidbody2D rb;
     EnemyHealth enemyHealth;
+    public int daño = 50;
     
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,7 +28,7 @@ public class Flecha : MonoBehaviour
         }
         else if (enemyHealth != null)
         {
-            enemyHealth.TakeDamage(10);
+            enemyHealth.TakeDamage(daño);
             DestruirFlecha();
         }
     }
