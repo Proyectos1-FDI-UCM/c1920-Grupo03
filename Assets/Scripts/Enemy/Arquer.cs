@@ -41,7 +41,9 @@ public class Arquer : MonoBehaviour
             transform.up = dir;
             if (tiempoDisparos <= 0)
             {
-                Instantiate(flecha, transform.position, Quaternion.identity, transform);
+                Quaternion rot =  this.gameObject.transform.rotation;
+                Instantiate(flecha, transform.position, rot, transform);
+                
                 tiempoDisparos = disparos;
                 nhijos = transform.childCount;
                 dirFlecha = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);

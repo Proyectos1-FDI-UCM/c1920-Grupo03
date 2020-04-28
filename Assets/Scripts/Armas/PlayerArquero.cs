@@ -6,6 +6,7 @@ public class PlayerArquero : MonoBehaviour
 {
     public GameObject flecha;
     public Transform lugar;
+    float tiempo = 0, FireRate = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +16,9 @@ public class PlayerArquero : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.time > tiempo)
         {
+            tiempo = Time.time + FireRate;
             Vector3 cursorPosition = Input.mousePosition;
             cursorPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
             Vector2 lugardisparo = new Vector2(cursorPosition.x - transform.position.x, cursorPosition.y - transform.position.y);

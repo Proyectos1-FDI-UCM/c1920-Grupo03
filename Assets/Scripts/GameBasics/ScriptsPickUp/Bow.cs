@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bow : MonoBehaviour
 {
+    private Armas armas;
     private bool recogible;
     private GameObject player;
     private ObjetoRecogible recogibles;
@@ -27,6 +28,8 @@ public class Bow : MonoBehaviour
             player = other.gameObject;
             recogible = true;
         }
+
+        //if (!other.GetComponent<Armas>().CompruebArma()) Destroy(this.gameObject);
     }
 
     void OnTriggerExit2D()
@@ -36,7 +39,10 @@ public class Bow : MonoBehaviour
     void PickUp()
     {
         recogibles.Puertas();
-        //player.GetComponent<Arco>().enabled = true;
+        armas = player.GetComponent<Armas>();
+        armas.ActivarArco();
         Destroy(this.gameObject);
+        recogibles.DestruirHijos();
+
     }
 }

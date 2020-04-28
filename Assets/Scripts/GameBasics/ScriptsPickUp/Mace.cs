@@ -28,6 +28,7 @@ public class Mace : MonoBehaviour
             player = other.gameObject;
             recogible = true;
         }
+      //if(!other.GetComponent<Armas>().CompruebArma()) Destroy(this.gameObject);
     }
 
     void OnTriggerExit2D()
@@ -38,7 +39,8 @@ public class Mace : MonoBehaviour
     {
         recogibles.Puertas();
         armas = player.GetComponent<Armas>();
-        armas.ActivarArmas();
+        armas.ActivarMartillo();
         Destroy(this.gameObject);
+        recogibles.DestruirHijos();
     }
 }

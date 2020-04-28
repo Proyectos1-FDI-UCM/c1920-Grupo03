@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Armas : MonoBehaviour
 {
-    Martillo martillo;
-    GameObject M;
-    Transform pos;
-    
+    // iniciales de armas
+    GameObject M, A;
+    Transform mart, arco;
+    bool MartilloActivo = false, ArcoActivo = false, LanzaActiva = false;
 
     /*public void Guardar(GameObject  arma)
     {
@@ -15,12 +15,35 @@ public class Armas : MonoBehaviour
     }*/
     void Start()
     {
-        pos = this.gameObject.transform.GetChild(0);
-        M = pos.gameObject;
+        mart = this.gameObject.transform.GetChild(0);
+        M = mart.gameObject;
+        arco = this.gameObject.transform.GetChild(3);
+        A = arco.gameObject;
         
     }
-    public void ActivarArmas()
+    public bool CompruebArma()
     {
-        M.SetActive(true);
+        if (MartilloActivo || ArcoActivo || LanzaActiva) return false;
+        return true;
+    }
+    
+    public void ActivarMartillo()
+    {
+        if (CompruebArma())
+        {
+            M.SetActive(true);
+            MartilloActivo = true;
+        }
+        
+    }
+
+    public void ActivarArco()
+    {
+        if (CompruebArma())
+        {
+            A.SetActive(true);
+            ArcoActivo = true;
+        }
+       
     }
 }
