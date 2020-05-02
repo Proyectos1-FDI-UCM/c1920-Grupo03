@@ -49,7 +49,7 @@ public class Bomba : MonoBehaviour
         Destroy(this.gameObject);
         if(d < distancia && player != null)
         {
-            Destroy(player);
+           GameManager.instance.TakeDamage(30);
         }
         
     }
