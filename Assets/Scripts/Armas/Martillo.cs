@@ -15,6 +15,7 @@ public class Martillo : MonoBehaviour
     ListaEnemigosDentro lista;
     public int damage;
     Arquer arquero;
+    Bomba bomb;
    /* void Awake()
     {
         arma = GetComponentInParent<Armas>();
@@ -70,6 +71,7 @@ public class Martillo : MonoBehaviour
                         movenemig = enemigo.GetComponent<MovEnemig>();
                         movenemig1 = enemigo.GetComponent<MovEnemig1>();
                         arquero = enemigo.GetComponent<Arquer>();
+                        bomb = enemigo.GetComponent<Bomba>();
                         if (movenemig != null)
                         {
                             movenemig.enabled = false;
@@ -91,6 +93,11 @@ public class Martillo : MonoBehaviour
                             EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
                             vidaEnmigo.TakeDamage(damage);
                             arquero.enabled = false;
+                        }
+                        else if(bomb != null)
+                        {
+                            EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
+                            vidaEnmigo.TakeDamage(damage);
                         }
                     }
                 }
@@ -233,9 +240,9 @@ public class Martillo : MonoBehaviour
             if (!lista.BuscaGameOBject(collision.gameObject))
             {
                 lista.AddPrincipio(collision.gameObject);
-                Debug.Log("Entraenem");
+               // Debug.Log("Entraenem");
 
-                Debug.Log("Lista: " + lista.nEnemigos());
+              //  Debug.Log("Lista: " + lista.nEnemigos());
             }
         }
         
@@ -249,12 +256,12 @@ public class Martillo : MonoBehaviour
         if (collision.GetComponent<EnemyHealth>())
         {
             lista.EliminaEnemig(collision.gameObject);
-            Debug.Log("SaleEnem");
+            //Debug.Log("SaleEnem");
         }
            
 
 
-        Debug.Log("Lista: " + lista.nEnemigos());
+       // Debug.Log("Lista: " + lista.nEnemigos());
     }
 
     /*

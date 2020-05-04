@@ -17,7 +17,7 @@ public class MazaBoss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Entra trigger");
+       // Debug.Log("Entra trigger");
         if (collision.GetComponent<Movimiento8D>() != null)
             ataque.CompruebaTriggerMaza(true);
     }

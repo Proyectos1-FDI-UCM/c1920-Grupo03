@@ -48,7 +48,7 @@ public class EnemigosSala : MonoBehaviour
         if (mov8d != null)
         {
            
-            Debug.Log("Entro");
+          //  Debug.Log("Entro");
             x = transform.childCount;
             //es un bucle que va decrementando la x ya que van saliendo los hijos
             while (x > 0)
@@ -66,7 +66,7 @@ public class EnemigosSala : MonoBehaviour
                 {
                     bomb.enabled = true;
                     bomb.CogerJugador(collision.gameObject);
-                    Debug.Log("ACtiva bomba");
+                   // Debug.Log("ACtiva bomba");
                 }
                 if (arquero != null)
                 {

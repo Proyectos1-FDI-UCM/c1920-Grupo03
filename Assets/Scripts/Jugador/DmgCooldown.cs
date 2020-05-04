@@ -15,7 +15,7 @@ public class DmgCooldown : MonoBehaviour
     public void Call() //Activa el cooldown.
     {
         onCooldown = true;
-        Debug.Log("Activate cooldown");
+       // Debug.Log("Activate cooldown");
 
         Invoke("Deactivate", cooldownTime); //desactiva el cooldown después de terminar su duración.
     }

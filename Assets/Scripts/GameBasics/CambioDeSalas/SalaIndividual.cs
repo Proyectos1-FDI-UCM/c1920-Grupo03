@@ -30,7 +30,7 @@ public class SalaIndividual : MonoBehaviour
                 Accionar(true);
            
             //GameManager.instance.AddRoom();
-            Debug.Log("Hola he chocado");
+          //  Debug.Log("Hola he chocado");
             Destroy(this);
         }
         
