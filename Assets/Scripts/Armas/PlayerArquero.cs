@@ -7,13 +7,7 @@ public class PlayerArquero : MonoBehaviour
     public GameObject flecha;
     public Transform lugar;
     float tiempo = 0, FireRate = 1;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+  
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && Time.time > tiempo)
@@ -25,6 +19,7 @@ public class PlayerArquero : MonoBehaviour
             GameObject arrow=Instantiate(flecha, lugar.position, Quaternion.identity);
             arrow.GetComponent<Rigidbody2D>().velocity = lugardisparo.normalized*10;
             arrow.transform.Rotate(0, 0, Mathf.Atan2(lugardisparo.y, lugardisparo.x) * Mathf.Rad2Deg - 90);
+            arrow.layer = 13;
         }
     }
 }

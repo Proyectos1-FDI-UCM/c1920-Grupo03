@@ -21,10 +21,10 @@ TagManager:
   - Jugador
   - ColliderEnemies
   - Pared
-  - Flecha
+  - FlechaPlayer
   - BolaPinchos
   - Columna
-  - 
+  - FlechaEnem
   - 
   - 
   - 

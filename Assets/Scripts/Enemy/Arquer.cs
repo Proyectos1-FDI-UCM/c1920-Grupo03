@@ -19,7 +19,6 @@ public class Arquer : MonoBehaviour
     void Start()
     {
         
-        
         rb = GetComponent<Rigidbody2D>();
 
         tiempoDisparos = disparos;
@@ -51,6 +50,7 @@ public class Arquer : MonoBehaviour
                 dirFlecha = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
                 flechaHija = transform.GetChild(nhijos - 1).gameObject;
                 flechaHija.transform.SetParent(null);
+                flechaHija.layer = 16;
                 flechaHijaRB = flechaHija.GetComponent<Rigidbody2D>();
                 dirFlecha.Normalize();
                 flechaHijaRB.velocity = dirFlecha * 500 * Time.deltaTime;
@@ -62,7 +62,7 @@ public class Arquer : MonoBehaviour
             }
         }
     }
-    // Update is called once per frame
+   
     void FixedUpdate()
     {
         if (player != null)
