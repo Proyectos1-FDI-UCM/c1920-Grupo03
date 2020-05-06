@@ -17,14 +17,14 @@ public class Bomba : MonoBehaviour
     float vel;
     Vector3 posPlayer;
     bool movEnabled;
-    bool playerInRange;
+    bool sprint;
 
     void Start()
     {
         movEnabled = true;
         rb = GetComponent<Rigidbody2D>(); 
         hijo = transform.GetChild(0);
-        playerInRange = false;
+        sprint = false;
         vel = velocidad;
     }
 
@@ -40,34 +40,25 @@ public class Bomba : MonoBehaviour
             transform.position = posPlayer;
         }
 
-        if (player != null && !playerInRange)//movimiento normal hacia el player
+        if (player != null && !sprint)//movimiento normal hacia el player
         {
             dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
             dir.Normalize();
             transform.up = dir;
         }
-
-        if (playerInRange && transform.position != posPlayer)
+        else  if (sprint && transform.position != posPlayer)
         {
-            dir = new Vector2(posPlayer.x - transform.position.x, posPlayer.y - transform.position.y);
-            dir.Normalize();
-            transform.up = dir;
-            transform.position = Vector3.MoveTowards(transform.position, posPlayer, vel*Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, posPlayer, vel * Time.deltaTime);
+
         }
        
 
         
        
-        if(d < distanciaRange && !playerInRange )
+        if(d < distanciaRange && !sprint )
         {
 
-
-
-            
-           
             vel = velocidad / 2;
-            
-
             Invoke("SprintBomba", 1f);
 
         }
@@ -103,12 +94,15 @@ public class Bomba : MonoBehaviour
 
     public void SprintBomba()
     {
-
+       
         posPlayer = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
-        playerInRange = true;
-        
+        sprint = true;
+        dir = new Vector2(posPlayer.x - transform.position.x, posPlayer.y - transform.position.y);
+        dir.Normalize();
+        transform.up = dir;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         vel = velocidad * 1.5f;
         movEnabled = false;
-        
+       
     }
 }
