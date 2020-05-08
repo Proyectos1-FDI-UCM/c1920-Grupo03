@@ -100,7 +100,11 @@ public class GameManager : MonoBehaviour
         return Ring4;
     }
 
-
+    public void SalirDelJuego()
+    {
+        Debug.Log("Sale del juego");
+        Application.Quit();
+    }
 
 
 }
