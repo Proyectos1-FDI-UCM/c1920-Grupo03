@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private UIManager theUIManager;
     private GameObject player;
+    bool Ring2;
+    bool Ring4;
 
     int unexploredRooms = 0, currentHealth = 100, maxHealth = 100, h, cargas, normRest = 8;
     // Start is called before the first frame update
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour
     {
         currentHealth = maxHealth;
         theUIManager.SetMaxHealth(currentHealth);
+        Ring2 = false;
+        Ring4 = false;
     }  
     public void SetPlayer(GameObject theplayer)
     {
@@ -75,5 +79,29 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(nivel);
     }
+
+   public void PickRing2()      //cuando el player coge el anillo 2 lo activa en el GameManager
+    {
+        Ring2 = true;
+    }
+
+    public bool ReturnRing2()       //para decirle a otros EnemyHealth si Ring2 esta activo o no
+    {
+        return Ring2;
+    }
+
+    public void PickRing4()      //cuando el player coge el anillo 4 lo activa en el GameManager
+    {
+        Ring4 = true;
+    }
+
+    public bool ReturnRing4()       //para decirle a DmgEnemyMelee si Ring4 esta activo o no
+    {
+        return Ring4;
+    }
+
+
+
+
 }
 
