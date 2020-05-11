@@ -8,7 +8,7 @@ public class Movimiento8D : MonoBehaviour
     Rigidbody2D rb;
     float x, y;
     Vector2 dir;
-    void Start()
+    void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
     }

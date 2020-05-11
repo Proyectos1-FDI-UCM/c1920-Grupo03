@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private UIManager theUIManager;
     private GameObject player;
-    //bool Ring2;
+   // bool Ring2;
     //bool Ring4;
 
     int unexploredRooms = 0, currentHealth = 100, maxHealth = 100, h, cargas, normRest = 8;
@@ -88,6 +88,16 @@ public class GameManager : MonoBehaviour
 
     public void CargarNivel(string nivel)
     {
+        if(nivel == "Menu")
+        {
+            currentHealth = 100;
+            unexploredRooms = 0;
+            cargas = 0;
+            for (int x = 0; x < ring.Length; x++) ring[x] = false;
+            h = 0;
+
+        }
+        Time.timeScale = 1;
         SceneManager.LoadScene(nivel);
     }
     
