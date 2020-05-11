@@ -35,7 +35,7 @@ public class Ring2 : MonoBehaviour
     void PickUp()
     {
         recogibles.Puertas();
-        GameManager.instance.PickRing2();
+        
         //player.GetComponent<AnilloDos>().enabled = true;
         Destroy(this.gameObject);
     }

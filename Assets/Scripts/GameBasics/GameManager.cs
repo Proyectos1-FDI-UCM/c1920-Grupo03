@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private bool [] ring = { false,false,false,false};
     private HealthBar health;
     public static GameManager instance;
     private UIManager theUIManager;
     private GameObject player;
-    bool Ring2;
-    bool Ring4;
+    //bool Ring2;
+    //bool Ring4;
 
     int unexploredRooms = 0, currentHealth = 100, maxHealth = 100, h, cargas, normRest = 8;
     // Start is called before the first frame update
@@ -21,10 +22,14 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        for (int x = 0; x < ring.Length; x++) ActivarAnillos(x,ring[x]);
+        // no se si deberia hacer la asignacion de cargas otra vez(no se si se ejecuta esto antes o el metodo de restore, lo cual hace variar las cargas de pociones debido a la primera habitación de cada nivel)
+        theUIManager.CambioPociones(cargas);
         currentHealth = maxHealth;
         theUIManager.SetMaxHealth(currentHealth);
-        Ring2 = false;
-        Ring4 = false;
+        //Ring2 = false;
+        //Ring4 = false;
+
     }  
     public void SetPlayer(GameObject theplayer)
     {
@@ -49,8 +54,7 @@ public class GameManager : MonoBehaviour
         else player.GetComponent<DiePlayer>().Call();
     }
     public void Restore()
-    {
-        
+    {        
         cargas = unexploredRooms / 2;
         theUIManager.CambioPociones(cargas);
         h = normRest * cargas + 3 * cargas; //?
@@ -58,12 +62,19 @@ public class GameManager : MonoBehaviour
     }
     public void Restor()
     {
-        if (currentHealth + h < maxHealth)
-            currentHealth += h;
-        else currentHealth = maxHealth;
-        theUIManager.CambiarVida(currentHealth);
-        unexploredRooms = 0;
+        if (h > 0)
+        {
+            if (currentHealth + h < maxHealth)
+                currentHealth += h;
+            else currentHealth = maxHealth;
+            theUIManager.CambiarVida(currentHealth);
+            unexploredRooms = 0;
+            Restore();
+        }
+        
     }
+
+   
     public void AddRoom()
     {
         unexploredRooms++;
@@ -79,26 +90,39 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(nivel);
     }
-
-   public void PickRing2()      //cuando el player coge el anillo 2 lo activa en el GameManager
+    
+    public void ActivarAnillos(int num, bool cambio)
     {
-        Ring2 = true;
+
+        
+        theUIManager.CambiarAnillos(num, cambio);
+        ring[num] = true;
     }
 
-    public bool ReturnRing2()       //para decirle a otros EnemyHealth si Ring2 esta activo o no
+    public bool ReturnRing(int num)
     {
-        return Ring2;
+        return ring[num - 1];
     }
 
-    public void PickRing4()      //cuando el player coge el anillo 4 lo activa en el GameManager
-    {
-        Ring4 = true;
-    }
+   //public void PickRing2()      //cuando el player coge el anillo 2 lo activa en el GameManager
+   // {
+   //     Ring2 = true;
+   // }
 
-    public bool ReturnRing4()       //para decirle a DmgEnemyMelee si Ring4 esta activo o no
-    {
-        return Ring4;
-    }
+   // public bool ReturnRing2()       //para decirle a otros EnemyHealth si Ring2 esta activo o no
+   // {
+   //     return Ring2;
+   // }
+
+   // public void PickRing4()      //cuando el player coge el anillo 4 lo activa en el GameManager
+   // {
+   //     Ring4 = true;
+   // }
+
+   // public bool ReturnRing4()       //para decirle a DmgEnemyMelee si Ring4 esta activo o no
+   // {
+   //     return Ring4;
+   // }
 
     public void SalirDelJuego()
     {

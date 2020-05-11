@@ -16,17 +16,17 @@ public class DmgEnemyMeelee : MonoBehaviour
         if (cooldown != null && !cooldown.GetStatus()) //Si existe cooldown, sabemos que el otro GameObject es el jugador. Si no está activo dicho cooldown...
         {
             prob = Random.Range(0, 8);
-            if (!GameManager.instance.ReturnRing4())            //si no tiene el anilllo 4 hace daño normal
+            if (!GameManager.instance.ReturnRing(4))            //si no tiene el anilllo 4 hace daño normal
             {
                 GameManager.instance.TakeDamage(amount); //..hacemos daño al jugador...
                 cooldown.Call(); //...y llamamos al cooldown.
             }
-            else if (GameManager.instance.ReturnRing4() && prob > 0)     //si tiene el anillo 4, 7 de cada 8 veces recibes daño
+            else if (GameManager.instance.ReturnRing(4) && prob > 0)     //si tiene el anillo 4, 7 de cada 8 veces recibes daño
             {
                 GameManager.instance.TakeDamage(amount); //..hacemos daño al jugador...
                 cooldown.Call(); //...y llamamos al cooldown.
             }
-            else if (GameManager.instance.ReturnRing4() && prob == 0)     //si tiene el anillo 4, 1 de cada 8 veces no recibes daño
+            else if (GameManager.instance.ReturnRing(4) && prob == 0)     //si tiene el anillo 4, 1 de cada 8 veces no recibes daño
             {
                 cooldown.Call();
             }

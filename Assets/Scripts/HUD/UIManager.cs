@@ -23,8 +23,7 @@ public class UIManager : MonoBehaviour
         health = barraVida.GetComponent<HealthBar>();
         for (int x = 0; x  < anillosSprite.Length; x++) anillosSprite[x].enabled = false; //Para no perder información en el cambio de escena implementar un array de booleanos en el gamemanager
                                                                                           //que indique los anillos que tenemos.
-        CambioPociones(1);
-        CambiarAnillos(0);
+        
     }
     public void SetMaxHealth(int x)
     {
@@ -39,10 +38,10 @@ public class UIManager : MonoBehaviour
 
     
  
-   public void CambiarAnillos(int i)
+   public void CambiarAnillos(int i, bool cambio)
     {
         
-            anillosSprite[i].enabled = true;
+            anillosSprite[i].enabled = cambio;
         
 
     }

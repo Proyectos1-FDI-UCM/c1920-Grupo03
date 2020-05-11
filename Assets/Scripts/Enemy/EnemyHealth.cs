@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
     {
         prob = Random.Range(0, 10);
 
-        if (GameManager.instance.ReturnRing2() && prob < 3)
+        if (GameManager.instance.ReturnRing(2) && prob < 3)
         {
 
             Debug.Log("Critico");

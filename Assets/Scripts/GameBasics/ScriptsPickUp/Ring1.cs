@@ -37,6 +37,7 @@ public class Ring1 : MonoBehaviour
     {
         recogibles.Puertas();
         player.GetComponent<Dash>().enabled = true;
+        GameManager.instance.ActivarAnillos(0, true);
         Destroy(this.gameObject);
     }
 }

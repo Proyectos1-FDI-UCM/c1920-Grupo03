@@ -10,6 +10,13 @@ public class DiePlayer : MonoBehaviour
         GameManager.instance.SetPlayer(this.gameObject);
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Q))
+            GameManager.instance.Restor();
+        
+    }
+
     public void Call()
     {
         Destroy(this.gameObject);

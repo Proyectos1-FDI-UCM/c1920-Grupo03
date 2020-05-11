@@ -29,7 +29,7 @@ public class SalaIndividual : MonoBehaviour
             if (enemigosViv > 0)
                 Accionar(true);
            
-            //GameManager.instance.AddRoom();
+           GameManager.instance.AddRoom();
           //  Debug.Log("Hola he chocado");
             Destroy(this);
         }

@@ -35,7 +35,7 @@ public class Ring4 : MonoBehaviour
     void PickUp()
     {
         recogibles.Puertas();
-        GameManager.instance.PickRing4();
+        
         //player.GetComponent<AnilloCuatro>().enabled = true;
         Destroy(this.gameObject);
     }

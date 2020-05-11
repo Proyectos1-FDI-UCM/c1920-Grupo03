@@ -14,7 +14,7 @@ public class Etereo : MonoBehaviour
     [SerializeField]
     float boost = 1.1f; //Multiplicador de la velocidad del jugador
     [SerializeField]
-    GameObject player; //GameObject del jugador
+    public GameObject player; //GameObject del jugador
 
     Movimiento8D playerMovement; //Componente que mueve el jugador, para acceder a su velocidad
     float speed, oldSpeed; //Velocidad a aplicar al jugador, y velocidad por defecto a la que volver cuando termine el efecto.
@@ -31,7 +31,7 @@ public class Etereo : MonoBehaviour
         speed = playerMovement.velocidad;
 
         pSprite = player.GetComponent<SpriteRenderer>(); //Guarda el sprite y el color del jugador
-        original = pSprite.color;
+        //original = pSprite.color;
         tmp = original; //Nuevo color con diferente alpha
         tmp.a = 0.5f;
         etereo = player.GetComponent<Etereo>();
