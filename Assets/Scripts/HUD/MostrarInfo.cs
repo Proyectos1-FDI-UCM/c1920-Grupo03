@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class MostrarInfo : MonoBehaviour
 {
-    [SerializeField]
     SpriteRenderer UIelement;
+
+    private void Awake()
+    {
+        UIelement = GetComponentInChildren<SpriteRenderer>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         UIelement.enabled = true;
