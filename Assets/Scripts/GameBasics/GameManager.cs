@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
 
     public void CargarNivel(string nivel)
     {
-        if(nivel == "Menu")
+        if(nivel == "MainMenu")
         {
             currentHealth = 100;
             unexploredRooms = 0;

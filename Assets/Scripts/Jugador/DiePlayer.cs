@@ -16,10 +16,13 @@ public class DiePlayer : MonoBehaviour
             GameManager.instance.Restor();
         
     }
-
+    MenuDeMuerte menuDeMuerte;
     public void Call()
     {
+        menuDeMuerte = GetComponent<MenuDeMuerte>();
+        menuDeMuerte.DeathMenu();
         Destroy(this.gameObject);
-        GameManager.instance.CargarNivel("Nivel1HUD");
+        
+
     }
 }
