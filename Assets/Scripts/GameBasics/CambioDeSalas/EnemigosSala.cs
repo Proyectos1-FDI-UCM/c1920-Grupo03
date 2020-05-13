@@ -41,7 +41,7 @@ public class EnemigosSala : MonoBehaviour
   // hay que cambiar esto para que sea llamado por sala individual(por alguna razon)
   // he probado y me daba error . Error: iba en linea recta una distancia exacta cada vez que se ejecutaba
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void ActivarEnemigos(Collider2D collision)
     {
         
         mov8d = collision.GetComponent<Movimiento8D>();
