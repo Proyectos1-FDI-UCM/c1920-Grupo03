@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private UIManager theUIManager;
     private GameObject player;
+    [SerializeField] GameObject trampilla;
    // bool Ring2;
     //bool Ring4;
 
@@ -74,7 +75,10 @@ public class GameManager : MonoBehaviour
         
     }
 
-   
+   public void Boss1Dead()
+    {
+        trampilla.SetActive(true);
+    }
     public void AddRoom()
     {
         unexploredRooms++;

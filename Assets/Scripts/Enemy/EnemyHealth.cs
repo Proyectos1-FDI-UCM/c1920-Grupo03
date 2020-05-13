@@ -7,7 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth = 100; //Puntos de vida con los que comienza el enemigo.
     int currentHealth; //Vida actual del enemigo.
     int prob;
-    public bool isBoss = false;
+    public bool isBoss1 = false;
+    public bool isBoss2 = false;
     void Start()
     {
         currentHealth = maxHealth; //La vida del enemigo comienza al máximo.
@@ -31,7 +32,12 @@ public class EnemyHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            if (isBoss) GameManager.instance.CargarNivel("MenuVictoria");
+
+            if (isBoss1)
+            {
+                GameManager.instance.Boss1Dead();
+            }
+           else if (isBoss2) GameManager.instance.CargarNivel("MenuVictoria");
 
             Destroy(this.gameObject); //Si se queda sin vida matarlo.
         }

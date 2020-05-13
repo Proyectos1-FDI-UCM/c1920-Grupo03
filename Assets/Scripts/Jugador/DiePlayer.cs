@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DiePlayer : MonoBehaviour
 {
+    [SerializeField] GameObject CanvasMenu;
     private void Start()
     {
         GameManager.instance.SetPlayer(this.gameObject);
@@ -16,11 +17,10 @@ public class DiePlayer : MonoBehaviour
             GameManager.instance.Restor();
         
     }
-    MenuDeMuerte menuDeMuerte;
+   
     public void Call()
     {
-        menuDeMuerte = GetComponent<MenuDeMuerte>();
-        menuDeMuerte.DeathMenu();
+        CanvasMenu.GetComponent<MenuDeMuerte>().DeathMenu();
         Destroy(this.gameObject);
         
 
