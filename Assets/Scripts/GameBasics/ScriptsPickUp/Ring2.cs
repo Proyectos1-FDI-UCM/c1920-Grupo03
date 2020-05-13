@@ -36,7 +36,8 @@ public class Ring2 : MonoBehaviour
     {
         recogibles.Puertas();
         
-        //player.GetComponent<AnilloDos>().enabled = true;
+        player.GetComponent<AnilloCrítico>().enabled = true;
+        GameManager.instance.ActivarAnillos(1, true);
         Destroy(this.gameObject);
     }
 }

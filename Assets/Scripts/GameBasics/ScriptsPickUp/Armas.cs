@@ -5,22 +5,23 @@ using UnityEngine;
 public class Armas : MonoBehaviour
 {
     // iniciales de armas
-    GameObject M, A;
-    Transform mart, arco;
+    // no es la solucion mas elegante pero xd
+    public GameObject M, A, L;
+    //Transform mart, arco;
     bool MartilloActivo = false, ArcoActivo = false, LanzaActiva = false;
 
     /*public void Guardar(GameObject  arma)
     {
         M = arma;
     }*/
-    void Start()
+    /*void Start()
     {
-        mart = this.gameObject.transform.GetChild(0);
+        //mart = this.gameObject.transform.GetChild(0);
         M = mart.gameObject;
-        arco = this.gameObject.transform.GetChild(3);
+        //arco = this.gameObject.transform.GetChild(3);
         A = arco.gameObject;
         
-    }
+    }*/
     public bool CompruebArma()
     {
         if (MartilloActivo || ArcoActivo || LanzaActiva) return false;
@@ -45,5 +46,14 @@ public class Armas : MonoBehaviour
             ArcoActivo = true;
         }
        
+    }
+    public void ActivarLanza()
+    {
+        if (CompruebArma())
+        {
+            L.SetActive(true);
+            MartilloActivo = true;
+        }
+
     }
 }

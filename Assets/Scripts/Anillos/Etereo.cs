@@ -25,7 +25,7 @@ public class Etereo : MonoBehaviour
     Color tmp; //Color a aplicar durante el efecto del anillo.
     Etereo etereo;
 
-    private void Awake() 
+    private void Start() 
     {
         playerMovement = player.GetComponent<Movimiento8D>(); //Recibe el componente para cambiar la velocidad del jugador.
         speed = playerMovement.velocidad;
@@ -41,7 +41,10 @@ public class Etereo : MonoBehaviour
     {
         return !onCooldown;
     }
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T) && etereo.IsReady()) Call();
+    }
     public void Call() //Cuando el efecto sea activado por el jugador
     {
         onCooldown = true; //Para que no pueda activarse dos veces

@@ -36,7 +36,8 @@ public class Ring4 : MonoBehaviour
     {
         recogibles.Puertas();
         
-        //player.GetComponent<AnilloCuatro>().enabled = true;
+        player.GetComponent<AnilloInvulnerabilidad>().enabled = true;
+        GameManager.instance.ActivarAnillos(3, true);
         Destroy(this.gameObject);
     }
 }

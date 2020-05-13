@@ -105,12 +105,13 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nivel);
     }
     
+    // quitar bool en caso de que no sea necesario desactivarlos(comprobar cambio nivel)
     public void ActivarAnillos(int num, bool cambio)
     {
 
         
         theUIManager.CambiarAnillos(num, cambio);
-        ring[num] = true;
+        ring[num] =  cambio;
     }
 
     public bool ReturnRing(int num)

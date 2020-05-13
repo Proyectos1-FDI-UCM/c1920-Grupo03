@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spear : MonoBehaviour
 {
+    private Armas armas;
     private bool recogible;
     private GameObject player;
     private ObjetoRecogible recogibles;
@@ -33,8 +34,14 @@ public class Spear : MonoBehaviour
     }
     void PickUp()
     {
+
         recogibles.Puertas();
-        //player.GetComponent<Lanza>().enabled = true;
+        armas = player.GetComponent<Armas>();
+        armas.ActivarLanza();
         Destroy(this.gameObject);
+        recogibles.DestruirHijos();
+
+        
+        
     }
 }
