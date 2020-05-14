@@ -45,8 +45,7 @@ public class EnemigosSala : MonoBehaviour
     {
         
         mov8d = collision.GetComponent<Movimiento8D>();
-        if (mov8d != null)
-        {
+        
            
           //  Debug.Log("Entro");
             x = transform.childCount;
@@ -81,7 +80,7 @@ public class EnemigosSala : MonoBehaviour
                 x = transform.childCount;
 
             }
-        }
+        
         
     }
 }

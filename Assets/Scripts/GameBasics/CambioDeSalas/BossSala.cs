@@ -37,7 +37,7 @@ public class BossSala : MonoBehaviour
     MovEnemig1 movEneScript;
     MirarJugador mirarJugadorScript;
     AtaqueBoss1 ataqueScript;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void ActivarBoss(Collider2D collision)
     {
         
         mov8d = collision.GetComponent<Movimiento8D>();

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SalaIndividual : MonoBehaviour
 {
+    BossSala boss;
     Puertas puertas;
     Deshabilitado desh;
     ObjetoRecogible recogibles;
@@ -23,7 +24,10 @@ public class SalaIndividual : MonoBehaviour
     {
         if(collision.GetComponent<Movimiento8D>() != null)
         {
+            if(enem != null)
             enem.ActivarEnemigos(collision);
+            else
+                this.GetComponentInChildren<BossSala>().ActivarBoss(collision);
             desh.Deshabilitarse();
             if (enemigosViv > 0)
                 Accionar(true);
@@ -32,6 +36,7 @@ public class SalaIndividual : MonoBehaviour
           //  Debug.Log("Hola he chocado");
             Destroy(this);
         }
+        
         
     }
     public void RecibeEnemigos(int enemigos)
