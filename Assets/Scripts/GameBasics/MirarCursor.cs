@@ -11,12 +11,15 @@ public class MirarCursor : MonoBehaviour
     void Update()
     {
 
+        if(Time.timeScale > 0)
+        {
+            Vector3 cursorPosition = Input.mousePosition;
+            cursorPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
+            Vector2 positionToFace = new Vector2(cursorPosition.x - transform.position.x, cursorPosition.y - transform.position.y);
 
-        Vector3 cursorPosition = Input.mousePosition;
-        cursorPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
-        Vector2 positionToFace = new Vector2(cursorPosition.x - transform.position.x, cursorPosition.y - transform.position.y);
-
-        transform.up = positionToFace;
+            transform.up = positionToFace;
+        }
+      
 
 
 
