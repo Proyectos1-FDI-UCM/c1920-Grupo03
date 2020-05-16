@@ -16,6 +16,7 @@ public class Martillo : MonoBehaviour
     public int damage;
     Arquer arquero;
     Bomba bomb;
+    Animator animator;
    /* void Awake()
     {
         arma = GetComponentInParent<Armas>();
@@ -26,7 +27,7 @@ public class Martillo : MonoBehaviour
         atacando = false;
        
          lista = new ListaEnemigosDentro();
-        
+        animator = GetComponent<Animator>();
         
     }
 
@@ -43,6 +44,9 @@ public class Martillo : MonoBehaviour
                 guardarVel = movPlayer.GetVel();
                 movPlayer.CambiaVel(guardarVel / 2);
                 Invoke("Ataca", 0.75f);
+
+                Invoke("ActivaAnimacion", 0.5f); //Invoca la animacion de ataque
+                Invoke("ParaAnimacion", 0.9f);  //Vuelve a estar estatico
 
             }
 
@@ -262,6 +266,16 @@ public class Martillo : MonoBehaviour
 
 
        // Debug.Log("Lista: " + lista.nEnemigos());
+    }
+
+   void ActivaAnimacion()                           //Pasa de la animacion estatica a la de ataque
+    {
+        animator.SetBool("AtacaMaza", true);
+    }
+
+    void ParaAnimacion()                            //Pasa de la animacion de ataque a la estatica
+    {
+        animator.SetBool("AtacaMaza", false);
     }
 
     /*
