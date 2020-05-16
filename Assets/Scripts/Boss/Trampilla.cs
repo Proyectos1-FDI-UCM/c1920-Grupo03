@@ -8,7 +8,7 @@ public class Trampilla : MonoBehaviour
     {
         if (collision.GetComponent<Movimiento8D>() != null)
         {
-            GameManager.instance.CargarNivel("Nivel2HUD");
+            GameManager.instance.CargarNivel("MenuVictoriaFinal");
         }
     }
 }
