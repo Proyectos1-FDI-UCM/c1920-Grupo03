@@ -16,6 +16,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage) //Se llama cuando el jugador ataca al enemigo.
     {
+        Debug.Log("he sido ejecutado");
         prob = Random.Range(0, 10);
 
         if (GameManager.instance.ReturnRing(2) && prob < 3)
