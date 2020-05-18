@@ -95,6 +95,7 @@ public class SalaIndividual : MonoBehaviour
 
     public void Accionar(bool estado)
     {        
+        if(puertas != null)
         puertas.ActivarPuertas(estado);
     }
 }
