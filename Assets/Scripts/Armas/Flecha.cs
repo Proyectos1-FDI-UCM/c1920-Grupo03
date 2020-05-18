@@ -18,7 +18,6 @@ public class Flecha : MonoBehaviour
         enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
         if ( collision.gameObject.tag == "Mapa")
         {
-
             DestruirFlecha();
         }
         else if(collision.gameObject.tag == "Player")

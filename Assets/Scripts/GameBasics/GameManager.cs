@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private bool invencible = false;
     private bool [] ring = { false,false,false,false};
     private HealthBar health;
     public static GameManager instance;
@@ -44,16 +45,25 @@ public class GameManager : MonoBehaviour
     
     public void TakeDamage(int damage)
     {
-        Debug.Log("me han ejecutado");
-        if (currentHealth - damage > 0)
+        if (!invencible)
         {
-            currentHealth -= damage;
-            theUIManager.CambiarVida(currentHealth);
+            
+            if (currentHealth - damage > 0)
+            {
+                currentHealth -= damage;
+                theUIManager.CambiarVida(currentHealth);
 
-           // Debug.Log(currentHealth);
+                // Debug.Log(currentHealth);
+            }
+
+            else player.GetComponent<DiePlayer>().Call();
         }
-
-        else player.GetComponent<DiePlayer>().Call();
+    }
+    public void Invencibilidad(bool activo)
+    {
+        
+        invencible = activo;
+       
     }
     public void Restore()
     {        
