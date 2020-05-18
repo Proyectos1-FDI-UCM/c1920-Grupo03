@@ -26,6 +26,8 @@ Controles(únicamente jugable en PC):
 - Barra Espaciadora-> Uso de Dash
 - Click Izquierdo -> Ataque
 
+
+-K -> Eliminar enemigos en la sala(creado para facilitar el testeo)
 //Aún no introducido
 - C-> Usar habilidad de Etéreo
 

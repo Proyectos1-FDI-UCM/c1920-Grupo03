@@ -10,7 +10,10 @@ public class EnemigoVivo : MonoBehaviour
     {
         sala = GetComponentInParent<ControlEnemigos>();        
     }
-
+    public  void Destruir()
+    {
+        Destroy(this.gameObject);
+    }
     void OnDisable()
     {
         sala.MinusEnemy();

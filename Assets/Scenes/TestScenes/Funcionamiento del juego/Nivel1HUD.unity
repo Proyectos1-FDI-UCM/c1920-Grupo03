@@ -199,6 +199,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1939e6f294fb2f343bd3b03478da895d, type: 3}
+--- !u!1 &36791426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7759456558206877811, guid: eb4384190bdafe34ea65f1be6dc4702b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1554417188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &40190163
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +475,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[0]
+      value: 
+      objectReference: {fileID: 1089414805}
     m_RemovedComponents:
     - {fileID: 7100988975258482307, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
@@ -800,6 +816,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f91c5ebf64fe69d4393029f6fa567937, type: 3}
+--- !u!1 &109216650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673672782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &136902803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -807,6 +829,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1999021867}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -871,11 +898,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -1462,50 +1484,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 887143766}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &244526045 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 312030329477736959, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1660092705}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &244526046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244526045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 897e910d531e2a841afbdf7092da4994, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &244526048
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244526045}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1001 &270303872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2015,6 +1993,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1999021867}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2079,11 +2062,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -3238,6 +3216,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 194978170}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3302,11 +3285,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -4070,6 +4048,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637233163}
   m_CullTransparentMesh: 0
+--- !u!1 &643520271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 650241252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &650241252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4077,6 +4061,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1395838722}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4141,11 +4130,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -4820,6 +4804,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1315540426}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4884,11 +4873,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -5003,6 +4987,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1315540426}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5067,11 +5056,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -5238,6 +5222,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0cab272d3954f94e84ab666826b6db9, type: 3}
+--- !u!1 &831852436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 136902803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &852753742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5418,6 +5408,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1050429378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &886820653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7759456558206877811, guid: eb4384190bdafe34ea65f1be6dc4702b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1093756120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &887143766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5510,6 +5506,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[0]
+      value: 
+      objectReference: {fileID: 36791426}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[1]
+      value: 
+      objectReference: {fileID: 886820653}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[2]
+      value: 
+      objectReference: {fileID: 1554796688}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[3]
+      value: 
+      objectReference: {fileID: 109216650}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[4]
+      value: 
+      objectReference: {fileID: 1420989251}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
 --- !u!4 &887143767 stripped
@@ -5603,6 +5629,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1939e6f294fb2f343bd3b03478da895d, type: 3}
+--- !u!1 &928840412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 384748061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &938826552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5795,6 +5827,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5904,15 +5945,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6996646150001649974, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
@@ -6143,6 +6175,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[0]
+      value: 
+      objectReference: {fileID: 1677155297}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[1]
+      value: 
+      objectReference: {fileID: 643520271}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[2]
+      value: 
+      objectReference: {fileID: 1456655860}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[3]
+      value: 
+      objectReference: {fileID: 2026549742}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
 --- !u!4 &1050429379 stripped
@@ -6434,6 +6491,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f91c5ebf64fe69d4393029f6fa567937, type: 3}
+--- !u!1 &1089414805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4525140439993992260, guid: bccc968d5e175754892f7dc50ffa4007,
+    type: 3}
+  m_PrefabInstance: {fileID: 1765716723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1093756120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6900,6 +6963,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 312030329477736959, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 312030329477736959, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -7863,6 +7936,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0cab272d3954f94e84ab666826b6db9, type: 3}
+--- !u!1 &1301943236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8915645136661280567, guid: 188ea5eab08d9df49bb3f69439d6308d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844370614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1307648830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
@@ -7876,6 +7955,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1395838722}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7940,11 +8024,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505766, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
@@ -8586,6 +8665,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1660092705}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1420989251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 563803700}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1429730292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8832,6 +8917,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f91c5ebf64fe69d4393029f6fa567937, type: 3}
+--- !u!1 &1456655860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1309034131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1474274081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3316560627137726507, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
@@ -8993,6 +9084,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[0]
+      value: 
+      objectReference: {fileID: 1961104012}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[1]
+      value: 
+      objectReference: {fileID: 928840412}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[2]
+      value: 
+      objectReference: {fileID: 831852436}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[3]
+      value: 
+      objectReference: {fileID: 2139756391}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
 --- !u!4 &1498274978 stripped
@@ -9296,6 +9412,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb4384190bdafe34ea65f1be6dc4702b, type: 3}
+--- !u!1 &1554796688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8915645136661280567, guid: 188ea5eab08d9df49bb3f69439d6308d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1255709947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1563796849
 GameObject:
   m_ObjectHideFlags: 0
@@ -9326,6 +9448,12 @@ Transform:
   m_Father: {fileID: 1498274978}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1565696439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647028317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1570503575
 GameObject:
   m_ObjectHideFlags: 0
@@ -9899,6 +10027,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1315540426}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9963,11 +10096,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -10147,6 +10275,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[0]
+      value: 
+      objectReference: {fileID: 2008458165}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[1]
+      value: 
+      objectReference: {fileID: 1565696439}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[2]
+      value: 
+      objectReference: {fileID: 1060237886}
+    - target: {fileID: 2210198663727555425, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: enemigosSala.Array.data[3]
+      value: 
+      objectReference: {fileID: 1301943236}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
 --- !u!4 &1660092706 stripped
@@ -10162,6 +10315,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 194978170}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10226,11 +10384,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -10323,6 +10476,12 @@ PrefabInstance:
       objectReference: {fileID: 1697798425}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70367a740817ef041ba4a8a553adec7c, type: 3}
+--- !u!1 &1677155297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7759456558206877811, guid: eb4384190bdafe34ea65f1be6dc4702b,
+    type: 3}
+  m_PrefabInstance: {fileID: 825766715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1678643353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11550,6 +11709,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1498274977}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1961104012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 1d67ed5bfff4c934bab27515b55d4224,
+    type: 3}
+  m_PrefabInstance: {fileID: 464731293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1966619605
 GameObject:
   m_ObjectHideFlags: 0
@@ -11912,6 +12077,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007340584}
   m_CullTransparentMesh: 0
+--- !u!1 &2008458165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 813655946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2014412753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4042891768009625613, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
@@ -11992,6 +12163,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2026549742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7759456558206877811, guid: eb4384190bdafe34ea65f1be6dc4702b,
+    type: 3}
+  m_PrefabInstance: {fileID: 70222191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2033636100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3327167367551222823, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
@@ -12472,6 +12649,12 @@ PrefabInstance:
       objectReference: {fileID: 1010019186}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70367a740817ef041ba4a8a553adec7c, type: 3}
+--- !u!1 &2139756391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8915645136661280567, guid: 188ea5eab08d9df49bb3f69439d6308d,
+    type: 3}
+  m_PrefabInstance: {fileID: 273396291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1030639283250534035
 GameObject:
   m_ObjectHideFlags: 0

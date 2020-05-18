@@ -20,11 +20,10 @@ public class Puertas : MonoBehaviour
 
     public void ActivarPuertas(bool abiertas)
     {
-        
-        for (int x = 0; x < puertas; x++)
-        {
+        if(this.gameObject != null)
+        for (int x = 0; x < puertas; x++)        
             transform.GetChild(x).gameObject.SetActive(abiertas);
-        }
+        
     }
 
     
