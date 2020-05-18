@@ -42,7 +42,8 @@ public class Arquer : MonoBehaviour
             if (tiempoDisparos <= 0)
             {
                 spawn = this.transform.GetChild(1).gameObject.transform.position;
-                Quaternion rot =  this.gameObject.transform.rotation;
+                Quaternion rot = transform.rotation;
+                   
                 Instantiate(flecha, spawn, rot, transform);
                 
                 tiempoDisparos = disparos;

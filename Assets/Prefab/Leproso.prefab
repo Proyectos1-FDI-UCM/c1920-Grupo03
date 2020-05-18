@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8168689828030355061}
   - component: {fileID: 819901040423940179}
   - component: {fileID: -8097767167741810377}
+  - component: {fileID: -6463484046982879670}
   m_Layer: 9
   m_Name: Leproso
   m_TagString: Enemy
@@ -173,6 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  isBoss1: 0
+  isBoss2: 0
 --- !u!114 &-8097767167741810377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +188,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e92dd1be23c42f40b7187ab1bcd70dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6463484046982879670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281903511872505764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4674801cce08dea4bb64e595ce7be601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 2
 --- !u!1 &8052215723254471351
 GameObject:
   m_ObjectHideFlags: 0

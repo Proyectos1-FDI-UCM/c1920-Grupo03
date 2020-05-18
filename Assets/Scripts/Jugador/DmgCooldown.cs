@@ -5,7 +5,7 @@ using UnityEngine;
 public class DmgCooldown : MonoBehaviour
 {
     bool onCooldown; //Indica el estado del cooldown, si está activo o no.
-    public float cooldownTime = 2f; //Duración del cooldown.
+    public float cooldownTime = 1.5f; //Duración del cooldown.
 
     private void Awake()
     {

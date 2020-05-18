@@ -56,13 +56,10 @@ public class Martillo : MonoBehaviour
     
     private void Ataca()
     {
-        ataque = true;
-        
-       
-
-
+        ataque = true;               
         while (lista.DamePrimeroParaEmpujar() != null)
         {
+            // para que este if si lo haces true en el mismo metodo
             if (ataque)
             {
                 GameObject enemigo = lista.DamePrimeroParaEmpujar();
@@ -84,7 +81,7 @@ public class Martillo : MonoBehaviour
                             EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
                             vidaEnmigo.TakeDamage(damage);
                         }
-                      
+                      // pa que? te da igual qué tipo de enemigo sea no?
                         else if (movenemig1 != null)
                         {
                            
