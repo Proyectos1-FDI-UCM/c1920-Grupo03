@@ -7029,7 +7029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
@@ -7201,7 +7201,7 @@ PrefabInstance:
     - target: {fileID: 2817475914817887767, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x

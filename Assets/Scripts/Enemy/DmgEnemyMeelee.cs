@@ -13,7 +13,7 @@ public class DmgEnemyMeelee : MonoBehaviour
         GameObject player = collision.gameObject; //El otro GameObject.
         DmgCooldown cooldown = player.GetComponent<DmgCooldown>(); //El componente Cooldown del jugador.
 
-        if (cooldown != null && !cooldown.GetStatus()) //Si existe cooldown, sabemos que el otro GameObject es el jugador. Si no está activo dicho cooldown...
+        if (cooldown != null && !cooldown.GetStatus() && player.GetComponent<Movimiento8D>() != null) //Si existe cooldown, sabemos que el otro GameObject es el jugador. Si no está activo dicho cooldown...
         {
             Debug.Log("Hago daño");
             prob = Random.Range(0, 8);
