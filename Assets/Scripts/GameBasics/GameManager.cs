@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     
     public void TakeDamage(int damage)
     {
+        Debug.Log("me han ejecutado");
         if (currentHealth - damage > 0)
         {
             currentHealth -= damage;

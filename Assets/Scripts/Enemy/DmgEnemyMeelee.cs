@@ -13,7 +13,7 @@ public class DmgEnemyMeelee : MonoBehaviour
         GameObject player = collision.gameObject; //El otro GameObject.
         DmgCooldown cooldown = player.GetComponent<DmgCooldown>(); //El componente Cooldown del jugador.
 
-        if (cooldown != null && !cooldown.GetStatus()) //Si existe cooldown, sabemos que el otro GameObject es el jugador. Si no está activo dicho cooldown...
+        if (cooldown != null && !cooldown.GetStatus() && player.GetComponent<Movimiento8D>() != null) //Si existe cooldown, sabemos que el otro GameObject es el jugador. Si no está activo dicho cooldown...
         {
             prob = Random.Range(0, 8);
             if (!GameManager.instance.ReturnRing(4))            //si no tiene el anilllo 4 hace daño normal
@@ -34,5 +34,7 @@ public class DmgEnemyMeelee : MonoBehaviour
             if (GameManager.instance.GetHealth() <= 0) Destroy(player); //Si el jugador se queda sin vida, matarlo.
 
         }
+        else if (player.GetComponent<EnemyHealth>() != null)
+            player.GetComponent<EnemyHealth>().TakeDamage(amount);
     }
 }
