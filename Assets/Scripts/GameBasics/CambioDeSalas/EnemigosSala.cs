@@ -37,10 +37,10 @@ public class EnemigosSala : MonoBehaviour
        
 
     }
-    public EnemigoVivo Enemigo(int  x)
+    /*public EnemigoVivo Enemigo(int  x)
     {
         return transform.GetChild(x).gameObject.GetComponent<EnemigoVivo>();
-    }
+    }*/
 
     
   // hay que cambiar esto para que sea llamado por sala individual(por alguna razon)

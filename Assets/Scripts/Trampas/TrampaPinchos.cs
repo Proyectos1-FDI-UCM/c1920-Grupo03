@@ -11,7 +11,7 @@ public class TrampaPinchos : MonoBehaviour
         cambiaColor = GetComponent<Renderer>();
         pinchando = false;
     }
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D()
     {
         if (!pinchando)
         {
@@ -24,7 +24,10 @@ public class TrampaPinchos : MonoBehaviour
 
 
     }
-
+    void OnTriggerExit2D()
+    {
+        pinchando = false;
+    }
     void ColorInicial()
     {
         cambiaColor.material.color = Color.black;
@@ -38,7 +41,11 @@ public class TrampaPinchos : MonoBehaviour
     void Ataque()
     {
         cambiaColor.material.color = Color.magenta;
-        GameManager.instance.TakeDamage(15);
-        pinchando = false;
+        if (pinchando)
+        {
+            GameManager.instance.TakeDamage(15);
+            pinchando = false;
+        }
+        
     }
 }

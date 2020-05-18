@@ -34,8 +34,8 @@ public class Ring2 : MonoBehaviour
     }
     void PickUp()
     {
-        recogibles.Puertas();
-        
+        recogibles.SalaTrampa();
+
         player.GetComponent<AnilloCrítico>().enabled = true;
         GameManager.instance.ActivarAnillos(1, true);
         Destroy(this.gameObject);

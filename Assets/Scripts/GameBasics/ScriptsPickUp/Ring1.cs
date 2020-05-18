@@ -35,7 +35,7 @@ public class Ring1 : MonoBehaviour
     }
     void PickUp()
     {
-        recogibles.Puertas();
+        recogibles.SalaTrampa();
         player.GetComponent<Dash>().enabled = true;
         GameManager.instance.ActivarAnillos(0, true);
         Destroy(this.gameObject);

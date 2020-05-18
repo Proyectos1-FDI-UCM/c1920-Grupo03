@@ -13,7 +13,11 @@ public class ObjetoRecogible : MonoBehaviour
     {
         sala.Accionar(false);
     }
-
+    public void SalaTrampa()
+    {
+        sala.Accionar(false);
+        sala.Trampas();
+    }
     public void DestruirHijos()
     {
         int numHijos = this.transform.childCount;

@@ -34,7 +34,7 @@ public class Ring3 : MonoBehaviour
     }
     void PickUp()
     {
-        recogibles.Puertas();
+        recogibles.SalaTrampa();
         player.GetComponent<Etereo>().enabled = true;
         GameManager.instance.ActivarAnillos(2, true);
         Destroy(this.gameObject);
