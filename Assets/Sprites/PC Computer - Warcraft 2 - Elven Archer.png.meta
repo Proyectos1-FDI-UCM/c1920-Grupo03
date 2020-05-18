@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9b9eff085299c9943ac590fdfa466ef7
+guid: b191f074cb8547d408c7d8174639e680
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4614868695797609258
-    second: Guerrero def front
+      213: -815588158069303588
+    second: default
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -89,13 +89,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guerrero def front
+      name: default
       rect:
         serializedVersion: 2
-        x: 123
-        y: 417
-        width: 40
-        height: 56
+        x: 3
+        y: 431
+        width: 47
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,8 +103,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536e290ca35e9a24db31c8d2d786d1e0
-      internalID: 4614868695797609258
+      spriteID: df4b903df547579438f510982a7fd706
+      internalID: -815588158069303588
       vertices: []
       indices: 
       edges: []

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9b9eff085299c9943ac590fdfa466ef7
+guid: ae5c6252e515c9d4e909f155bef1bb5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4614868695797609258
-    second: Guerrero def front
+      213: -340641950855635563
+    second: idledefault_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -66,7 +66,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -89,13 +89,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guerrero def front
+      name: idledefault_0
       rect:
         serializedVersion: 2
-        x: 123
-        y: 417
-        width: 40
-        height: 56
+        x: 10
+        y: 14
+        width: 44
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,8 +103,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536e290ca35e9a24db31c8d2d786d1e0
-      internalID: 4614868695797609258
+      spriteID: ccdbe0a141eeeab4580a732729c752c2
+      internalID: -340641950855635563
       vertices: []
       indices: 
       edges: []

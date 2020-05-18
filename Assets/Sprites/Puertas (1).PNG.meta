@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 9b9eff085299c9943ac590fdfa466ef7
+guid: 3f6094b1802fc844da4a39ebf44d9fec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4614868695797609258
-    second: Guerrero def front
+      213: 573068293589019441
+    second: PuertaCerrada horiz
+  - first:
+      213: 6421903037452861741
+    second: PuertaCerrada vertical
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -34,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -89,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guerrero def front
+      name: PuertaCerrada horiz
       rect:
         serializedVersion: 2
-        x: 123
-        y: 417
-        width: 40
-        height: 56
+        x: 76
+        y: 29
+        width: 100
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,8 +106,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536e290ca35e9a24db31c8d2d786d1e0
-      internalID: 4614868695797609258
+      spriteID: 10bd5f762cc55b94d9a08c2bcd3bb9c9
+      internalID: 573068293589019441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuertaCerrada vertical
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 8
+        width: 18
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343b8f364071323469360c54d207bb61
+      internalID: 6421903037452861741
       vertices: []
       indices: 
       edges: []

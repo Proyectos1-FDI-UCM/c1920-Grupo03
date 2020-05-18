@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 53a914a1c08a45643856aad278f5f3d9
+guid: b4eb1ded6f1b12143bb616fedaae81c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 665957176924697594
-    second: Trampa pinchos Def_0
+      213: 1008781331336675366
+    second: Trampa pinchos hacia arriba
   - first:
-      213: 7477239834821551526
-    second: Trampa pinchos Def_1
+      213: 4478198986681079537
+    second: Trampa pinchos default
   - first:
-      213: 2488189610192453629
-    second: Trampa pinchos Def_2
+      213: -1973259596787955741
+    second: Trampa pinchos gira5
   - first:
-      213: 8907391626256109795
-    second: Trampa pinchos Def_3
+      213: 7950470682549424485
+    second: Trampa pinchos gira4
   - first:
-      213: -2512867025146181115
-    second: Trampa pinchos Def_4
+      213: 2495267092115953927
+    second: Trampa pinchos gira3
+  - first:
+      213: -8402608208443117519
+    second: Trampa pinchos gira2
+  - first:
+      213: -1268418067598644756
+    second: Trampa pinchos gira1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,53 +107,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trampa pinchos Def_0
+      name: Trampa pinchos hacia arriba
       rect:
         serializedVersion: 2
-        x: 0
-        y: 14
-        width: 335
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 23, y: 0, z: 232, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e26dd1b79d6452d4185ab8bdd0323b16
-      internalID: 665957176924697594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trampa pinchos Def_1
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 23
-        width: 77
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c2f26a9f59fd8e438bfeb5dc74e3ff5
-      internalID: 7477239834821551526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trampa pinchos Def_2
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 27
+        x: 334
+        y: 21
         width: 79
         height: 75
       alignment: 0
@@ -157,50 +121,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3930e8b23625404a8286940d5e98f74
-      internalID: 2488189610192453629
+      spriteID: 84cc88bd0f1fbb2409608e56d0b66fec
+      internalID: 1008781331336675366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trampa pinchos Def_3
+      name: Trampa pinchos default
       rect:
         serializedVersion: 2
-        x: 494
-        y: 29
-        width: 78
-        height: 74
+        x: 25
+        y: 22
+        width: 77
+        height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ff64584fc19214db935bfcf4a790d1
-      internalID: 8907391626256109795
+      spriteID: 64d71db491911b448852d295121a38fa
+      internalID: 4478198986681079537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trampa pinchos Def_4
+      name: Trampa pinchos gira5
       rect:
         serializedVersion: 2
-        x: 575
-        y: 32
-        width: 96
-        height: 71
+        x: 101
+        y: 23
+        width: 77
+        height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60742ba773ab2b41a545af35d73becd
-      internalID: -2512867025146181115
+      spriteID: 5b26096f27cc3434e8c8f6316ff641d5
+      internalID: -1973259596787955741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trampa pinchos gira4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 22
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103a7081c9370b649a847dbfc52aaf78
+      internalID: 7950470682549424485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trampa pinchos gira3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 22
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f740891e9545e4da57958aea22baa5
+      internalID: 2495267092115953927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trampa pinchos gira2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 23
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e830643081f088b49b9082514e1ceb39
+      internalID: -8402608208443117519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trampa pinchos gira1
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 23
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0746bba6eba881d41a988e2c1930319d
+      internalID: -1268418067598644756
       vertices: []
       indices: 
       edges: []
