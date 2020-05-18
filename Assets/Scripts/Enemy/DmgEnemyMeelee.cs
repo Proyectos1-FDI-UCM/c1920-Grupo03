@@ -15,6 +15,7 @@ public class DmgEnemyMeelee : MonoBehaviour
 
         if (cooldown != null && !cooldown.GetStatus()) //Si existe cooldown, sabemos que el otro GameObject es el jugador. Si no está activo dicho cooldown...
         {
+            Debug.Log("Hago daño");
             prob = Random.Range(0, 8);
             if (!GameManager.instance.ReturnRing(4))            //si no tiene el anilllo 4 hace daño normal
             {

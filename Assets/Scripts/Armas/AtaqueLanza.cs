@@ -18,7 +18,7 @@ public class AtaqueLanza : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > nextHit)
+        if(Time.time > nextHit && Input.GetMouseButtonDown(0))
         {
             nextHit = Time.time + hitRate;
             Ataque();
