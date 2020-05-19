@@ -316,7 +316,7 @@ MonoBehaviour:
   tiempoexplosion: 2
   distanciExplosion: 1.5
   distanciaRange: 4
-  velocidad: 2
+  velocidad: 5
 --- !u!114 &-5997861966054657105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,4 +342,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  isBoss: 0
+  isBoss1: 0
+  isBoss2: 0

@@ -45,7 +45,7 @@ public class Martillo : MonoBehaviour
                 movPlayer = GetComponentInParent<Movimiento8D>();
                 guardarVel = movPlayer.GetVel();
                 movPlayer.CambiaVel(guardarVel / 2);
-                animator.SetBool("Ataque", true);
+            animator.enabled = true;
                 Invoke("Ataca", 0.6f);
 
                 //Invoke("ActivaAnimacion",0f); //Invoca la animacion de ataque

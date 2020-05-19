@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AtaqueLanza : MonoBehaviour
 {
+    Animator anim;
     public int amount = 20;
     ListaEnemigosDentro lista;
     bool atacando ;
@@ -11,6 +12,7 @@ public class AtaqueLanza : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponentInParent<Animator>();
         atacando = false;
         lista = new ListaEnemigosDentro();
     }
@@ -21,11 +23,14 @@ public class AtaqueLanza : MonoBehaviour
         if(Time.time > nextHit && Input.GetMouseButtonDown(0))
         {
             nextHit = Time.time + hitRate;
-            Ataque();
+            anim.SetBool("Ataque", true);
+            Invoke("Ataque",1f);
+            
         }
     }
     void Ataque()
     {
+        
         while (lista.DamePrimeroParaEmpujar() != null)
         {
             
@@ -38,6 +43,7 @@ public class AtaqueLanza : MonoBehaviour
             }
             
         }
+        anim.SetBool("Ataque", false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

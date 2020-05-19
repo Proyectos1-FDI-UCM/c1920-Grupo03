@@ -47,6 +47,7 @@ public class Armas : MonoBehaviour
         {
             A.SetActive(true);
             ArcoActivo = true;
+            GetComponent<Animator>().SetBool("RecogidoArco", true);
         }
        
     }
@@ -56,6 +57,7 @@ public class Armas : MonoBehaviour
         {
             L.SetActive(true);
             MartilloActivo = true;
+            GetComponent<Animator>().SetBool("RecogidaLanza", true);
         }
 
     }

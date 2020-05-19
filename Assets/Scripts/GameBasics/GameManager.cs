@@ -119,10 +119,11 @@ public class GameManager : MonoBehaviour
     // quitar bool en caso de que no sea necesario desactivarlos(comprobar cambio nivel)
     public void ActivarAnillos(int num, bool cambio)
     {
-
-        
-        theUIManager.CambiarAnillos(num, cambio);
-        ring[num] =  cambio;
+        if (theUIManager != null)
+        {
+            theUIManager.CambiarAnillos(num, cambio);
+            ring[num] = cambio;
+        }
     }
 
     public bool ReturnRing(int num)

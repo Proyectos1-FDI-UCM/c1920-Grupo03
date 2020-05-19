@@ -1,7 +1,25 @@
 fileFormatVersion: 2
-guid: 7f324d5bc1998e74baff20d1d8bad3ae
+guid: 0c4b9b9637033d34ab4eff171794e76d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8858315255189172797
+    second: ArcoSpritesheet_0
+  - first:
+      213: -3870257101077608811
+    second: ArcoSpritesheet_1
+  - first:
+      213: 7390518593543748263
+    second: ArcoSpritesheet_2
+  - first:
+      213: 6463739373377393392
+    second: ArcoSpritesheet_3
+  - first:
+      213: -2726206299923140146
+    second: ArcoSpritesheet_4
+  - first:
+      213: 7270344132622296024
+    second: ArcoSpritesheet_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -144,7 +162,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ArcoSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 674
+        width: 159
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5022413, y: 0.2772542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6f869e4b390e243b7f721dffd33d6b
+      internalID: -8858315255189172797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcoSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 674
+        width: 158
+        height: 144
+      alignment: 9
+      pivot: {x: 0.4932336, y: 0.26984236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2277416618fa748808d0a037652869
+      internalID: -3870257101077608811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcoSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 674
+        width: 159
+        height: 136
+      alignment: 9
+      pivot: {x: 0.49775898, y: 0.28774846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f992188b3ee4f5e419041882454638c2
+      internalID: 7390518593543748263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcoSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 674
+        width: 158
+        height: 130
+      alignment: 9
+      pivot: {x: 0.502069, y: 0.31640577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb42f14932cddaa47b8a2cda7fbb8e6b
+      internalID: 6463739373377393392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcoSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 674
+        width: 159
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6368636328126734da89925dcd270f95
+      internalID: -2726206299923140146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcoSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 214
+        width: 159
+        height: 131
+      alignment: 9
+      pivot: {x: 0.4979437, y: 0.3153117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478cd11c35e1a624a8bd6f735549d29c
+      internalID: 7270344132622296024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
