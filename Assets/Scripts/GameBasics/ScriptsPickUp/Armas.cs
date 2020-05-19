@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Armas : MonoBehaviour
 {
+    Animator animator;
     // iniciales de armas
     // no es la solucion mas elegante pero xd
     public GameObject M, A, L;
@@ -22,6 +23,7 @@ public class Armas : MonoBehaviour
         A = arco.gameObject;
         
     }*/
+    
     public bool CompruebArma()
     {
         if (MartilloActivo || ArcoActivo || LanzaActiva) return false;
@@ -34,6 +36,7 @@ public class Armas : MonoBehaviour
         {
             M.SetActive(true);
             MartilloActivo = true;
+            GetComponent<Animator>().SetBool("RecogidaMaza", true);
         }
         
     }

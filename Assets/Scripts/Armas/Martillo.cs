@@ -17,6 +17,7 @@ public class Martillo : MonoBehaviour
     Arquer arquero;
     Bomba bomb;
     Animator animator;
+    float hitRate = 1.5f, nextHit = 0;
    /* void Awake()
     {
         arma = GetComponentInParent<Armas>();
@@ -24,33 +25,35 @@ public class Martillo : MonoBehaviour
     }*/
     private void Start()
     {
-        atacando = false;
+        //atacando = false;
        
          lista = new ListaEnemigosDentro();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInParent<Animator>();
         
     }
 
     private void Update()
     {
-        if (!atacando)
-        {
+        //if (!atacando )
+        //{
           
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0)&& nextHit< Time.time)
             {
+            nextHit = Time.time + hitRate;
                 atacando = true;
                 Debug.Log("MásLEnto");
                 movPlayer = GetComponentInParent<Movimiento8D>();
                 guardarVel = movPlayer.GetVel();
                 movPlayer.CambiaVel(guardarVel / 2);
-                Invoke("Ataca", 0.75f);
+                animator.SetBool("Ataque", true);
+                Invoke("Ataca", 0.6f);
 
-                Invoke("ActivaAnimacion", 0.5f); //Invoca la animacion de ataque
+                //Invoke("ActivaAnimacion",0f); //Invoca la animacion de ataque
                 Invoke("ParaAnimacion", 0.9f);  //Vuelve a estar estatico
 
             }
 
-        }
+        //}
     }
 
     
@@ -106,7 +109,7 @@ public class Martillo : MonoBehaviour
             }
             lista.AvanzaPrimer();
         }
-        Invoke("VelOriginal", 0f);
+        VelOriginal();
         
     }
     public class ListaEnemigosDentro
@@ -267,12 +270,12 @@ public class Martillo : MonoBehaviour
 
    void ActivaAnimacion()                           //Pasa de la animacion estatica a la de ataque
     {
-        animator.SetBool("AtacaMaza", true);
+        animator.SetBool("Ataque", true);
     }
 
     void ParaAnimacion()                            //Pasa de la animacion de ataque a la estatica
     {
-        animator.SetBool("AtacaMaza", false);
+        animator.SetBool("Ataque", false);
     }
 
     /*
