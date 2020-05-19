@@ -26,9 +26,13 @@ public class GameManager : MonoBehaviour
     {
         for (int x = 0; x < ring.Length; x++) ActivarAnillos(x,ring[x]);
         // no se si deberia hacer la asignacion de cargas otra vez(no se si se ejecuta esto antes o el metodo de restore, lo cual hace variar las cargas de pociones debido a la primera habitación de cada nivel)
-        theUIManager.CambioPociones(cargas);
-        currentHealth = maxHealth;
-        theUIManager.SetMaxHealth(currentHealth);
+        if(theUIManager != null)
+        {
+            theUIManager.CambioPociones(cargas);
+            currentHealth = maxHealth;
+            theUIManager.SetMaxHealth(currentHealth);
+        }
+        
         //Ring2 = false;
         //Ring4 = false;
 
