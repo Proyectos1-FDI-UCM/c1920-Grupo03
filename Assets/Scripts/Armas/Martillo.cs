@@ -110,7 +110,9 @@ public class Martillo : MonoBehaviour
             lista.AvanzaPrimer();
         }
         VelOriginal();
-        
+        this.enabled = false;//para que si se ha quedado alguien en el trigger se elimine
+        this.enabled = true;
+
     }
     public class ListaEnemigosDentro
     {
