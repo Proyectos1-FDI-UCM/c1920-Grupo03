@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/Menu/MenuVictoriaFinal.unity
     guid: fa7eb87c15d1c8c4ba28a05ba2b03587
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/Menu/Creditos.unity
+    guid: 6b6c1fb2cff41d545b78ae84e00b9fac
   m_configObjects: {}
