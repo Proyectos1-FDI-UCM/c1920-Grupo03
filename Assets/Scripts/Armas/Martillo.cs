@@ -18,6 +18,7 @@ public class Martillo : MonoBehaviour
     Bomba bomb;
     Animator animator;
     float hitRate = 1.5f, nextHit = 0;
+    BoxCollider2D trigger;
    /* void Awake()
     {
         arma = GetComponentInParent<Armas>();
@@ -26,7 +27,7 @@ public class Martillo : MonoBehaviour
     private void Start()
     {
         //atacando = false;
-       
+        trigger = GetComponent<BoxCollider2D>();
          lista = new ListaEnemigosDentro();
         animator = GetComponentInParent<Animator>();
         
@@ -84,7 +85,7 @@ public class Martillo : MonoBehaviour
                             EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
                             vidaEnmigo.TakeDamage(damage);
                         }
-                      // pa que? te da igual qué tipo de enemigo sea no?
+                      
                         else if (movenemig1 != null)
                         {
                            
@@ -110,8 +111,8 @@ public class Martillo : MonoBehaviour
             lista.AvanzaPrimer();
         }
         VelOriginal();
-        this.enabled = false;//para que si se ha quedado alguien en el trigger se elimine
-        this.enabled = true;
+        trigger.enabled = false;//para que si se ha quedado alguien en el trigger se veulva a meter en la lista tras atacar
+        trigger.enabled = true;
 
     }
     public class ListaEnemigosDentro

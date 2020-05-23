@@ -8405,12 +8405,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
@@ -8547,11 +8547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 6.5
+      value: 1.625
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 4.125
+      value: 1.03125
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -8567,19 +8567,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_Offset.x
-      value: 0.25884056
+      value: -0.17034388
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_Offset.y
-      value: 3.7023299
+      value: 3.9821944
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_Size.y
-      value: 2.9017453
+      value: 3.4614773
       objectReference: {fileID: 0}
     - target: {fileID: 1638056377, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_Size.x
-      value: 12.518127
+      value: 13.949708
       objectReference: {fileID: 0}
     - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_Enabled

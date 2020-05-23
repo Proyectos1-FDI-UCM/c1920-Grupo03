@@ -10,7 +10,10 @@ public class MovEnemig : MonoBehaviour
     Vector2 dir;
     void Start()
     {
+
+        velocidad = Random.Range(velocidad - velocidad / 10, velocidad + velocidad / 5);//Al principio se ajusta la velicidad entre un -20% y un +10& del valor dado
         rb = GetComponent<Rigidbody2D>();
+
     }
 
     public void Activar(bool act)
