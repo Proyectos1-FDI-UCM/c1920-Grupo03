@@ -18,6 +18,7 @@ public class Bomba : MonoBehaviour
     Vector3 posPlayer;
     bool movEnabled;
     bool sprint;
+    Animator animator;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class Bomba : MonoBehaviour
         hijo = transform.GetChild(0);
         sprint = false;
         vel = velocidad;
+        animator = GetComponent<Animator>();
     }
 
     public void CogerJugador(GameObject juga)
@@ -60,6 +62,7 @@ public class Bomba : MonoBehaviour
 
             vel = velocidad / 2;
             Invoke("SprintBomba", 1f);
+            animator.SetBool("enciendeMecha", true);
 
         }
 
@@ -69,6 +72,7 @@ public class Bomba : MonoBehaviour
             //para hacer más grande el circulo que indica la explosión
             hijo.localScale = new Vector3(distanciExplosion, distanciExplosion, distanciExplosion) * 2;
             Invoke("Explota", tiempoexplosion);
+            animator.SetBool("explota", true);
         }
     }
 
@@ -79,7 +83,9 @@ public class Bomba : MonoBehaviour
         {
             GameManager.instance.TakeDamage(30);
         }
-        Destroy(this.gameObject);
+
+        
+        Destroy(this.gameObject, 0.1f);
         
         
     }

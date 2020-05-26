@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: 184d91a4c7a410f4585ae0317610cedc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 684807284342723667
+    second: bomba alpha (2)_0
+  - first:
+      213: -531496019717924539
+    second: bomba alpha (2)_1
+  - first:
+      213: -7338508035144473403
+    second: bomba alpha (2)_2
+  - first:
+      213: 1906384022217375173
+    second: bomba alpha (2)_3
+  - first:
+      213: -8630064875896460765
+    second: bomba alpha (2)_4
+  - first:
+      213: 2897921717804159083
+    second: bomba alpha (2)_5
+  - first:
+      213: -4631964472338222333
+    second: bomba alpha (2)_6
+  - first:
+      213: -4048711733581563141
+    second: bomba alpha (2)_7
+  - first:
+      213: -7011171593689624142
+    second: bomba alpha (2)_8
+  - first:
+      213: -8580844093514426435
+    second: bomba alpha (2)_9
+  - first:
+      213: 4764550634969070861
+    second: bomba alpha (2)_10
+  - first:
+      213: -571326461888007599
+    second: bomba alpha (2)_11
+  - first:
+      213: -2786453542917108621
+    second: bomba alpha (2)_12
+  - first:
+      213: -3440366501436246979
+    second: bomba alpha (2)_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +82,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +126,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: bomba alpha (2)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783c7b6004df7a041ac83267dba361be
+      internalID: 684807284342723667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253afb7b84bb56342bc74db8a7600156
+      internalID: -531496019717924539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9283dbc2c9ccdd744ba38b2961439df8
+      internalID: -7338508035144473403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fda363d282dd9489b563c09eb9b124
+      internalID: 1906384022217375173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633add80eadcc1449975defbcbd8721d
+      internalID: -8630064875896460765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 64
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71d4212fbed7d541958732c9dc151fe
+      internalID: 2897921717804159083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e0e75d86f41ae41b9fcd26349daa1d
+      internalID: -4631964472338222333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 64
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db259649ee7a3646bdcf1c5b9363504
+      internalID: -4048711733581563141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b002926eca831147acaa6caf6043cc1
+      internalID: -7011171593689624142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_9
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 32
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f05f63496e7e5341a5ccd9ac35498a4
+      internalID: -8580844093514426435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 32
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a42b5ea808a0164bb180a702b3884b1
+      internalID: 4764550634969070861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_11
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 34
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae10999d9f7b769428147a2575f55758
+      internalID: -571326461888007599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9045c9139f76e8d4089568a4fbbf3f56
+      internalID: -2786453542917108621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomba alpha (2)_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 4
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b2e454e774c6d4ea05385fbf4a4355
+      internalID: -3440366501436246979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
