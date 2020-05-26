@@ -2883,7 +2883,7 @@ GameObject:
   - component: {fileID: 2060535083486989462}
   m_Layer: 0
   m_Name: Paredes
-  m_TagString: Untagged
+  m_TagString: Mapa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2914,7 +2914,7 @@ GameObject:
   - component: {fileID: 1877941418815496471}
   m_Layer: 0
   m_Name: Puertas
-  m_TagString: Untagged
+  m_TagString: Mapa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

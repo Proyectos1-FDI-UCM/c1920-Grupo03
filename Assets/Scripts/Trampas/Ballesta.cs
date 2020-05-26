@@ -24,7 +24,7 @@ public class Ballesta : MonoBehaviour
             dirFlecha = new Vector2(shotSpawn.position.x - transform.position.x, shotSpawn.position.y - transform.position.y);
             nextFire = Time.time + fireRate;
             Vector3 pos = new Vector3(shot.transform.position.x, shot.transform.position.y, 0);
-            arrow = Instantiate<GameObject>(shot, shotSpawn.position, transform.rotation);
+            arrow = Instantiate<GameObject>(shot, shotSpawn.position, Quaternion.identity);
             Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
             rb.velocity = dirFlecha;
 
