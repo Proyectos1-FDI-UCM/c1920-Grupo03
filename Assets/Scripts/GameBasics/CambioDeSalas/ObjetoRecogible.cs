@@ -17,6 +17,7 @@ public class ObjetoRecogible : MonoBehaviour
     {
         sala.Accionar(false);
         sala.Trampas();
+
     }
     public void DestruirHijos()
     {

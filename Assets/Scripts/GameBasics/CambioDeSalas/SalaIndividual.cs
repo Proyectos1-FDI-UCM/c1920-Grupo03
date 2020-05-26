@@ -59,6 +59,8 @@ public class SalaIndividual : MonoBehaviour
     {
         if (collision.GetComponent<Movimiento8D>() != null)
         {
+            if (GetComponentInChildren<TrampasManager>() != null)
+                collision.GetComponent<Dash>().enabled = false;
             playerDentro = true;
 
             if (hayEnemigos)
