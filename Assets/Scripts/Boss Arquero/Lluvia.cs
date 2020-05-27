@@ -9,7 +9,7 @@ public class Lluvia : MonoBehaviour
     Rigidbody2D rb;
     public float tiempoataque;
     public GameObject prefabLluvia;
-    GameObject boss;
+   
     
     
  
@@ -23,7 +23,7 @@ public class Lluvia : MonoBehaviour
     {
         bossManager2 = GetComponent<BossManager2>();
         rb = GetComponent<Rigidbody2D>();
-        boss = GetComponent<GameObject>();
+        
     }
 
 

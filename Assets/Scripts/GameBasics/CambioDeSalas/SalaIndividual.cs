@@ -63,10 +63,13 @@ public class SalaIndividual : MonoBehaviour
                 collision.GetComponent<Dash>().enabled = false;
             playerDentro = true;
 
+
             if (hayEnemigos)
                 enem.ActivarEnemigos(collision);
             else if (this.GetComponentInChildren<BossSala>() != null)
                 this.GetComponentInChildren<BossSala>().ActivarBoss(collision);
+            else if (GetComponentInChildren<BossArqueroSala>() != null)
+                GetComponentInChildren<BossArqueroSala>().ActivarBoss(collision);
             desh.Deshabilitarse();
             if (enemigosViv > 0)
                 Accionar(true);
