@@ -1,0 +1,1111 @@
+fileFormatVersion: 2
+guid: 3ac64e3b211b03947af6d6f56c546d0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3423987771804355041
+    second: Boss arquero_0
+  - first:
+      213: -2684273185070936673
+    second: Boss arquero_1
+  - first:
+      213: -135310702885252243
+    second: Boss arquero_2
+  - first:
+      213: 4213284504624927882
+    second: Boss arquero_3
+  - first:
+      213: -5525796166742581637
+    second: Boss arquero_4
+  - first:
+      213: 4758976586598088127
+    second: Boss arquero_5
+  - first:
+      213: 2022218922668054667
+    second: Boss arquero_6
+  - first:
+      213: 8167687437947350497
+    second: Boss arquero_7
+  - first:
+      213: 7122199925174530407
+    second: Boss arquero_8
+  - first:
+      213: 3259306239030574863
+    second: Boss arquero_9
+  - first:
+      213: -1978441298320796491
+    second: Boss arquero_10
+  - first:
+      213: 7593985311485769758
+    second: Boss arquero_11
+  - first:
+      213: 3206893087576365288
+    second: Boss arquero_12
+  - first:
+      213: -1415662768317863882
+    second: Boss arquero_13
+  - first:
+      213: 1975948113202286070
+    second: Boss arquero_14
+  - first:
+      213: -4377424286100747469
+    second: Boss arquero_15
+  - first:
+      213: 8494057781295750325
+    second: Boss arquero_16
+  - first:
+      213: 8755368503209811111
+    second: Boss arquero_17
+  - first:
+      213: 5199335675282404056
+    second: Boss arquero_18
+  - first:
+      213: -3974335062065176638
+    second: Boss arquero_19
+  - first:
+      213: -283686971132367253
+    second: Boss arquero_20
+  - first:
+      213: -6572435703248889931
+    second: Boss arquero_21
+  - first:
+      213: -932381551925887576
+    second: Boss arquero_22
+  - first:
+      213: 4521070201575483210
+    second: Boss arquero_23
+  - first:
+      213: 5964560832498090572
+    second: Boss arquero_24
+  - first:
+      213: -2996117546313456819
+    second: Boss arquero_25
+  - first:
+      213: -6021601610573551213
+    second: Boss arquero_26
+  - first:
+      213: 3254917081000713246
+    second: Boss arquero_27
+  - first:
+      213: 7721969998471686797
+    second: Boss arquero_28
+  - first:
+      213: 290644917942842960
+    second: Boss arquero_29
+  - first:
+      213: -662464184054045028
+    second: Boss arquero_30
+  - first:
+      213: 1992226308036930463
+    second: Boss arquero_31
+  - first:
+      213: -5355229139963606993
+    second: Boss arquero_32
+  - first:
+      213: 4081746224731332914
+    second: Boss arquero_33
+  - first:
+      213: -1858994243136142777
+    second: Boss arquero_34
+  - first:
+      213: 4045486148496113731
+    second: Boss arquero_35
+  - first:
+      213: 1446666931337899932
+    second: Boss arquero_36
+  - first:
+      213: 8511305583468834803
+    second: Boss arquero_37
+  - first:
+      213: 2281173629178852186
+    second: Boss arquero_38
+  - first:
+      213: 3114058650531491205
+    second: Boss arquero_39
+  - first:
+      213: 4265314175962257012
+    second: Boss arquero_40
+  - first:
+      213: 3229611305793848335
+    second: Boss arquero_41
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss arquero_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 579
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2325a2662ce99b24aa312fcf09be11c7
+      internalID: 3423987771804355041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 580
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355f66ccf6f98ab419c943913a75f5ce
+      internalID: -2684273185070936673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 581
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf25d625a355de478d7362f65c3e617
+      internalID: -135310702885252243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 583
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2c32dab769fd64daec0502418ae836
+      internalID: 4213284504624927882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_4
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 578
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cb15ee9d21e5543a704ff45d590ca7
+      internalID: -5525796166742581637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 503
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4c9a23d3ca0f74cb86105ca340dcf1
+      internalID: 4758976586598088127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 508
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00ec02d7475e354d955277622b71f83
+      internalID: 2022218922668054667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 504
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e86a6747aa861c42bbb4929d1f6908d
+      internalID: 8167687437947350497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_8
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 508
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712fa6a63d798014f908ed1672fff1dd
+      internalID: 7122199925174530407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 504
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79809d4f7db6136438ddc1dc53ac76bb
+      internalID: 3259306239030574863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 431
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f4f6c68a003454b9026358442fc352
+      internalID: -1978441298320796491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 432
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe969ae87705e840a4b83bf13ffd89c
+      internalID: 7593985311485769758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_12
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 432
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9c42f31f3b3954a99fee8a2aa4d3f2
+      internalID: 3206893087576365288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_13
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 434
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86978047608c3f94dace2288d4e6d07a
+      internalID: -1415662768317863882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_14
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 430
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e1151be6eef0848a9519a0bd4cc6df
+      internalID: 1975948113202286070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 356
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19765386ecdca1d4fb0e3cf480b769be
+      internalID: -4377424286100747469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 361
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957daed152b9fa04fb719aa0b11687e9
+      internalID: 8494057781295750325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_17
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 359
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2278642afd6885f49840022cc0447442
+      internalID: 8755368503209811111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_18
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 364
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553616f9ad1c5cc4da4a9afd500564c5
+      internalID: 5199335675282404056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_19
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 358
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd75bfe8335dd14dbc440a6c8a179b8
+      internalID: -3974335062065176638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 283
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7453feb1cda5e0347a1035e92ea5007d
+      internalID: -283686971132367253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_21
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 288
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967336a00a9a98243a06493bde57365e
+      internalID: -6572435703248889931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 284
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ecd7c1ef4a1844c8e22ab7b7304312
+      internalID: -932381551925887576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_23
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 288
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b105253e916f5e4ca263ed4768bae34
+      internalID: 4521070201575483210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_24
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 284
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76a42f4f3c105e479241670a5d6983e
+      internalID: 5964560832498090572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_25
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 212
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d93bd99ff6a9364f918ae91c092d7e9
+      internalID: -2996117546313456819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_26
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 208
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac117aad75aec44b991a46303b9aaed
+      internalID: -6021601610573551213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 215
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4c1745ea3a5114993d2443fb830ddb
+      internalID: 3254917081000713246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_28
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 212
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260e6f3e23c7f164faec5cda4759d44a
+      internalID: 7721969998471686797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_29
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 213
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26a537cd9eff5149881d322718ccdad
+      internalID: 290644917942842960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 137
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1e1757b9754f24d9df1eea34314682
+      internalID: -662464184054045028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_31
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 134
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a55fa3c410af6c459158dfc6caaeb3a
+      internalID: 1992226308036930463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 142
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40854fff84ccabf4b99db7050b6e64a1
+      internalID: -5355229139963606993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_33
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 137
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15430057d4a4a7c478e36277a9cfdaad
+      internalID: 4081746224731332914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_34
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 138
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7387c6fe169004a9076a4e06a456ba
+      internalID: -1858994243136142777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_35
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 62
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e28bca91ccf1294aa5fb648755e8001
+      internalID: 4045486148496113731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_36
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 64
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0564d98a92e00294bb4922003bca4522
+      internalID: 1446666931337899932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_37
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 70
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7113cd8b342a4458db7efb6433ff4e
+      internalID: 8511305583468834803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_38
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 64
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b346d45cb0f034186bc328c5056129
+      internalID: 2281173629178852186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 101
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9c9ab0ccfbebb4e9fcdbdc6b5197d3
+      internalID: 3114058650531491205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_40
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 65
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f30a55aad2504468bf305feccd38d6
+      internalID: 4265314175962257012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss arquero_41
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 5
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd2ceaa8cd523f45b8f46190a1bdcec
+      internalID: 3229611305793848335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
