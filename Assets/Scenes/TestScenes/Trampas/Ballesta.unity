@@ -650,6 +650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!61 &62349056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -799,6 +801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shot: {fileID: 2567494917473944401, guid: 68ffd4dcc00eea848893d0025a00d1be, type: 3}
   fireRate: 2
+  velFlechas: 5
 --- !u!65 &109650955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1129,6 +1132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!61 &218943922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2764,16 +2769,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.09488622
       objectReference: {fileID: 0}
-    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1097852494}
-    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8915645136661280564, guid: 188ea5eab08d9df49bb3f69439d6308d,
         type: 3}
       propertyPath: player
@@ -2783,6 +2778,16 @@ PrefabInstance:
         type: 3}
       propertyPath: tiempoexplosion
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1097852494}
+    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 188ea5eab08d9df49bb3f69439d6308d, type: 3}
@@ -3445,6 +3450,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashDistanceMax: 2
   raycastOrigin: {fileID: 0}
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1097852503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3470,6 +3478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e3b6a9e97012847a7a75fa3a0ad2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanvasMenu: {fileID: 0}
 --- !u!114 &1097852505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3712,6 +3721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
+  isBoss1: 0
+  isBoss2: 0
 --- !u!1 &1300605241
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,16 +4087,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.09488622
       objectReference: {fileID: 0}
-    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1097852494}
-    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8915645136661280564, guid: 188ea5eab08d9df49bb3f69439d6308d,
         type: 3}
       propertyPath: player
@@ -4095,6 +4096,16 @@ PrefabInstance:
         type: 3}
       propertyPath: tiempoexplosion
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1097852494}
+    - target: {fileID: 8915645136661280565, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 188ea5eab08d9df49bb3f69439d6308d, type: 3}
@@ -5158,6 +5169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c41cfc0e090b994c853a61ffe899850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sigSala: {fileID: 0}
+  teleportPoint: {fileID: 0}
 --- !u!1 &1932551163
 GameObject:
   m_ObjectHideFlags: 0
