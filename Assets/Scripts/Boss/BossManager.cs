@@ -43,7 +43,7 @@ public class BossManager : MonoBehaviour
         if(estado == Estados.Normal &&!cargaembestir)
           {
             cargaembestir = true;
-              Invoke("embestir", Random.Range(15f, 17f)) ;
+              Invoke("embestir", Random.Range(10f, 15f)) ;
           }
           
     }

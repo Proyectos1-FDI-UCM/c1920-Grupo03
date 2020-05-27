@@ -18,6 +18,7 @@ public class AtaqueBoss1 : MonoBehaviour
     enum Estados {Atacando, Moviendose }
     Estados estado;
     bool delay;//delay de ataque, para el if de abajo
+    Animator anim;
     void Start()
     {
         delay = true;
@@ -29,6 +30,7 @@ public class AtaqueBoss1 : MonoBehaviour
         maza = transform.GetChild(2).gameObject.GetComponent<MeshRenderer>();
         miraJugador = GetComponent<MirarJugador>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     public void CogerJugador(GameObject juga)
@@ -64,6 +66,9 @@ public class AtaqueBoss1 : MonoBehaviour
                mov.velocidad  = mov.velocidad/2;
                 miraJugador.enabled = false;
                 rb.freezeRotation = true;
+
+                anim.SetBool("cargarAtaque", true);
+                Invoke("InvocaAnimAtaque", tiempoataque - 0.3f);
                 Invoke("Ataca", tiempoataque);
                 
                 //gameObject.tag = "Invencible";
@@ -94,6 +99,8 @@ public class AtaqueBoss1 : MonoBehaviour
         
         if (enabled)//si el script está activa, para que no ataque si está embistiendo
         {
+            
+            
             if (dentroTriggerMaza)
             {
 
@@ -108,11 +115,22 @@ public class AtaqueBoss1 : MonoBehaviour
             estado = Estados.Moviendose;
            
             mov.CambiaguardaPos(false);
-           
-            
+
+            anim.SetBool("ataca",true);         //anim ataque
+
+            Invoke("DesactivaAnimacion", 0.25f);
         }
        
        
+    }
+
+    void InvocaAnimAtaque()
+    {
+        anim.SetBool("cargarAtaque", false);
+    }
+    void DesactivaAnimacion()
+    {
+        anim.SetBool("ataca", false);
     }
    private void OnDisable()
     {

@@ -12,6 +12,7 @@ public class Embestida : MonoBehaviour
     public float fuerza;
     Vector2 pos, dir;
     public float vel;
+    Animator anim;
 
     Movimiento8D movPlayer;
     string estado;
@@ -27,13 +28,14 @@ public class Embestida : MonoBehaviour
         mirarJugador = GetComponent<MirarJugador>();
         rbplayer = player.GetComponent<Rigidbody2D>();
         movPlayer = player.GetComponent<Movimiento8D>();
+        anim = GetComponent<Animator>();
        
     }
 
    
     private void OnEnable()
     {
-     
+        
         Invoke("Embiste", 3f);
     }
  
@@ -41,17 +43,19 @@ public class Embestida : MonoBehaviour
     {
         if(player != null)
         {
-          
+            anim.SetBool("embiste", true);
             mirarJugador.enabled = false;
             pos = new Vector2(player.transform.position.x, player.transform.position.y);
             dir = new Vector2(pos.x - transform.position.x, pos.y - transform.position.y);
             dir.Normalize();
             // rb.isKinematic = true;
             rb.freezeRotation = true;
-            rb.velocity = dir * vel; 
+            rb.velocity = dir * vel;
+            
         }
-       
-        
+
+        Invoke("DesactivaAnimacion", 1.7f);
+
     }
 
     public int danyo;
@@ -95,4 +99,10 @@ public class Embestida : MonoBehaviour
     {
         bossmanager.CambiaEstado("Normal");
     }
+    
+    void DesactivaAnimacion()
+    {
+        anim.SetBool("embiste", false);
+    }
+
 }
