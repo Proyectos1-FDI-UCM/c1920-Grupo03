@@ -9,9 +9,11 @@ public class EnemyHealth : MonoBehaviour
     int prob;
     public bool isBoss1 = false;
     public bool isBoss2 = false;
+    Animator anim;
     void Start()
     {
         currentHealth = maxHealth; //La vida del enemigo comienza al máximo.
+        anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage) //Se llama cuando el jugador ataca al enemigo.
@@ -40,7 +42,13 @@ public class EnemyHealth : MonoBehaviour
             }
            else if (isBoss2) GameManager.instance.CargarNivel("MenuVictoria");
 
-           Destroy(this.gameObject); //Si se queda sin vida matarlo.
+           if (anim != null)
+            {
+                anim.SetBool("dieEnemy", true);
+                Destroy(this.gameObject, 0.1f); //Si se queda sin vida matarlo.
+            }
+           else
+                Destroy(this.gameObject); //Si se queda sin vida matarlo.
         }
     }
 }
