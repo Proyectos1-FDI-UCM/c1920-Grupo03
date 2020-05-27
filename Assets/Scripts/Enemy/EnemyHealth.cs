@@ -40,7 +40,7 @@ public class EnemyHealth : MonoBehaviour
             }
            else if (isBoss2) GameManager.instance.CargarNivel("MenuVictoria");
 
-            Destroy(this.gameObject); //Si se queda sin vida matarlo.
+           Destroy(this.gameObject); //Si se queda sin vida matarlo.
         }
     }
 }

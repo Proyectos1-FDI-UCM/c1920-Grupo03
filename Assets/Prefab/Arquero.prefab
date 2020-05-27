@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 5461395954318165737}
   - component: {fileID: -381267065182802222}
   - component: {fileID: 8189864244799521756}
+  - component: {fileID: -8996279973897606850}
   m_Layer: 9
   m_Name: Arquero
   m_TagString: Untagged
@@ -182,7 +183,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.35, y: 2.4}
+    oldSize: {x: 1.3125, y: 1.53125}
     newSize: {x: 0.47, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -294,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -815588158069303588, guid: b191f074cb8547d408c7d8174639e680,
+  m_Sprite: {fileID: -3506536579647068688, guid: 4ce10096f32349643931ef3c32548b9f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -306,3 +307,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &-8996279973897606850
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7759456558206877811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eea48f25cdd7b5a4295c9658d7ec8f91, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

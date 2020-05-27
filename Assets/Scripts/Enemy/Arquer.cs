@@ -14,6 +14,7 @@ public class Arquer : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 spawn;
     Vector2 dir;
+    Animator anim;
 
     
     void Start()
@@ -22,6 +23,8 @@ public class Arquer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         tiempoDisparos = disparos;
+
+        anim = GetComponent<Animator>();
     }
 
     public void CogeJugador(GameObject jugador)
@@ -43,7 +46,9 @@ public class Arquer : MonoBehaviour
             {
                 spawn = this.transform.GetChild(1).gameObject.transform.position;
                 Quaternion rot = transform.rotation;
-                   
+
+                anim.SetBool("cargaFlecha", true);   
+                
                 Instantiate(flecha, spawn, rot, transform);
                 
                 tiempoDisparos = disparos;
