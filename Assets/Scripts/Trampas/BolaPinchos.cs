@@ -10,7 +10,7 @@ public class BolaPinchos : MonoBehaviour
     [SerializeField] float fuerza = 100f;
     public bool ejeX = true;
     public float velocidad;
-    
+    public int damage;
    
     Vector2 posIni, posFin, posMid, dir;
     Rigidbody2D rb;
@@ -30,10 +30,7 @@ public class BolaPinchos : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         gameObject.transform.position = new Vector3(posIni.x, posIni.y, -3) ;
         rb.velocity = velocidad * dir;
-        Debug.Log(dir);
-        Debug.Log(posIni);
-        Debug.Log(posFin);
-        Debug.Log(posMid);
+       
     }
     private void Update()
     {
@@ -49,10 +46,10 @@ public class BolaPinchos : MonoBehaviour
          {
              if(posIni.y >= posFin.y)//si va de arriba a abajo
              {
-                 if (pos.x <= posIni.x || pos.x >= posFin.x || pos.y >= posIni.y || pos.y <= posFin.y)
+                 if (pos.x < posIni.x || pos.x > posFin.x || pos.y > posIni.y || pos.y < posFin.y)
                  {
                      dir *= -1;
-                     rb.velocity = 0.5f * dir;
+                     rb.velocity = velocidad * dir;
                      Debug.Log("CambiaVel");
                  }
                 else
@@ -63,7 +60,7 @@ public class BolaPinchos : MonoBehaviour
              }
              else // de abajo a arriba
              {
-                 if (pos.x <= posIni.x || pos.x >= posFin.x || pos.y <= posIni.y || pos.y >= posFin.y)
+                 if (pos.x < posIni.x || pos.x > posFin.x || pos.y < posIni.y || pos.y > posFin.y)
                  {
                      dir *= -1;
                      rb.velocity = velocidad * dir;
@@ -81,7 +78,7 @@ public class BolaPinchos : MonoBehaviour
          {
              if (posIni.y >= posFin.y)//si va de arriba a abajo
              {
-                 if (pos.x >= posIni.x || pos.x <= posFin.x || pos.y >= posIni.y || pos.y <= posFin.y)
+                 if (pos.x > posIni.x || pos.x < posFin.x || pos.y > posIni.y || pos.y < posFin.y)
                  {
                      dir *= -1;
                      rb.velocity = velocidad * dir;
@@ -95,7 +92,7 @@ public class BolaPinchos : MonoBehaviour
             }
              else // de abajo a arriba
              {
-                 if (pos.x >= posIni.x || pos.x <= posFin.x || pos.y <= posIni.y || pos.y >= posFin.y)
+                 if (pos.x > posIni.x || pos.x < posFin.x || pos.y < posIni.y || pos.y > posFin.y)
                  {
                      dir *= -1;
                      rb.velocity = velocidad * dir;
@@ -130,6 +127,7 @@ public class BolaPinchos : MonoBehaviour
                 Vector2 difference = collision.transform.position - transform.position;
                 enemy.AddForce(difference.normalized * fuerza, ForceMode2D.Impulse);
                 Invoke("ActivaMov8D", 2f);
+                GameManager.instance.TakeDamage(damage);
 
             }
         }
@@ -145,6 +143,8 @@ public class BolaPinchos : MonoBehaviour
 
                 Vector2 difference = collision.transform.position - transform.position;
                 enemy.AddForce(difference.normalized * fuerza, ForceMode2D.Impulse);
+                EnemyHealth enemyHealth = collision.GetComponent<EnemyHealth>();
+                enemyHealth.TakeDamage(damage);
 
             }
         }

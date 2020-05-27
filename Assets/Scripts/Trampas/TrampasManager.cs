@@ -32,6 +32,7 @@ public class TrampasManager : MonoBehaviour
     }
     void OnTriggerExit2D()
     {
+        if(GetComponent<Movimiento8D>())
         ChangeState(false);
     }
     void ChangeState(bool activar)

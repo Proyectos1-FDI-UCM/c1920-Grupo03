@@ -145,9 +145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618afed5a9b224e4c9fa8dfe54bfa875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuerza: 100
+  fuerza: 10
   ejeX: 0
   velocidad: 0.5
+  damage: 15
 --- !u!212 &2294218388214612134
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -186,7 +187,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 629db3b0df58e7f4b8db6ed2e61cc8c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e0f69423a88a034caadbc9110c01257, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

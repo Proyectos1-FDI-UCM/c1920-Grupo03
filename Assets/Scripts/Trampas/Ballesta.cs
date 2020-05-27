@@ -30,7 +30,7 @@ public class Ballesta : MonoBehaviour
 
             rb.velocity = dirFlecha * Time.deltaTime * velFlechas*100 ;
 
-            Vector3 orientacion = new Vector3(0, 0, this.transform.rotation.eulerAngles.z + 90);//para que no sea en quaterniones hay que poner euelrangles
+            Vector3 orientacion = new Vector3(0, 0, this.transform.rotation.eulerAngles.z - 90);//para que no sea en quaterniones hay que poner euelrangles
             arrow.transform.Rotate(orientacion);
             
 
