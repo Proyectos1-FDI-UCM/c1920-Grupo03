@@ -2091,6 +2091,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5acb27b34193fe64784e7ba6ed3ba166, type: 3}
+--- !u!1 &141119037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6996646150001649974, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1007694248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &142288167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3158,6 +3164,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3222,11 +3233,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -3445,6 +3451,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3509,11 +3520,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -3862,11 +3868,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4036576378488175357, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 799233328011557765, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -4076,6 +4077,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 4036576378488175357, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
@@ -5439,6 +5445,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5503,11 +5514,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -7587,6 +7593,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1066993222}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7651,11 +7662,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -11547,6 +11553,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11611,11 +11622,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -12013,6 +12019,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 278472151}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12077,11 +12088,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -12559,7 +12565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
@@ -15173,6 +15179,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f91c5ebf64fe69d4393029f6fa567937, type: 3}
+--- !u!1 &1160860727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1007694248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1160927047
 GameObject:
   m_ObjectHideFlags: 0
@@ -16104,6 +16116,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16168,11 +16185,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -20059,9 +20071,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d144c41045a8dbf4aaf1c73cb156b9f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  M: {fileID: 0}
-  A: {fileID: 0}
-  L: {fileID: 0}
+  M: {fileID: 1160860727}
+  A: {fileID: 141119037}
+  L: {fileID: 1977796744}
 --- !u!114 &1474274095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20529,6 +20541,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2145774445}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20593,11 +20610,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -23781,6 +23793,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1066993222}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23845,11 +23862,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -26170,6 +26182,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a49b719032f5ed4282cb295a77533b2, type: 3}
+--- !u!1 &1977796744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1007694248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1979143328
 PrefabInstance:
   m_ObjectHideFlags: 0

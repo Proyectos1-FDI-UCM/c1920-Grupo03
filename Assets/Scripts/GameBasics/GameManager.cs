@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
     private bool invencible = false;
-    private bool [] ring = { false,false,false,false};
+    static private bool[] armas = { false, false, false };
+    static private bool [] ring = { false,false,false,false};
     private HealthBar health;
     public static GameManager instance;
     private UIManager theUIManager;
@@ -31,6 +33,10 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        
+
+        //while (!armas[cont] && cont < armas.Length) cont++;
+        //if (cont < armas.Length) ActivarArma(cont);
         for (int x = 0; x < ring.Length; x++) ActivarAnillos(x,ring[x]);
         // no se si deberia hacer la asignacion de cargas otra vez(no se si se ejecuta esto antes o el metodo de restore, lo cual hace variar las cargas de pociones debido a la primera habitación de cada nivel)
         if(theUIManager != null)
@@ -48,9 +54,21 @@ public class GameManager : MonoBehaviour
     
     public void SetPlayer(GameObject theplayer)
     {
+        int cont = 0;
         player = theplayer;
+        while (!armas[cont] && cont < armas.Length) cont++;
+        if (cont < armas.Length) ActivarArma(cont);
+        ActivarArma(cont);
+    }
+    public void ActivarArma(int num)
+    {
+        player.GetComponent<Armas>().Activar(num);
     }
 
+    public void ActBoolArma(int num)
+    {
+        armas[num] = true;
+    }
     public void SetUIManager(UIManager uim)
     {
         theUIManager = uim;
@@ -83,10 +101,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     public void ActualizaSlider()
     {
         theUIManager.CambiarVida(currentHealth);
     }
+
 
     public void Invencibilidad(bool activo)
     {
@@ -138,6 +158,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetinitialState()
     {
+        for (int x = 0; x < armas.Length; x++) armas[x] = false;
         Debug.LogError("Reseteado");
         currentHealth = 100;
         unexploredRooms = 0;

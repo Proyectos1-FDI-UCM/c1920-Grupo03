@@ -34,7 +34,9 @@ public class Armas : MonoBehaviour
     {
         if (CompruebArma())
         {
-            M.SetActive(true);
+            GameManager.instance.ActBoolArma(0);
+            Activar(0);
+            //M.SetActive(true);
             MartilloActivo = true;
             GetComponent<Animator>().SetBool("RecogidaMaza", true);
         }
@@ -45,7 +47,9 @@ public class Armas : MonoBehaviour
     {
         if (CompruebArma())
         {
-            A.SetActive(true);
+            GameManager.instance.ActBoolArma(1);
+            Activar(1);
+            //A.SetActive(true);
             ArcoActivo = true;
             GetComponent<Animator>().SetBool("RecogidoArco", true);
         }
@@ -55,10 +59,30 @@ public class Armas : MonoBehaviour
     {
         if (CompruebArma())
         {
-            L.SetActive(true);
+            GameManager.instance.ActBoolArma(2);
+            Activar(2);
+            //L.SetActive(true);
             MartilloActivo = true;
             GetComponent<Animator>().SetBool("RecogidaLanza", true);
         }
 
+    }
+    public void Activar(int num)
+    {
+        switch (num)
+        {
+            case 0:
+                M.SetActive(true);
+                GetComponent<Animator>().SetBool("RecogidaMaza", true);
+                break;
+            case 1:
+                A.SetActive(true);
+                GetComponent<Animator>().SetBool("RecogidoArco", true);
+                break;
+            case 2:
+                L.SetActive(true);
+                GetComponent<Animator>().SetBool("RecogidaLanza", true);
+                break;
+        }
     }
 }
