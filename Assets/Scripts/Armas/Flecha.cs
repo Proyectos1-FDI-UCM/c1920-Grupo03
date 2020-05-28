@@ -7,7 +7,7 @@ public class Flecha : MonoBehaviour
     public float velocidad;
     
     EnemyHealth enemyHealth;
-    public int danyo = 15;
+    public int danyo = 50;
 
 
     private void OnCollisionEnter2D(Collision2D collision)//La flecha se destruye con  el mapa,
