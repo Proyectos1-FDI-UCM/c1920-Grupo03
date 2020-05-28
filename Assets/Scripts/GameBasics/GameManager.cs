@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         int cont = 0;
         player = theplayer;
-        while (!armas[cont] && cont < armas.Length) cont++;
+        while (cont < armas.Length && !armas[cont]) cont++;
         if (cont < armas.Length) ActivarArma(cont);
         ActivarArma(cont);
     }
