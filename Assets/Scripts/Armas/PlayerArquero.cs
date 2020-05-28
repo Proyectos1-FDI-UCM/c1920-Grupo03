@@ -19,8 +19,8 @@ public class PlayerArquero : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && Time.time > tiempo)
         {
-           
-            anim.SetBool("Ataque", true);
+           //poner mas tarde
+            //anim.SetBool("Ataque", true);
             Ataca();
             
             
