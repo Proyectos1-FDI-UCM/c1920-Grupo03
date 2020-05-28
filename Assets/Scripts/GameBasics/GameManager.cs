@@ -12,10 +12,10 @@ public class GameManager : MonoBehaviour
     private UIManager theUIManager;
     private GameObject player;
     [SerializeField] GameObject trampilla;
-   // bool Ring2;
+    // bool Ring2;
     //bool Ring4;
-
-    int unexploredRooms = 0, currentHealth, maxHealth = 100, h, cargas, normRest = 8;
+    static int currentHealth,cargas, unexploredRooms=0, h;
+    int  maxHealth = 100, normRest = 8;
 
    
     private void Awake()
@@ -115,9 +115,6 @@ public class GameManager : MonoBehaviour
     public void CargarNivel(string nivel)
     {
         
-
-
-        if(nivel == "Nivel1HUD")
         {
             Debug.LogError("Reseteado");
             currentHealth = 100;
@@ -126,8 +123,9 @@ public class GameManager : MonoBehaviour
             for (int x = 0; x < ring.Length; x++) ring[x] = false;
             h = 0;
         }
-        Time.timeScale = 1;
         SceneManager.LoadScene(nivel, LoadSceneMode.Single);
+        Time.timeScale = 1;
+        
     }
     
 
