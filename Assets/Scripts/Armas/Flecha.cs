@@ -4,18 +4,36 @@ using UnityEngine;
 
 public class Flecha : MonoBehaviour
 {
+    public float velocidad;
+    
     EnemyHealth enemyHealth;
-    public int daño = 50;
+    public int danyo = 15;
 
 
     private void OnCollisionEnter2D(Collision2D collision)//La flecha se destruye con  el mapa,
     {
+
         enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+        
+        if (collision.gameObject.GetComponent<Movimiento8D>() != null)
+        {
+            GameManager.instance.TakeDamage(danyo);
+            DestruirFlecha();
 
-        if (enemyHealth != null)
-            enemyHealth.TakeDamage(daño);
-
+        }
+        else if (enemyHealth != null)
+        {
+            enemyHealth.TakeDamage(danyo);
+            DestruirFlecha();
+        }
+        else if (collision.gameObject.layer == 16 || collision.gameObject.layer == 13 || collision.gameObject.layer == 12)//si las flechas chocan entre sí o con una pared se destruyen
+        {
+            DestruirFlecha();
+        }
+    }
+    private void DestruirFlecha()
+    {
         Destroy(gameObject);
     }
-        
+
 }
