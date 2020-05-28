@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     
     // bool Ring2;
     //bool Ring4;
-    static int currentHealth,cargas, unexploredRooms=0, h;
+    static int currentHealth = 100,cargas, unexploredRooms=0, h;
     int  maxHealth = 100, normRest = 8;
 
    
@@ -27,8 +27,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
         else Destroy(this.gameObject);
-        
-        currentHealth = 100;
+
     }
     void Start()
     {
@@ -38,9 +37,10 @@ public class GameManager : MonoBehaviour
         {
             theUIManager.CambioPociones(cargas);
             currentHealth = maxHealth;
-            theUIManager.SetMaxHealth(currentHealth);
+           
         }
         
+
         //Ring2 = false;
         //Ring4 = false;
 
@@ -54,8 +54,18 @@ public class GameManager : MonoBehaviour
     public void SetUIManager(UIManager uim)
     {
         theUIManager = uim;
+       
+        Invoke("ActualizaSlider", 0.1f);
+
+        for (int x = 0; x < 4; x++)
+        {
+            theUIManager.CambiarAnillos(x, ring[x]);
+        }
+        
     }
     
+
+
     public void TakeDamage(int damage)
     {
         if (!invencible)
@@ -64,20 +74,28 @@ public class GameManager : MonoBehaviour
             if (currentHealth - damage > 0)
             {
                 currentHealth -= damage;
-                theUIManager.CambiarVida(currentHealth);
 
+                theUIManager.CambiarVida(currentHealth);
                 // Debug.Log(currentHealth);
             }
 
             else player.GetComponent<DiePlayer>().Call();
         }
     }
+
+    public void ActualizaSlider()
+    {
+        theUIManager.CambiarVida(currentHealth);
+    }
+
     public void Invencibilidad(bool activo)
     {
         
         invencible = activo;
        
     }
+
+
     public void Restore()
     {        
         cargas = unexploredRooms / 2;

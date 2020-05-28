@@ -13,17 +13,18 @@ public class UIManager : MonoBehaviour
     GameObject barraVida;
     Slider slider;
 
-    // Start is called before the first frame update
+    
 
     void Start()
     {
         slider = GetComponentInChildren<Slider>();
-        GameManager.instance.SetUIManager(this);
+       
         barraVida = transform.GetChild(1).gameObject;
         health = barraVida.GetComponent<HealthBar>();
         for (int x = 0; x  < anillosSprite.Length; x++) anillosSprite[x].enabled = false; //Para no perder información en el cambio de escena implementar un array de booleanos en el gamemanager
                                                                                           //que indique los anillos que tenemos.
-        
+
+        GameManager.instance.SetUIManager(this);
     }
     public void SetMaxHealth(int x)
     {
