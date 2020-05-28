@@ -12,6 +12,7 @@ public class MovAtqBoss : MonoBehaviour
     public GameObject flecha;
     GameObject player;
     private Rigidbody2D rb;
+    private Vector3 spawn;
     Vector2 dir;
 
 
@@ -46,7 +47,9 @@ public class MovAtqBoss : MonoBehaviour
             transform.up = dir;
             if (tiempoDisparos <= 0)
             {
-                Instantiate(flecha, transform.position, Quaternion.identity, transform);
+                spawn = this.transform.GetChild(0).gameObject.transform.position;
+                Quaternion rot = transform.rotation;
+                Instantiate(flecha, spawn, rot, transform);
                 tiempoDisparos = disparos;
                 nhijos = transform.childCount;
                 dirFlecha = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);

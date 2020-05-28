@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6305653624617953887}
   - component: {fileID: 6305653624617953884}
   - component: {fileID: 6305653624617953885}
+  - component: {fileID: -8390433164515158808}
   m_Layer: 0
   m_Name: LluviaDeFlechas
   m_TagString: Untagged
@@ -93,4 +94,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07a41aaad4fa244eaf277f6aeb9f145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3316560627137726507, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+--- !u!58 &-8390433164515158808
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6305653624617953882}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

@@ -10,7 +10,7 @@ public class Arquer : MonoBehaviour
     public float disparos;
     private float tiempoDisparos;
     public GameObject flecha;
-     GameObject player;
+    GameObject player;
     private Rigidbody2D rb;
     private Vector3 spawn;
     Vector2 dir;
