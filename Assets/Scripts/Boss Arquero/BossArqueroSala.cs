@@ -56,6 +56,7 @@ public class BossArqueroSala : MonoBehaviour
                     if (lluvia != null)
                     {
                         lluvia.CogerJugador(collision.gameObject);
+                        Debug.Log("Pilla al player");
                     }
 
                     movAtaBoss= boss.GetComponent<MovAtqBoss>();

@@ -2520,6 +2520,12 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!1 &187117368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5511704877782502213, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046559939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &194279384
 GameObject:
   m_ObjectHideFlags: 0
@@ -12516,6 +12522,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4758976586598088127, guid: 3ac64e3b211b03947af6d6f56c546d0f,
         type: 3}
+    - target: {fileID: 1032193187690931333, guid: 1491c24b0c02faf499fdc8eb02c35236,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093206453570081070, guid: 1491c24b0c02faf499fdc8eb02c35236,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.26
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1491c24b0c02faf499fdc8eb02c35236, type: 3}
 --- !u!1 &1021616282 stripped
@@ -12556,7 +12572,7 @@ MonoBehaviour:
   tiempoataque: 3
   prefabLluvia: {fileID: 6305653624617953882, guid: 14daaa2013fc142428ad6ca86f36e4c0,
     type: 3}
-  sala: {fileID: 1021616282}
+  sala: {fileID: 187117368}
 --- !u!114 &1021616285
 MonoBehaviour:
   m_ObjectHideFlags: 0

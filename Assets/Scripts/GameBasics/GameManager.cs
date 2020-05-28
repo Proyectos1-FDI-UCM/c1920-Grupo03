@@ -17,10 +17,7 @@ public class GameManager : MonoBehaviour
 
     int unexploredRooms = 0, currentHealth, maxHealth = 100, h, cargas, normRest = 8;
 
-    private void Update()
-    {
-        Debug.Log(currentHealth);
-    }
+   
     private void Awake()
     {
         if (instance == null)
