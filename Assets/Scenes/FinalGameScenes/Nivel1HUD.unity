@@ -1894,6 +1894,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4525140439993992271, guid: bccc968d5e175754892f7dc50ffa4007,
+        type: 3}
+      propertyPath: trampilla
+      value: 
+      objectReference: {fileID: 1352744014}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bccc968d5e175754892f7dc50ffa4007, type: 3}
 --- !u!1001 &183591897
@@ -6421,6 +6426,11 @@ PrefabInstance:
       propertyPath: enemigosSala.Array.data[3]
       value: 
       objectReference: {fileID: 427375103}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7818078507295493131, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6500,11 +6510,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
       value: 177
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
@@ -7782,6 +7787,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 585199501468857355, guid: 2172a85501bb1294b8a32fd9553c664c,
+        type: 3}
+      propertyPath: trampilla
+      value: 
+      objectReference: {fileID: 1352744014}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2172a85501bb1294b8a32fd9553c664c, type: 3}
 --- !u!1 &814057093
@@ -14132,6 +14142,11 @@ PrefabInstance:
       propertyPath: enemigosSala.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -14201,11 +14216,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1113365860608822656, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
@@ -15374,15 +15384,15 @@ PrefabInstance:
       propertyPath: enemigosSala.Array.data[0]
       value: 
       objectReference: {fileID: 353793201}
-    - target: {fileID: 4036576378488175357, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Layer
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4036576378488175357, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7100988975258482307, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}

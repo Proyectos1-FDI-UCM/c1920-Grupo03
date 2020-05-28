@@ -11,7 +11,7 @@ public class BossManager : MonoBehaviour
     MirarJugador mirarJugadorScript;
     AtaqueBoss1 ataqueScript;
     bool cargaembestir;
-  
+    [SerializeField] GameObject trampilla;
 
     
 
@@ -56,6 +56,7 @@ public class BossManager : MonoBehaviour
         CambiaEstado("Embistiendo");
         cargaembestir = false;
     }
+
     public void CambiaEstado(string a)//a es el nombre del estado
     {
 
@@ -93,5 +94,10 @@ public class BossManager : MonoBehaviour
 
         Debug.Log(estado);
         
+    }
+
+    public void ActivaTrampilla()
+    {
+        trampilla.SetActive(true);
     }
 }

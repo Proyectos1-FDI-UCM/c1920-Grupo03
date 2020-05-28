@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private UIManager theUIManager;
     private GameObject player;
-    [SerializeField] GameObject trampilla;
+    
+    
     // bool Ring2;
     //bool Ring4;
     static int currentHealth,cargas, unexploredRooms=0, h;
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
         //Ring2 = false;
         //Ring4 = false;
 
-    }  
+    }
+    
     public void SetPlayer(GameObject theplayer)
     {
         player = theplayer;
@@ -96,11 +98,7 @@ public class GameManager : MonoBehaviour
         }
         
     }
-
-   public void Boss1Dead()
-    {
-        trampilla.SetActive(true);
-    }
+   
     public void AddRoom()
     {
         unexploredRooms++;
@@ -114,15 +112,6 @@ public class GameManager : MonoBehaviour
 
     public void CargarNivel(string nivel)
     {
-        
-        {
-            Debug.LogError("Reseteado");
-            currentHealth = 100;
-            unexploredRooms = 0;
-            cargas = 0;
-            for (int x = 0; x < ring.Length; x++) ring[x] = false;
-            h = 0;
-        }
         SceneManager.LoadScene(nivel, LoadSceneMode.Single);
         Time.timeScale = 1;
         
@@ -131,7 +120,12 @@ public class GameManager : MonoBehaviour
 
     public void ResetinitialState()
     {
-        
+        Debug.LogError("Reseteado");
+        currentHealth = 100;
+        unexploredRooms = 0;
+        cargas = 0;
+        for (int x = 0; x < ring.Length; x++) ring[x] = false;
+        h = 0;
     }
 
    

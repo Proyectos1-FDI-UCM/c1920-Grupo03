@@ -38,7 +38,11 @@ public class EnemyHealth : MonoBehaviour
 
             if (isBoss1)
             {
-                GameManager.instance.Boss1Dead();
+                BossManager bossManager = gameObject.GetComponent<BossManager>();
+                if(bossManager != null)
+                {
+                    bossManager.ActivaTrampilla();
+                }
             }
            else if (isBoss2) GameManager.instance.CargarNivel("MenuVictoria");
 
