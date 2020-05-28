@@ -14,7 +14,7 @@ public class MovAtqBoss : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 spawn;
     Vector2 dir;
-
+    Animator anim;
 
     public void CogerJugador(GameObject juga)
     {
@@ -24,7 +24,7 @@ public class MovAtqBoss : MonoBehaviour
     void Start()
     {
 
-
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
         tiempoDisparos = disparos;
@@ -49,6 +49,7 @@ public class MovAtqBoss : MonoBehaviour
             {
                 spawn = this.transform.GetChild(0).gameObject.transform.position;
                 Quaternion rot = transform.rotation;
+                anim.SetBool("atacaBoss2", true);
                 Instantiate(flecha, spawn, rot, transform);
                 tiempoDisparos = disparos;
                 nhijos = transform.childCount;
@@ -64,6 +65,7 @@ public class MovAtqBoss : MonoBehaviour
             }
             else
             {
+                anim.SetBool("atacaBoss2", false);
                 tiempoDisparos -= Time.deltaTime;
             }
         }

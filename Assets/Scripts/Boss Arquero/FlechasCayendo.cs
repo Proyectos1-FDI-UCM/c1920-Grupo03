@@ -7,11 +7,13 @@ public class FlechasCayendo : MonoBehaviour
     private Renderer cambiaColor;
     private bool cayendo;
     bool playerDentro;
+    Animator anim;
     
     void Start()
     {
         cambiaColor = GetComponent<Renderer>();
         cayendo = false;
+        anim = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,24 +47,25 @@ public class FlechasCayendo : MonoBehaviour
 
     void Advertencia()
     {
-        cambiaColor.material.color = Color.blue;
+        anim.SetBool("iniciaAdvertencia", true);
     }
 
     void Ataque()
     {
-        cambiaColor.material.color = Color.magenta;
+        anim.SetBool("caeFlechas", true);
         if (playerDentro) 
         {
             GameManager.instance.TakeDamage(15);
             cayendo = false;
             
         }
-        Invoke("Destruir", 2f);
+        Invoke("Destruir", 1.75f);
 
 
     }
     void Destruir()
-    {
+    {   
+        
         Destroy(this.gameObject);
     }
 }
