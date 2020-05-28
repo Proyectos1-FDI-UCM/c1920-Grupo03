@@ -15,12 +15,22 @@ public class GameManager : MonoBehaviour
    // bool Ring2;
     //bool Ring4;
 
-    int unexploredRooms = 0, currentHealth = 100, maxHealth = 100, h, cargas, normRest = 8;
-    // Start is called before the first frame update
+    int unexploredRooms = 0, currentHealth, maxHealth = 100, h, cargas, normRest = 8;
+
+    private void Update()
+    {
+        Debug.Log(currentHealth);
+    }
     private void Awake()
     {
-        if (instance == null) instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
         else Destroy(this.gameObject);
+        
+        currentHealth = 100;
     }
     void Start()
     {
@@ -107,19 +117,29 @@ public class GameManager : MonoBehaviour
 
     public void CargarNivel(string nivel)
     {
-        if(nivel == "MainMenu")
+        
+
+
+        if(nivel == "Nivel1HUD")
         {
+            Debug.LogError("Reseteado");
             currentHealth = 100;
             unexploredRooms = 0;
             cargas = 0;
             for (int x = 0; x < ring.Length; x++) ring[x] = false;
             h = 0;
-
         }
         Time.timeScale = 1;
-        SceneManager.LoadScene(nivel);
+        SceneManager.LoadScene(nivel, LoadSceneMode.Single);
     }
     
+
+    public void ResetinitialState()
+    {
+        
+    }
+
+   
     // quitar bool en caso de que no sea necesario desactivarlos(comprobar cambio nivel)
     public void ActivarAnillos(int num, bool cambio)
     {
@@ -130,6 +150,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+  
     public bool ReturnRing(int num)
     {
         return ring[num - 1];
