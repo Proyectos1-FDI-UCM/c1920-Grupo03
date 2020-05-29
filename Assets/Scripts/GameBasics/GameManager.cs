@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
+    static bool anillo1 = false;
     private bool invencible = false;
     static private bool[] armas = { false, false, false };
     static private bool [] ring = { false,false,false,false};
@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 
         //while (!armas[cont] && cont < armas.Length) cont++;
         //if (cont < armas.Length) ActivarArma(cont);
+       
         for (int x = 0; x < ring.Length; x++) ActivarAnillos(x,ring[x]);
         // no se si deberia hacer la asignacion de cargas otra vez(no se si se ejecuta esto antes o el metodo de restore, lo cual hace variar las cargas de pociones debido a la primera habitación de cada nivel)
         if(theUIManager != null)
@@ -51,7 +52,14 @@ public class GameManager : MonoBehaviour
         //Ring4 = false;
 
     }
-    
+    public void ActivarAnillo1()
+    {
+        anillo1 = true;
+    }
+    public bool AnilloDash()
+    {
+        return anillo1;
+    }
     public void SetPlayer(GameObject theplayer)
     {
         int cont = 0;
@@ -59,6 +67,7 @@ public class GameManager : MonoBehaviour
         while (cont < armas.Length && !armas[cont]) cont++;
         if (cont < armas.Length) ActivarArma(cont);
         ActivarArma(cont);
+        if (anillo1) player.GetComponent<Dash>().enabled = true;
     }
     public void ActivarArma(int num)
     {
@@ -175,6 +184,7 @@ public class GameManager : MonoBehaviour
             theUIManager.CambiarAnillos(num, cambio);
             ring[num] = cambio;
         }
+
     }
 
   

@@ -35,8 +35,10 @@ public class Ring2 : MonoBehaviour
     void PickUp()
     {
         recogibles.SalaTrampa();
-        player.GetComponent<Dash>().enabled = true;
+        if (GameManager.instance.AnilloDash())
+            player.GetComponent<Dash>().enabled = true;
         player.GetComponent<AnilloCrítico>().enabled = true;
+        
         GameManager.instance.ActivarAnillos(1, true);
         Destroy(this.gameObject);
     }

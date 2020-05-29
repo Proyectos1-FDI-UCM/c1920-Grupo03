@@ -35,7 +35,8 @@ public class Ring3 : MonoBehaviour
     void PickUp()
     {
         recogibles.SalaTrampa();
-        player.GetComponent<Dash>().enabled = true;
+        if (GameManager.instance.AnilloDash())
+            player.GetComponent<Dash>().enabled = true;
         player.GetComponent<Etereo>().enabled = true;
         GameManager.instance.ActivarAnillos(2, true);
         Destroy(this.gameObject);

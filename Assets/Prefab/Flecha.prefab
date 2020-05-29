@@ -47,8 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 1
-  player: {fileID: 3316560627137726507, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-  "da\xF1o": 50
+  danyo: 500
 --- !u!61 &-3559352041602176327
 BoxCollider2D:
   m_ObjectHideFlags: 0
