@@ -70,6 +70,7 @@ public class Bomba : MonoBehaviour
         if(transform.position == posPlayer)//si la bomba se encuentra en la posición donde estaba el player expolota
         {
             //para hacer más grande el circulo que indica la explosión
+
             hijo.localScale = new Vector3(distanciExplosion, distanciExplosion, distanciExplosion) * 2;
             Invoke("Explota", tiempoexplosion);
             animator.SetBool("explota", true);

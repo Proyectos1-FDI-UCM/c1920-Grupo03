@@ -27,7 +27,7 @@ public class MovAtqBoss : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        tiempoDisparos = disparos;
+        tiempoDisparos = Random.Range(disparos -1, disparos+1);
     }
    
     public void CogeJugador(GameObject jugador)

@@ -8,7 +8,7 @@ public class BolaPinchos : MonoBehaviour
     Movimiento8D movplayer;
 
     [SerializeField] float fuerza = 100f;
-    public bool ejeX = true;
+  
     public float velocidad;
     public int damage;
    

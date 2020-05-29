@@ -11,7 +11,7 @@ public class MovEnemig : MonoBehaviour
     Vector2 dir;
     bool moverse;
     public float timepoMaxrespuesta;
-
+    [SerializeField] bool mirarplayer;
     void Start()
     {
         moverse = false;
@@ -43,6 +43,7 @@ public class MovEnemig : MonoBehaviour
         {
             dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
             dir.Normalize();
+            if(mirarplayer)
             transform.up = dir;
         }
          

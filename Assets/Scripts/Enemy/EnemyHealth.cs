@@ -44,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
                     bossManager.ActivaTrampilla();
                 }
             }
-           else if (isBoss2) GameManager.instance.CargarNivel("MenuVictoria");
+           else if (isBoss2) GameManager.instance.CargarNivel("MenuVictoriaFinal");
 
            if (anim != null)
             {

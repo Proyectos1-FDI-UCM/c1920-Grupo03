@@ -7,7 +7,7 @@ public class Flecha : MonoBehaviour
     public float velocidad;
     
     EnemyHealth enemyHealth;
-    public int danyo = 50;
+    public int danyo = 25;
 
 
     private void OnCollisionEnter2D(Collision2D collision)//La flecha se destruye con  el mapa,
@@ -23,7 +23,7 @@ public class Flecha : MonoBehaviour
         }
         else if (enemyHealth != null)
         {
-            enemyHealth.TakeDamage(danyo);
+            enemyHealth.TakeDamage(danyo*2);
             DestruirFlecha();
         }
         else if (collision.gameObject.layer == 16 || collision.gameObject.layer == 13 || collision.gameObject.layer == 12)//si las flechas chocan entre sí o con una pared se destruyen

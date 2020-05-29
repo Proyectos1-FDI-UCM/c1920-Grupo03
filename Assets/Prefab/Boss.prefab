@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aaf284294b70f44c88da8e69b0ea287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trampilla: {fileID: 0}
 --- !u!114 &4525140439993992268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b512ddc1559914141aae6c4644fe2c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 500
   isBoss1: 0
   isBoss2: 0
 --- !u!95 &8449334786939648416

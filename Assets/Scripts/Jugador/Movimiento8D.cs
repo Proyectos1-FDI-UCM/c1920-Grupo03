@@ -27,8 +27,8 @@ public class Movimiento8D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
         dir = new Vector2(x, y);
         dir.Normalize();
     }

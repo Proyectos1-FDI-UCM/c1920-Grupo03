@@ -1832,17 +1832,22 @@ PrefabInstance:
     - target: {fileID: 4525140439993992269, guid: bccc968d5e175754892f7dc50ffa4007,
         type: 3}
       propertyPath: tiempoataque
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4525140439993992269, guid: bccc968d5e175754892f7dc50ffa4007,
         type: 3}
       propertyPath: danyo
-      value: 15
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525140439993992269, guid: bccc968d5e175754892f7dc50ffa4007,
+        type: 3}
+      propertyPath: distancia
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 412532123771425910, guid: bccc968d5e175754892f7dc50ffa4007,
         type: 3}
       propertyPath: maxHealth
-      value: 200
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 412532123771425910, guid: bccc968d5e175754892f7dc50ffa4007,
         type: 3}
@@ -2076,6 +2081,42 @@ PrefabInstance:
         type: 3}
       propertyPath: tiempoexplosion
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915645135835209829, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915645135835209829, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915645135835209826, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 09c416a6d2652a446b5f737922f35ae1, type: 2}
+    - target: {fileID: 8915645135835209826, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 629db3b0df58e7f4b8db6ed2e61cc8c5,
+        type: 3}
+    - target: {fileID: 8915645135835209826, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915645135835209826, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915645135835209826, guid: 188ea5eab08d9df49bb3f69439d6308d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 188ea5eab08d9df49bb3f69439d6308d, type: 3}
@@ -2964,7 +3005,7 @@ PrefabInstance:
     - target: {fileID: 6281903511872505767, guid: 1d67ed5bfff4c934bab27515b55d4224,
         type: 3}
       propertyPath: m_Constraints
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6301928266550181905, guid: 1d67ed5bfff4c934bab27515b55d4224,
         type: 3}
@@ -4868,6 +4909,14 @@ PrefabInstance:
       propertyPath: CanvasMenu
       value: 
       objectReference: {fileID: 693188770}
+    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: damage
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557309860, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: amount
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
 --- !u!4 &571168035 stripped
@@ -7509,6 +7558,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 585199501468857355, guid: 2172a85501bb1294b8a32fd9553c664c,
+        type: 3}
+      propertyPath: trampilla
+      value: 
+      objectReference: {fileID: 1352744014}
     - target: {fileID: 3771587297475109941, guid: 2172a85501bb1294b8a32fd9553c664c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7564,11 +7618,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 585199501468857355, guid: 2172a85501bb1294b8a32fd9553c664c,
-        type: 3}
-      propertyPath: trampilla
-      value: 
-      objectReference: {fileID: 1352744014}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2172a85501bb1294b8a32fd9553c664c, type: 3}
 --- !u!4 &849245987 stripped

@@ -159,7 +159,6 @@ public class GameManager : MonoBehaviour
     public void ResetinitialState()
     {
         for (int x = 0; x < armas.Length; x++) armas[x] = false;
-        Debug.LogError("Reseteado");
         currentHealth = 100;
         unexploredRooms = 0;
         cargas = 0;

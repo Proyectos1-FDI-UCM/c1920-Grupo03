@@ -9,6 +9,7 @@ public class Martillo : MonoBehaviour
     Movimiento8D movPlayer;
     MovEnemig movenemig;
     MovEnemig1 movenemig1;
+    BossManager2 bossarquero;
     public float fuerza = 300;
     bool atacando;//si esta atacando
     bool ataque;//da la orden de atacar
@@ -71,6 +72,7 @@ public class Martillo : MonoBehaviour
                 GameObject enemigo = lista.DamePrimeroParaEmpujar();
                 if (enemigo != null)
                 {
+
                     Rigidbody2D enemy = enemigo.GetComponent<Rigidbody2D>();
                     if (enemy != null)
                     {
@@ -79,6 +81,7 @@ public class Martillo : MonoBehaviour
                         movenemig1 = enemigo.GetComponent<MovEnemig1>();
                         arquero = enemigo.GetComponent<Arquer>();
                         bomb = enemigo.GetComponent<Bomba>();
+                        bossarquero = enemigo.GetComponent<BossManager2>();
                         if (movenemig != null)
                         {
                             movenemig.enabled = false;
@@ -102,6 +105,11 @@ public class Martillo : MonoBehaviour
                             arquero.enabled = false;
                         }
                         else if(bomb != null)
+                        {
+                            EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
+                            vidaEnmigo.TakeDamage(damage);
+                        }
+                        else if (bossarquero != null)
                         {
                             EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
                             vidaEnmigo.TakeDamage(damage);

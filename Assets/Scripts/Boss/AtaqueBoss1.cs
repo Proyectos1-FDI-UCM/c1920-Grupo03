@@ -12,8 +12,8 @@ public class AtaqueBoss1 : MonoBehaviour
     MovEnemig1 mov;
     GameObject hijo;
     float d;
-    SpriteRenderer sprite;
-    MeshRenderer maza;
+   //SpriteRenderer sprite;
+   // MeshRenderer maza;
     float velocidad;
     enum Estados {Atacando, Moviendose }
     Estados estado;
@@ -25,9 +25,9 @@ public class AtaqueBoss1 : MonoBehaviour
         estado = Estados.Moviendose;
         mov = GetComponent<MovEnemig1>();
         hijo = transform.GetChild(0).gameObject;
-        sprite = hijo.GetComponent<SpriteRenderer>();
-        sprite.enabled = false;
-        maza = transform.GetChild(2).gameObject.GetComponent<MeshRenderer>();
+      //  sprite = hijo.GetComponent<SpriteRenderer>();
+      //  sprite.enabled = false;
+        //maza = transform.GetChild(2).gameObject.GetComponent<MeshRenderer>();
         miraJugador = GetComponent<MirarJugador>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -58,9 +58,9 @@ public class AtaqueBoss1 : MonoBehaviour
                 Invoke("EsperaDelay", tiempoataque + 1);
                 estado = Estados.Atacando;
                 //para hacer más grande el circulo que indica la explosión
-                maza.enabled = true;
-                sprite.enabled = true;
-                hijo.transform.localScale = new Vector2(distancia, distancia) * 2;
+               // maza.enabled = true;
+               // sprite.enabled = true;
+               // hijo.transform.localScale = new Vector2(distancia, distancia) * 2;
                 mov.CambiaguardaPos(true);
                 velocidad = mov.velocidad;
                mov.velocidad  = mov.velocidad/2;
@@ -109,8 +109,8 @@ public class AtaqueBoss1 : MonoBehaviour
             }
             rb.freezeRotation = false;
             miraJugador.enabled = true;
-            sprite.enabled = false;
-            maza.enabled = false;
+           // sprite.enabled = false;
+           // maza.enabled = false;
             mov.velocidad = velocidad;
             estado = Estados.Moviendose;
            
@@ -134,7 +134,7 @@ public class AtaqueBoss1 : MonoBehaviour
     }
    private void OnDisable()
     {
-        sprite.enabled = false;
+       // sprite.enabled = false;
         mov.velocidad = velocidad;
         estado = Estados.Moviendose;
     }

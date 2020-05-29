@@ -149,8 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velMin: 2
   velMax: 4
-  moverse: 0
   timepoMaxrespuesta: 0.75
+  mirarplayer: 1
 --- !u!114 &8168689828030355061
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -59,7 +59,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6281903511872505766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77,7 +77,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.56}
+    oldSize: {x: 0.8888889, y: 1.2444445}
     newSize: {x: 0.4, y: 0.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velMin: 1.5
   velMax: 3
-  moverse: 0
   timepoMaxrespuesta: 1
+  mirarplayer: 0
 --- !u!114 &8168689828030355061
 MonoBehaviour:
   m_ObjectHideFlags: 0
