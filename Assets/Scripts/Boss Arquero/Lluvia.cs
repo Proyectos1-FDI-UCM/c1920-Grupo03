@@ -46,11 +46,7 @@ public class Lluvia : MonoBehaviour
             
 
             //para hacer más grande el circulo que indica la explosión
-             
-                
-
-               
-                
+            
 
                 Invoke("Ataca", 1f);
             
@@ -76,10 +72,11 @@ public class Lluvia : MonoBehaviour
             Debug.Log(salatransform.position);
             for (int i=0; i<Random.Range(3, 6); i++)
             {
+                GameObject clon;
                 float spawnPosX =  (salatransform.transform.localScale.x / 2 - prefabLluvia.transform.localScale.x / 2);
                 float spawnPosY = (salatransform.transform.localScale.y / 2 - prefabLluvia.transform.localScale.y / 2);
-                Instantiate(prefabLluvia, new Vector3(Random.Range(salatransform.position.x - spawnPosX, salatransform.position.x + spawnPosX), Random.Range(salatransform.position.y -spawnPosY, salatransform.position.y + spawnPosY), -8), Quaternion.identity);
-                
+                clon = Instantiate(prefabLluvia, new Vector3(Random.Range(salatransform.position.x - spawnPosX, salatransform.position.x + spawnPosX), Random.Range(salatransform.position.y -spawnPosY, salatransform.position.y + spawnPosY), -8), Quaternion.identity);
+                clon.transform.localScale *= 4;
             }
             
           

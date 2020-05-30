@@ -6,7 +6,7 @@ public class TrampaPinchos : MonoBehaviour
 {
     private bool pinchando;
     Animator anim;
-    float hit = 0, activateRate= 2;
+    float hit = 0, activateRate= 1;
 
     void Start()
     {

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 1
-  danyo: 500
+  danyo: 25
 --- !u!61 &-3559352041602176327
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -441,11 +441,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -464,7 +459,7 @@ PrefabInstance:
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.data[25].second.m_TileSpriteIndex
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -959,7 +954,28 @@ PrefabInstance:
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[1].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[1].m_Data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[2].m_RefCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[2].m_Data
+      value: 
+      objectReference: {fileID: -4302374582122762387, guid: b8d0717c251eef54d972b98e164daca7,
+        type: 3}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
@@ -3685,6 +3701,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3749,11 +3770,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -3972,6 +3988,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4036,11 +4057,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -4389,11 +4405,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4036576378488175357, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 799233328011557765, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -4604,6 +4615,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -10.065
       objectReference: {fileID: 0}
+    - target: {fileID: 4036576378488175357, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
 --- !u!1 &277541332
@@ -4702,16 +4718,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -5447,6 +5453,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[33].second.m_TileSpriteIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -6701,6 +6717,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6765,11 +6786,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -8854,6 +8870,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1066993222}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8918,11 +8939,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -12815,6 +12831,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12879,11 +12900,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -13281,6 +13297,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 278472151}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13345,11 +13366,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -13730,11 +13746,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 6996646150001649974, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3316560627137726510, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13795,6 +13806,22 @@ PrefabInstance:
       propertyPath: CanvasMenu
       value: 
       objectReference: {fileID: 1218317051}
+    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: damage
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: fuerza
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557309860, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: amount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3316560627137726497, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_Mass
@@ -13808,6 +13835,20 @@ PrefabInstance:
     - target: {fileID: 7072495211507574093, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996646150001649974, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2650391268905082717, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
@@ -13824,31 +13865,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638056375, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817475914817887773, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-      propertyPath: damage
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638056380, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-      propertyPath: fuerza
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 1557309860, guid: 2937c8cdd00135f49a86ecff5d5ad6a1, type: 3}
-      propertyPath: amount
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2817475914817887763, guid: 2937c8cdd00135f49a86ecff5d5ad6a1,
         type: 3}
@@ -14739,16 +14755,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -14919,6 +14925,16 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -15076,16 +15092,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -15811,6 +15817,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[33].second.m_TileSpriteIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -16945,16 +16961,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -17690,6 +17696,16 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[33].second.m_TileSpriteIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -17803,16 +17819,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -18228,6 +18234,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[41].second.m_TileSpriteIndex
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -19290,16 +19306,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -19470,6 +19476,16 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[5].m_RefCount
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -19597,6 +19613,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997471444}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19661,11 +19682,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -23203,16 +23219,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -23878,6 +23884,16 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[42].second.m_TileSpriteIndex
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -24383,16 +24399,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -24909,6 +24915,16 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[32].second.m_TileSpriteIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_RootOrder
@@ -25202,6 +25218,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2145774445}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25266,11 +25287,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -28438,7 +28454,7 @@ PrefabInstance:
     - target: {fileID: 8168689828030355061, guid: 1d67ed5bfff4c934bab27515b55d4224,
         type: 3}
       propertyPath: amount
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 819901040423940179, guid: 1d67ed5bfff4c934bab27515b55d4224,
         type: 3}
@@ -28454,6 +28470,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1066993222}
     m_Modifications:
+    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Leproso
+      objectReference: {fileID: 0}
     - target: {fileID: 6281903511872505762, guid: 4ce6ebd08782a11409575bbc839c82c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28518,11 +28539,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281903511872505764, guid: 4ce6ebd08782a11409575bbc839c82c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Leproso
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce6ebd08782a11409575bbc839c82c7, type: 3}
@@ -31283,16 +31299,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -32057,6 +32063,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[30].second.m_TileSpriteIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -33582,11 +33598,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -34041,6 +34052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[41].second.m_TileSpriteIndex
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b465e0d1590804fa1b0f1770ec7f9a, type: 3}
@@ -34555,16 +34571,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2438922492515697428, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}
@@ -35290,6 +35296,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[33].second.m_TileSpriteIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883988591459930697, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060535083486989462, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 819467902198795352, guid: 64b465e0d1590804fa1b0f1770ec7f9a,
         type: 3}

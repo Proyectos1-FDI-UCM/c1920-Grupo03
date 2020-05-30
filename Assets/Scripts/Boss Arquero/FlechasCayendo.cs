@@ -55,7 +55,7 @@ public class FlechasCayendo : MonoBehaviour
         anim.SetBool("caeFlechas", true);
         if (playerDentro) 
         {
-            GameManager.instance.TakeDamage(15);
+            GameManager.instance.TakeDamage(30);
             cayendo = false;
             
         }
