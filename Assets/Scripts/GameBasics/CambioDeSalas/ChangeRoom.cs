@@ -9,7 +9,7 @@ public class ChangeRoom : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       if(collision.GetComponent<Movimiento8D>() != null)
+        if (collision.GetComponent<Movimiento8D>() != null)
         {
             //Debug.Log("Hola he chocado");
             //sala.CambioDeSala(collision);
@@ -17,6 +17,8 @@ public class ChangeRoom : MonoBehaviour
             Camera.main.transform.position += new Vector3(0, 0, -10);
             collision.transform.position = teleportPoint.transform.position;
         }
+
+        else Destroy(collision.gameObject);
       
         
         
