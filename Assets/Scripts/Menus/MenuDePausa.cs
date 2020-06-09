@@ -15,7 +15,7 @@ public class MenuDePausa : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !transform.GetChild(1).gameObject.activeSelf)
         {
             if (isPaused)
             {
