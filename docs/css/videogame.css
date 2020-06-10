@@ -4,10 +4,13 @@
 
 html,body {
   font-size: 18px;
+  
 }
 body {
   padding-bottom: 1rem;
   color: #5a5a5a;
+  
+  background-color: #303030;
 }
 
 
@@ -17,7 +20,8 @@ body {
 -------------------------------------------------- */
 
 img.img-header {
-  max-height: 500px;
+  max-height: 650px;
+  
 }
 
 
@@ -31,15 +35,36 @@ img.img-header {
 
 .marketing h2 {
   font-size: 2rem;
+  color: #f4f4f4;
   font-weight: 700;
   margin: 1rem 0;
 
 }
+.marketing p{
+	color: #f4f4f4;
+}
+
+.marketing ul{
+	color: #f4f4f4;
+}
 
 .media-item {
   margin: 1rem;
+ 
 }
 
+.image-border{
+	
+	border-color: black;
+    border-width: 20px;
+    border-style: solid;
+}
+.video-height{
+	max-height: 350px;
+}
+.image-height{
+	max-height: 260px;
+}
 
 /* Featurettes
 ------------------------- */
@@ -64,6 +89,7 @@ img.img-header {
 
 footer p {
   font-size: 0.8rem;
+  color: #f4f4f4;
   margin-bottom: 0.5rem;
 }
 

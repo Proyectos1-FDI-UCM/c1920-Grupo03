@@ -7,14 +7,14 @@
     <meta name="author" content="">
 
     <title>Videogame</title>
-
+		
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="./css/videogame.css" rel="stylesheet">
   </head>
-  <body>
+  <body background = "./img/roca.jpg">
 
 
 
@@ -22,8 +22,8 @@
       <!-- HEADER SECTION 
         Change image path in src="..."
       -->
-      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <img class="img-header img-fluid" src="./img/header.jpg" alt="Header image">
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center "><!--bg-light*/-->
+        <img class="img-header img-fluid image-border" src="./img/header.jpg" alt="Header image">
       </div>
 
 
@@ -54,8 +54,10 @@
             </ul>
            
            <!-- Paste URL between "" in href="" -->
-           <a href="" class="btn btn-primary" role="button" aria-pressed="true">Descárgalo gratis </a> 
-
+		   
+           <a href="./game/YOLO.zip"  class="btn btn-primary" role="button" aria-pressed="true" >Descárgalo gratis </a> 
+			
+			
           </div>
           
           <!-- Right column -->
@@ -66,17 +68,19 @@
               Modify href and src attributes with the path/url to the new image/video 
             -->
             
+			<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/QF1ZsE-1DFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+			
             <!-- Youtube Video -->
             <div class="media-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/watch?v=QF1ZsE-1DFo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class="embed-responsive embed-responsive-16by9 image-border video-height">
+                <iframe src="https://www.youtube.com/embed/QF1ZsE-1DFo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
             </div>
 
             <!-- Images -->
             <div class="media-item">
               <a href="img/screenshot.jpg">
-                <img src="img/screenshot.jpg" alt="Screenshot 1" class="img-thumbnail">
+                <img src="img/screenshot.jpg" alt="Screenshot 1" class=" image-border image-height">
               </a>
             </div>
           </div>
