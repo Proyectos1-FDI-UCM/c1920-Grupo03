@@ -117,12 +117,12 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void Invencibilidad(bool activo)
-    {
+    //public void Invencibilidad(bool activo)
+    //{
         
-        invencible = activo;
+    //    invencible = activo;
        
-    }
+    //}
 
 
     public void Restore()
@@ -193,25 +193,6 @@ public class GameManager : MonoBehaviour
         return ring[num - 1];
     }
 
-   //public void PickRing2()      //cuando el player coge el anillo 2 lo activa en el GameManager
-   // {
-   //     Ring2 = true;
-   // }
-
-   // public bool ReturnRing2()       //para decirle a otros EnemyHealth si Ring2 esta activo o no
-   // {
-   //     return Ring2;
-   // }
-
-   // public void PickRing4()      //cuando el player coge el anillo 4 lo activa en el GameManager
-   // {
-   //     Ring4 = true;
-   // }
-
-   // public bool ReturnRing4()       //para decirle a DmgEnemyMelee si Ring4 esta activo o no
-   // {
-   //     return Ring4;
-   // }
 
     public void SalirDelJuego()
     {

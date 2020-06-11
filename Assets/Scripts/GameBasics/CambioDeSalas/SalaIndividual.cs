@@ -35,26 +35,29 @@ public class SalaIndividual : MonoBehaviour
         }
 
     }
-    void Update()
-    {
 
-        if (Input.GetKeyDown(KeyCode.K) && playerDentro && hayEnemigos)
-        {
-            EliminarEnem();
-        }
-    }
+    //Código matar enemigos en sala
 
-    void EliminarEnem()
-    {
-        for (int x = 0; x < enemigosSala.Length; x++)
-        {
-            if (enemigosSala[x] != null)
-                enemigosSala[x].SetActive(false);
-        }
+    //void Update()
+    //{
+
+    //    if (Input.GetKeyDown(KeyCode.K) && playerDentro && hayEnemigos)
+    //    {
+    //        EliminarEnem();
+    //    }
+    //}
+
+    //void EliminarEnem()
+    //{
+    //    for (int x = 0; x < enemigosSala.Length; x++)
+    //    {
+    //        if (enemigosSala[x] != null)
+    //            enemigosSala[x].SetActive(false);
+    //    }
 
 
-        hayEnemigos = false;
-    }
+    //    hayEnemigos = false;
+    //}
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<Movimiento8D>() != null)
@@ -94,10 +97,8 @@ public class SalaIndividual : MonoBehaviour
     {
         enemigosViv = enemigos;
     }
-   /* void ActPuertas()
-    {
-        puertas.ActivarPuertas(true);
-    }*/
+ 
+
 
     public void Accionar(bool estado)
     {        
