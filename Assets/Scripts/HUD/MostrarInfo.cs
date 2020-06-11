@@ -8,14 +8,14 @@ public class MostrarInfo : MonoBehaviour
 
     private void Awake()
     {
-        UIelement = GetComponentInChildren<SpriteRenderer>();
+        UIelement = transform.GetChild(0).GetComponent<SpriteRenderer>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D()
     {
         UIelement.enabled = true;
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D()
     {
         UIelement.enabled = false;
     }
