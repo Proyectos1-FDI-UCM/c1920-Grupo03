@@ -10,7 +10,6 @@ public class Invencibilidad : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log(activo);
-            GameManager.instance.Invencibilidad(activo);
             activo = !activo;
         }
     }
