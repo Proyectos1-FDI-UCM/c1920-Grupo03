@@ -15,15 +15,7 @@ public class BossManager : MonoBehaviour
 
     
 
-   /* public void CogerJugadorBM1(GameObject juga)                 No funciona y no se la razón
-    {
-        movEneScript.CogerJugador(juga);
-        mirarJugadorScript.CogerJugador(juga);
-        embeScript.CogerJugador(juga);
-       
-        ataqueScript.CogerJugador(juga);
-
-    */
+   
     void Start()
     {
         embeScript = GetComponent<Embestida>();
@@ -32,7 +24,7 @@ public class BossManager : MonoBehaviour
         ataqueScript = GetComponent<AtaqueBoss1>();
         CambiaEstado("Normal");
        
-        //Invoke("embestir", 0f);
+       
         cargaembestir = false;
 
 
@@ -59,9 +51,12 @@ public class BossManager : MonoBehaviour
 
     public void CambiaEstado(string a)//a es el nombre del estado
     {
-
+        //Dependiendo el estado en el que se encuentra el boss, éste hace una  cosa  u otra
         switch (a)
         {
+
+
+            //El estado normal es en el que el boss se mueve persiguiendo al enemigo y en el que se ataca al juagdor si está en rango
             case "Normal":
                 movEneScript.CambiaguardaPos(false);
                 estado = Estados.Normal;
@@ -71,7 +66,7 @@ public class BossManager : MonoBehaviour
                 ataqueScript.enabled = true;
                 break;
 
-           
+           //Desde que se para para embestir hasta que choca con algo después de embestir
             case "Embistiendo":
                 estado = Estados.Embistiendo;
                 movEneScript.enabled = false;
@@ -80,6 +75,9 @@ public class BossManager : MonoBehaviour
                 ataqueScript.enabled = false;
 
                 break;
+
+
+            //Justo deespués de embestir, cuando ha chocado con una pared o el jugador
             case "Aturdido":
                 estado = Estados.Aturdido;
                 mirarJugadorScript.enabled = false;

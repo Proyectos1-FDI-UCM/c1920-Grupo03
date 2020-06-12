@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class AtaqueBoss1 : MonoBehaviour
@@ -12,10 +11,9 @@ public class AtaqueBoss1 : MonoBehaviour
     MovEnemig1 mov;
     GameObject hijo;
     float d;
-   //SpriteRenderer sprite;
-   // MeshRenderer maza;
+  
     float velocidad;
-    enum Estados {Atacando, Moviendose }
+    enum Estados {Atacando, Moviendose}
     Estados estado;
     bool delay;//delay de ataque, para el if de abajo
     Animator anim;
@@ -25,9 +23,6 @@ public class AtaqueBoss1 : MonoBehaviour
         estado = Estados.Moviendose;
         mov = GetComponent<MovEnemig1>();
         hijo = transform.GetChild(0).gameObject;
-      //  sprite = hijo.GetComponent<SpriteRenderer>();
-      //  sprite.enabled = false;
-        //maza = transform.GetChild(2).gameObject.GetComponent<MeshRenderer>();
         miraJugador = GetComponent<MirarJugador>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -46,26 +41,22 @@ public class AtaqueBoss1 : MonoBehaviour
     {
         delay = true;
     }
-    void Update()
-    {
+    void Update()//En cuanto el boss está a distancia de ataque reduce su velocidad, deja de mirar al jugador y se prepara para atacar,
+    {             // el jugador recibe daño si se encuentra en el area de afecto del ataque del boss cuando este acabe
         
       if(player != null)
         {
             d = Vector2.Distance(transform.position, player.transform.position);
-            if (d < distancia && estado!=Estados.Atacando && delay)
+            if (d < distancia && estado!=Estados.Atacando && delay)//si está a distancia de ataque
             {
                 delay = false;
-                Invoke("EsperaDelay", tiempoataque + 1);
+                Invoke("EsperaDelay", tiempoataque + 1); 
                 estado = Estados.Atacando;
-                //para hacer más grande el circulo que indica la explosión
-               // maza.enabled = true;
-               // sprite.enabled = true;
-               // hijo.transform.localScale = new Vector2(distancia, distancia) * 2;
                 mov.CambiaguardaPos(true);
                 velocidad = mov.velocidad;
-               mov.velocidad  = mov.velocidad/2;
-                miraJugador.enabled = false;
-                rb.freezeRotation = true;
+                mov.velocidad  = mov.velocidad/2;//al atacar su velocidad de movimiento se reduce
+                miraJugador.enabled = false;//deja de mirar al jugador
+                rb.freezeRotation = true; //para que no rote cuando deja de mirar al jugador
 
                 anim.SetBool("cargarAtaque", true);
                 Invoke("InvocaAnimAtaque", tiempoataque - 0.3f);
