@@ -14,20 +14,15 @@ public class BossSala : MonoBehaviour
     
     void  EnciendeBoss()
     {
-
-
-
-        //es un bucle que va decrementando la x ya que van saliendo los hijos
+       
         boss = transform.GetChild(0).gameObject;
         bossManager = boss.GetComponent<BossManager>();
         if (bossManager != null)
         {
             Debug.Log("Entro en el boss");
-            boss.transform.SetParent(null);
+            boss.transform.SetParent(null);//le saca de la sala para que no se distorsione
             bossManager.enabled = true;
         }
-
-
 
     }
 
@@ -57,6 +52,8 @@ public class BossSala : MonoBehaviour
                     bossManager.enabled = true;
 
 
+
+                    //Aquí se le pasa el jugador a todos los scripts del boss
                     embeScript = boss.GetComponent<Embestida>();
                     if (embeScript != null)
                     {

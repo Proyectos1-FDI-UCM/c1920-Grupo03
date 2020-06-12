@@ -44,9 +44,9 @@ public class EnemigosSala : MonoBehaviour
         mov8d = collision.GetComponent<Movimiento8D>();
         
            
-          //  Debug.Log("Entro");
             x = transform.childCount;
             //es un bucle que va decrementando la x ya que van saliendo los hijos
+            //según van siendo activados y se les pasa  una referencia al jugador
             while (x > 0)
             {
                 hijo = transform.GetChild(x - 1).gameObject;
@@ -62,7 +62,6 @@ public class EnemigosSala : MonoBehaviour
                 {
                     bomb.enabled = true;
                     bomb.CogerJugador(collision.gameObject);
-                   // Debug.Log("ACtiva bomba");
                 }
                 if (arquero != null)
                 {
@@ -70,10 +69,7 @@ public class EnemigosSala : MonoBehaviour
                     arquero.CogeJugador(collision.gameObject);
                 }
 
-
                 hijo.transform.SetParent(null);
-                //Debug.Log("Enciende hijo" + x);
-               // Debug.Log(x);
                 x = transform.childCount;
 
             }

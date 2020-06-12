@@ -11,7 +11,7 @@ public class MovEnemig : MonoBehaviour
     Vector2 dir;
     bool moverse;
     public float timepoMaxrespuesta;
-    [SerializeField] bool mirarplayer;
+    [SerializeField] bool mirarplayer = true;
     void Start()
     {
         moverse = false;
@@ -57,7 +57,10 @@ public class MovEnemig : MonoBehaviour
         }
        
     }
-    private void OnDisable()
+
+
+
+    private void OnDisable()//Solo se va a desactivar si le pega el amrtillo, y depende del enemigo, asique esto es la duración del aturdimiento del enemigo
     {
         if(player != null)
         {

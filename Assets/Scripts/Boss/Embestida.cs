@@ -5,10 +5,9 @@ using UnityEngine;
 public class Embestida : MonoBehaviour
 {
     BossManager bossmanager;
-     GameObject player;
+    GameObject player;
     Rigidbody2D rb, rbplayer;
     MirarJugador mirarJugador;
-    MovEnemig1 movBoss;
     public float fuerza;
     Vector2 pos, dir;
     public float vel;
@@ -19,7 +18,6 @@ public class Embestida : MonoBehaviour
     public void CogerJugador(GameObject juga)
     {
         player = juga;
-        Debug.Log("JUgador embes");
     }
     void Start()
     {
@@ -36,7 +34,7 @@ public class Embestida : MonoBehaviour
     private void OnEnable()
     {
         
-        Invoke("Embiste", 3f);
+        Invoke("Embiste", 3f);//los primeros 3 segundos esta quieto "cargando" la embestida
     }
  
     void Embiste()
@@ -48,7 +46,6 @@ public class Embestida : MonoBehaviour
             pos = new Vector2(player.transform.position.x, player.transform.position.y);
             dir = new Vector2(pos.x - transform.position.x, pos.y - transform.position.y);
             dir.Normalize();
-            // rb.isKinematic = true;
             rb.freezeRotation = true;
             rb.velocity = dir * vel;
             
@@ -69,7 +66,6 @@ public class Embestida : MonoBehaviour
             {
 
                 bossmanager.CambiaEstado("Aturdido");
-              
                 rb.velocity = Vector2.zero;//no es para quitar mov, es para que se pare en seco al chocar con algo
                 Invoke("CambiaMov", 3f);
             }
@@ -77,12 +73,11 @@ public class Embestida : MonoBehaviour
             {
               
                 bossmanager.CambiaEstado("Aturdido");
-               
                 rb.velocity = Vector2.zero;//no es para quitar mov, es para que se pare en seco al chocar con algo
                 movPlayer.enabled = false;
                 dir.Normalize();
                 rbplayer.AddForce(dir * fuerza, ForceMode2D.Impulse);
-                Invoke("CambiaMovPlayer", 0.5f);
+                Invoke("CambiaMovPlayer", 0.5f);//El jugador podrá moverse antes que el boss si es embestido
                 Invoke("CambiaMov", 1f);
                 GameManager.instance.TakeDamage(danyo);
                 

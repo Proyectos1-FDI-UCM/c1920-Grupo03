@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Image[] pocion;
-    // public bool [] anillo;
     public Image [] anillosSprite;
     HealthBar health;
     Potion pc;
@@ -32,21 +31,21 @@ public class UIManager : MonoBehaviour
     }
 
     //para llmar al otro script
-  public  void CambiarVida(int x)
+    public  void CambiarVida(int x)
     {
         slider.value = x;
     }
 
     
  
-   public void CambiarAnillos(int i, bool cambio)
+    public void CambiarAnillos(int i, bool cambio)
     {
         
             anillosSprite[i].enabled = cambio;
         
 
     }
-    public void CambioPociones(int y)
+    public void CambioPociones(int y)//Activa el sprite de la poción que tiene y desactiva las mayores
     {
         if (y < 0 || y > 9)
         {
@@ -54,10 +53,9 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i <= y; i++)
-            {
-                pocion[i].enabled = true;
-            }
+            
+                pocion[y].enabled = true;
+            
             for(int x = y+1; x<pocion.Length; x++)
             {
                 pocion[x].enabled = false;

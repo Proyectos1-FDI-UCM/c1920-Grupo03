@@ -41,6 +41,6 @@ public class Movimiento8D : MonoBehaviour
 
     private void OnDisable()
     {
-        rb.velocity = Vector2.zero;
+        rb.velocity = Vector2.zero;//para que no se quede a la deriva
     }
 }

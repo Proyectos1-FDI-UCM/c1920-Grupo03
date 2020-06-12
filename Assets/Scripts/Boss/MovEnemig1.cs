@@ -34,8 +34,6 @@ public class MovEnemig1 : MonoBehaviour
         {
             if (!guardaPos) { dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y); }
             
-            
-           
         }
          
     }
