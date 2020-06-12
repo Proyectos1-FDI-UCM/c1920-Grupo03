@@ -4,25 +4,14 @@ using UnityEngine;
 
 public class Armas : MonoBehaviour
 {
-    Animator animator;
+   
     // iniciales de armas
     // no es la solucion mas elegante pero xd
     public GameObject M, A, L;
     //Transform mart, arco;
     bool MartilloActivo = false, ArcoActivo = false, LanzaActiva = false;
 
-    /*public void Guardar(GameObject  arma)
-    {
-        M = arma;
-    }*/
-    /*void Start()
-    {
-        //mart = this.gameObject.transform.GetChild(0);
-        M = mart.gameObject;
-        //arco = this.gameObject.transform.GetChild(3);
-        A = arco.gameObject;
-        
-    }*/
+  
     
     public bool CompruebArma()
     {
@@ -30,15 +19,16 @@ public class Armas : MonoBehaviour
         return true;
     }
     
+    //Todos los metodos comprueban si ya se ha recogido un arma, y en caso contrario, se pone a true su bool de ArmaActivo, su respectivo bool en armas[] de GameManager y se ejecuta Activar(ver)
     public void ActivarMartillo()
     {
         if (CompruebArma())
         {
             GameManager.instance.ActBoolArma(0);
             Activar(0);
-            //M.SetActive(true);
+            
             MartilloActivo = true;
-            GetComponent<Animator>().SetBool("RecogidaMaza", true);
+            
         }
         
     }
@@ -49,9 +39,9 @@ public class Armas : MonoBehaviour
         {
             GameManager.instance.ActBoolArma(1);
             Activar(1);
-            //A.SetActive(true);
+            
             ArcoActivo = true;
-            GetComponent<Animator>().SetBool("RecogidoArco", true);
+            
         }
        
     }
@@ -61,12 +51,13 @@ public class Armas : MonoBehaviour
         {
             GameManager.instance.ActBoolArma(2);
             Activar(2);
-            //L.SetActive(true);
+            
             MartilloActivo = true;
-            GetComponent<Animator>().SetBool("RecogidaLanza", true);
+            
         }
 
     }
+    // activa(dependiendo del arma recogida) el arma y su respectiva animación 
     public void Activar(int num)
     {
         switch (num)
