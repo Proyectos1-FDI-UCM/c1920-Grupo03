@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+//(no importante, script de prueba en fases tempranas)
+//script de pasado un tiempo destruye al objeto que lo porte
 public class Destruirse : MonoBehaviour
 {
     public int tiempo = 5;
-    // Start is called before the first frame update
+    
     void Start()
     {
         Invoke("AutoDestruc", tiempo);

@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class AnilloCrítico : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //ScriptVacío para activar la característica de anilloCrítico (ver daño enemigo) relacionada con el anillo 2
 }

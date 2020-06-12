@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Puertas : MonoBehaviour
 {
-    //GameObject[] Paredes;
+    
 
     int puertas = 0;
-    // Start is called before the first frame update
+    
+    //desactiva todas las puertas al inicio
     void Awake()
     {
         puertas = this.transform.childCount;
@@ -18,6 +19,7 @@ public class Puertas : MonoBehaviour
         }
     }
 
+    //se activan y desactivam las puertas en función del bool abiertas recibido
     public void ActivarPuertas(bool abiertas)
     {
         

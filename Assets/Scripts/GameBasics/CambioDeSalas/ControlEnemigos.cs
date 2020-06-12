@@ -4,44 +4,33 @@ using UnityEngine;
 
 public class ControlEnemigos : MonoBehaviour
 {
-    SalaIndividual puertas;
+    SalaIndividual sala;
     
     int enemigosVivos = 0;
-    // Start is called before the first frame update
+   
+    // al iniciar, se coge la cantidad de enemigos que hay en la sala y si hay enemigos, SalaIndividual recibe la cantidad que hay 
     void Start()
     {
         
-        puertas = GetComponentInParent<SalaIndividual>();
+        sala = GetComponentInParent<SalaIndividual>();
         enemigosVivos = this.transform.childCount;
-        //Debug.Log(enemigosVivos);
-        if (enemigosVivos > 0) PasarEnemigos();
-        //else DeshP();
         
-
-        //else if (enemigosVivos == 0) DeshP();
+        if (enemigosVivos > 0) PasarEnemigos();
+       
     }
 
-    /*void ActP()
-    {
-        //Debug.Log("Hola he pasado por aqui");
-        puertas.Accionar(true);
-    }*/
-    
     void PasarEnemigos()
     {
-        puertas.RecibeEnemigos(enemigosVivos);
+        sala.RecibeEnemigos(enemigosVivos);
     }
 
-    /*void DeshP()
-    {
-        puertas.Accionar(false);
-    }*/
+   // se reduce la cantidad de enemigos a medida que mueren 
     public void MinusEnemy()
     {
         enemigosVivos--;
-       // Debug.Log("Numero enemigos = " + enemigosVivos);
+       //cuando se alcanza 0 enemigos(es decir, todos muertos) las puertas se abren
         if(enemigosVivos == 0)        
-           puertas.Accionar(false);
+           sala.Accionar(false);
         
     }
 

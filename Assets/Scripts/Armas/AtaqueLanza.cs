@@ -4,47 +4,60 @@ using UnityEngine;
 
 public class AtaqueLanza : MonoBehaviour
 {
+    //En esencia igual al script "Martillo"
+
+
     Animator anim;
     public int amount = 20;
+    //los enemigos dentro del rango de ataque se introducen en una lista
     ListaEnemigosDentro lista;
     bool atacando ;
+    //delay entre ataques
     float hitRate = 1.5f, nextHit = 0;
-    // Start is called before the first frame update
+    
     void Start()
     {
-        anim = GetComponentInParent<Animator>();
+        anim = GetComponentInParent<Animator>();        
         atacando = false;
         lista = new ListaEnemigosDentro();
     }
 
-    // Update is called once per frame
+    // si se ha completado el delay entre ataques y el juagdor pulsa click izquierdo:
     void Update()
     {
         if(Time.time > nextHit && Input.GetMouseButtonDown(0))
         {
+            //reinicia cooldown
             nextHit = Time.time + hitRate;
+            //se activa la animación de ataque
             anim.SetBool("Ataque", true);
-            Invoke("Ataque",1f);
+            //se ejecuta el ataque con algo de delay para coincidir con la animación
+            Invoke("Ataque",0.9f);
             
         }
     }
     void Ataque()
-    {
-        
+    {        
+        //mientras hayan enemigos dentro de la lista de enemigos para realizar daño
         while (lista.DamePrimeroParaEmpujar() != null)
-        {
-            
+        {            
+            //cojo sus componentes rIgidbody
             GameObject enemigo = lista.DamePrimeroParaEmpujar();            
                 Rigidbody2D enemy = enemigo.GetComponent<Rigidbody2D>();
+            //en caso de que este tenfga rigidbody
                 if (enemy != null)
                 {
+                //le realizo daño
                 EnemyHealth vidaEnmigo = enemy.GetComponent<EnemyHealth>();
                 vidaEnmigo.TakeDamage(amount);
             }
             
         }
+        // "apago" la animación para evitar que se pueda repetir
         anim.SetBool("Ataque", false);
     }
+
+    //si el objeto que ha entrado en el trigger es enemigo, lo añado a la lista de enemigos a dañar
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -53,54 +66,50 @@ public class AtaqueLanza : MonoBehaviour
             if (!lista.BuscaGameOBject(collision.gameObject))
             {
                 lista.AddPrincipio(collision.gameObject);
-                // Debug.Log("Entraenem");
-
-                //  Debug.Log("Lista: " + lista.nEnemigos());
+                
             }
         }
 
-
-
-
     }
 
+    //cuando un objeto enemigo sale, se elimina el mismo de la lista
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.GetComponent<EnemyHealth>())
         {
             lista.EliminaEnemig(collision.gameObject);
-            //Debug.Log("SaleEnem");
+            
         }
 
-
-
-        // Debug.Log("Lista: " + lista.nEnemigos());
     }
 }
+
+//Clase de listas utilizada 
 public class ListaEnemigosDentro
 {
+    //clase enemigo interna
     private class Enemigo
     {
         public GameObject enem;
         public Enemigo sig;
 
+       //constructora clase enemigo
         public Enemigo(GameObject e, Enemigo next)
         {
             enem = e;
-            sig = next;
-            // Debug.Log("Se ha creado un nuevo enemigo");
+            sig = next;            
         }
     }
 
-
     Enemigo prim;
 
+    //constructora de clase ListaEnemigosDentro
     public ListaEnemigosDentro()
     {
         prim = null;
     }
 
-    public int EnemigoN(GameObject e)//busca el numero dl  nodo que tiene el siguiente gameobject
+    public int EnemigoN(GameObject e)//busca el numero del  nodo que tiene el siguiente gameobject
     {
 
         int x = 1;
@@ -114,6 +123,7 @@ public class ListaEnemigosDentro
         return x;
     }
 
+    // devuelve un objeto de la clase enemigo en la posición n de la lista
     private Enemigo DameEnemigoN(int n)
     {
         int x = 1;
@@ -126,6 +136,8 @@ public class ListaEnemigosDentro
 
         return aux;
     }
+
+    //añade un enemigo al inicio de la lista
     public void AddPrincipio(GameObject e)
     {
 
@@ -135,6 +147,7 @@ public class ListaEnemigosDentro
 
     }
 
+    //busca en la lista un objeto enemigo cuyo GO coincida con el del objeto recibido como parámetro
     public bool BuscaGameOBject(GameObject e)
     {
         Enemigo aux = prim;

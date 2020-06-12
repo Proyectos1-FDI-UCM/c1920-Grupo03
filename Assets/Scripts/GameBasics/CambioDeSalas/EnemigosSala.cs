@@ -37,14 +37,6 @@ public class EnemigosSala : MonoBehaviour
        
 
     }
-    /*public EnemigoVivo Enemigo(int  x)
-    {
-        return transform.GetChild(x).gameObject.GetComponent<EnemigoVivo>();
-    }*/
-
-    
-  // hay que cambiar esto para que sea llamado por sala individual(por alguna razon)
-  // he probado y me daba error . Error: iba en linea recta una distancia exacta cada vez que se ejecutaba
 
     public void ActivarEnemigos(Collider2D collision)
     {

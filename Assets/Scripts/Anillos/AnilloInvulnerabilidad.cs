@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class AnilloInvulnerabilidad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //Anillo vacío para activar la habilidad de invulnerabilidad ocasional(ver scrcipt daño enemigo) relacionado con el anillo 4
 }
