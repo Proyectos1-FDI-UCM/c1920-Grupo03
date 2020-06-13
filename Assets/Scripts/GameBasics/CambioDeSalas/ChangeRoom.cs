@@ -18,10 +18,7 @@ public class ChangeRoom : MonoBehaviour
             collision.transform.position = teleportPoint.transform.position;
         }
 
-        else Destroy(collision.gameObject);
-      
-        
-        
+       
         
     }
 }
