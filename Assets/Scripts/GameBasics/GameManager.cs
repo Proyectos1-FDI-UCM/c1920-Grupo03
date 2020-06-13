@@ -153,6 +153,16 @@ public class GameManager : MonoBehaviour
         }
         
     }
+    //reinicia el estado inicial del juego
+    public void ResetinitialState()
+    {
+        for (int x = 0; x < armas.Length; x++) armas[x] = false;
+        currentHealth = 100;
+        unexploredRooms = 0;
+        cargas = 0;
+        for (int x = 0; x < ring.Length; x++) ring[x] = false;
+        h = 0;
+    }
    
     // añade uno cada vez que el jugador entra en una sala(aumenta cargas de pociones)
     public void AddRoom()
