@@ -58,16 +58,16 @@ public class Bomba : MonoBehaviour
        
         if(d < distanciaRange && !sprint )//si se enuentra a una determinada distancia y no tiene activado el sprint
         {
-            Invoke("SprintBomba", 1f);//Activa el spint tras un segundo
-            animator.SetBool("enciendeMecha", true);
+            Invoke("SprintBomba", 1f);      //Activa el spint tras un segundo
+            animator.SetBool("enciendeMecha", true);        //se enciende la mecha de la bomba mediante la animacion
         }
 
 
-        if(transform.position == posPlayer)//si la bomba se encuentra en la posición guardada expolota
+        if(transform.position == posPlayer)//si la bomba se encuentra en la posición guardada explota
         {
             hijo.localScale = new Vector3(distanciExplosion, distanciExplosion, distanciExplosion) * 2;
             Invoke("Explota", tiempoexplosion);
-            animator.SetBool("explota", true);
+            animator.SetBool("explota", true);      //activa la animacion de la explosion de la bomba
         }
     }
 

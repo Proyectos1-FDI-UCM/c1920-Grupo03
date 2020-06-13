@@ -47,12 +47,12 @@ public class FlechasCayendo : MonoBehaviour
 
     void Advertencia()
     {
-        anim.SetBool("iniciaAdvertencia", true);
+        anim.SetBool("iniciaAdvertencia", true);        //animacion de la sombra para advertir al jugador del ataque
     }
 
     void Ataque()
     {
-        anim.SetBool("caeFlechas", true);
+        anim.SetBool("caeFlechas", true);       //al impactar las flechas se activa la animacion de explosion
         if (playerDentro) 
         {
             GameManager.instance.TakeDamage(30);                //quita daño

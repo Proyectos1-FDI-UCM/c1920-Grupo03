@@ -41,7 +41,7 @@ public class Embestida : MonoBehaviour
     {
         if(player != null)
         {
-            anim.SetBool("embiste", true);
+            anim.SetBool("embiste", true);      //comienza la animacion de embestida
             mirarJugador.enabled = false;
             pos = new Vector2(player.transform.position.x, player.transform.position.y);
             dir = new Vector2(pos.x - transform.position.x, pos.y - transform.position.y);          //direccion embestida
@@ -97,7 +97,7 @@ public class Embestida : MonoBehaviour
     
     void DesactivaAnimacion()
     {
-        anim.SetBool("embiste", false);
+        anim.SetBool("embiste", false);     //desactiva la animacion de embestida
     }
 
 }

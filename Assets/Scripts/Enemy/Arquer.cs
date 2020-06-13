@@ -47,7 +47,7 @@ public class Arquer : MonoBehaviour
                 spawn = this.transform.GetChild(1).gameObject.transform.position;       //lugar spawn
                 Quaternion rot = transform.rotation;
 
-                anim.SetBool("cargaFlecha", true);   
+                anim.SetBool("cargaFlecha", true);   //activa la animacion del disparo
                 
                 Instantiate(flecha, spawn, rot, transform);         //crea flecha
                 

@@ -31,7 +31,7 @@ public class AtaqueBoss1 : MonoBehaviour
     public void CogerJugador(GameObject juga)
     {
         player = juga;
-        Debug.Log("JUgador AtaquebOss");
+        Debug.Log("JUgador Ataqueboss");
     }
 
 
@@ -59,7 +59,7 @@ public class AtaqueBoss1 : MonoBehaviour
                 rb.freezeRotation = true; //para que no rote cuando deja de mirar al jugador
 
                 anim.SetBool("cargarAtaque", true);
-                Invoke("InvocaAnimAtaque", tiempoataque - 0.3f);
+                Invoke("InvocaAnimAtaque", tiempoataque - 0.3f);        //justo antes de hacer daño
                 Invoke("Ataca", tiempoataque);
                 
                 //gameObject.tag = "Invencible";
@@ -107,7 +107,7 @@ public class AtaqueBoss1 : MonoBehaviour
            
             mov.CambiaguardaPos(false);
 
-            anim.SetBool("ataca",true);         //anim ataque
+            anim.SetBool("ataca",true);         //activa la animacion de ataque cuerpo a cuerpo del Boss 1
 
             Invoke("DesactivaAnimacion", 0.25f);
         }
@@ -117,11 +117,11 @@ public class AtaqueBoss1 : MonoBehaviour
 
     void InvocaAnimAtaque()
     {
-        anim.SetBool("cargarAtaque", false);
+        anim.SetBool("cargarAtaque", false);    //activa la animacion de cargar el ataque cuerpo a cuerpo del Boss 1
     }
     void DesactivaAnimacion()
     {
-        anim.SetBool("ataca", false);
+        anim.SetBool("ataca", false);       ////desactiva la animacion de ataque del Boss 1
     }
    private void OnDisable()
     {

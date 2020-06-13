@@ -21,16 +21,16 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log("he sido ejecutado");
         prob = Random.Range(0, 10);
 
-        if (GameManager.instance.ReturnRing(2) && prob < 3)
+        if (GameManager.instance.ReturnRing(2) && prob < 3)     //si tiene el anillo 2 y la probabilidad es la adecuada (1/3) hace critico
         {
 
             Debug.Log("Critico");
-            currentHealth -= (damage * 3 / 2); //daño critico
+            currentHealth -= (damage * 3 / 2);  //daño critico
         }
         else
         {
             Debug.Log("Ouch");
-            currentHealth -= damage; //daño normal
+            currentHealth -= damage;    //daño normal
         }
 
         if (currentHealth <= 0)
@@ -46,9 +46,9 @@ public class EnemyHealth : MonoBehaviour
             }
            else if (isBoss2) GameManager.instance.CargarNivel("MenuVictoriaFinal");
 
-           if (anim != null)
+           if (anim != null)    //si tiene componente animator
             {
-                anim.SetBool("dieEnemy", true);
+                anim.SetBool("dieEnemy", true);     //activa la animacion de muerte del enemigo (no todos la tienen)
                 Destroy(this.gameObject, 0.1f); //Si se queda sin vida matarlo.
             }
            else

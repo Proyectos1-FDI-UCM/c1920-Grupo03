@@ -17,7 +17,7 @@ public class DmgEnemyMeelee : MonoBehaviour
         {
             Debug.Log("Hago daño");
             prob = Random.Range(0, 8);
-            if (!GameManager.instance.ReturnRing(4))            //si no tiene el anilllo 4 hace daño normal
+            if (!GameManager.instance.ReturnRing(4))            //si no tiene el anillo 4 recibe daño normal
             {
                 GameManager.instance.TakeDamage(amount); //..hacemos daño al jugador...
                 cooldown.Call(); //...y llamamos al cooldown.

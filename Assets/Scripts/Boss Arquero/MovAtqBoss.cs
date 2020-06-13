@@ -49,7 +49,7 @@ public class MovAtqBoss : MonoBehaviour
             {
                 spawn = this.transform.GetChild(0).gameObject.transform.position;
                 Quaternion rot = transform.rotation;
-                anim.SetBool("atacaBoss2", true);
+                anim.SetBool("atacaBoss2", true);       //activa la animacion de ataque del boss 2
                 Instantiate(flecha, spawn, rot, transform);             
                 tiempoDisparos = disparos;
                 nhijos = transform.childCount;
@@ -65,7 +65,7 @@ public class MovAtqBoss : MonoBehaviour
             }
             else
             {
-                anim.SetBool("atacaBoss2", false);
+                anim.SetBool("atacaBoss2", false);      //desactiva la animacion de ataque del boss 2
                 tiempoDisparos -= Time.deltaTime;
             }
         }
