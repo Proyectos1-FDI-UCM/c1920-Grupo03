@@ -32,8 +32,8 @@ public class MovEnemig1 : MonoBehaviour
     {
         if(player!= null)
         {
-            if (!guardaPos) { dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y); }
-            
+            if (!guardaPos) { dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y); }      //direccion de movimiento
+
         }
          
     }
@@ -51,7 +51,7 @@ public class MovEnemig1 : MonoBehaviour
     {
         if(player != null)
         {
-            dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
+            dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);      //direccion de movimiento
             rb.velocity = Vector2.zero;
 
         }

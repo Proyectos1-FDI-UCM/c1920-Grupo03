@@ -19,7 +19,6 @@ public class PlayerArquero : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && Time.time > tiempo)
         {
-           //poner mas tarde
             //anim.SetBool("Ataque", true);
             Ataca();
             
@@ -33,11 +32,11 @@ public class PlayerArquero : MonoBehaviour
     {
         
         tiempo = Time.time + FireRate;
-        Vector3 cursorPosition = Input.mousePosition;
+        Vector3 cursorPosition = Input.mousePosition;                   //dispara al lugar del raton
         cursorPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
-        Vector2 lugardisparo = new Vector2(cursorPosition.x - transform.position.x, cursorPosition.y - transform.position.y);
-        GameObject arrow = Instantiate(flecha, lugar.position, Quaternion.identity);
-        arrow.GetComponent<Rigidbody2D>().velocity = lugardisparo.normalized * 10;
+        Vector2 lugardisparo = new Vector2(cursorPosition.x - transform.position.x, cursorPosition.y - transform.position.y);                   //lugar de donde salen las flechas
+        GameObject arrow = Instantiate(flecha, lugar.position, Quaternion.identity);                //crea flechas
+        arrow.GetComponent<Rigidbody2D>().velocity = lugardisparo.normalized * 10;              //velocidad de la flecha
         arrow.transform.Rotate(0, 0, Mathf.Atan2(lugardisparo.y, lugardisparo.x) * Mathf.Rad2Deg - 90);
         arrow.layer = 13;
         

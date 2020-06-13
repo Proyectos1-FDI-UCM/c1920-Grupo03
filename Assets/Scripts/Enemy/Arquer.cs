@@ -44,22 +44,22 @@ public class Arquer : MonoBehaviour
             transform.up = dir;
             if (tiempoDisparos <= 0)
             {
-                spawn = this.transform.GetChild(1).gameObject.transform.position;
+                spawn = this.transform.GetChild(1).gameObject.transform.position;       //lugar spawn
                 Quaternion rot = transform.rotation;
 
                 anim.SetBool("cargaFlecha", true);   
                 
-                Instantiate(flecha, spawn, rot, transform);
+                Instantiate(flecha, spawn, rot, transform);         //crea flecha
                 
                 tiempoDisparos = disparos;
                 nhijos = transform.childCount;
-                dirFlecha = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
+                dirFlecha = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);       //direccion flecha
                 flechaHija = transform.GetChild(nhijos - 1).gameObject;
                 flechaHija.transform.SetParent(null);
                 flechaHija.layer = 16;
                 flechaHijaRB = flechaHija.GetComponent<Rigidbody2D>();
                 dirFlecha.Normalize();
-                flechaHijaRB.velocity = dirFlecha * 500 * Time.deltaTime;
+                flechaHijaRB.velocity = dirFlecha * 500 * Time.deltaTime;           //velocidad
 
             }
             else
@@ -76,16 +76,16 @@ public class Arquer : MonoBehaviour
 
             if (Vector2.Distance(transform.position, player.transform.position) < distanciaCerca)
             {
-                rb.velocity = -dir*velocidad*100*Time.fixedDeltaTime;
+                rb.velocity = -dir*velocidad*100*Time.fixedDeltaTime;               //se aleja
 
             }
             else if (Vector2.Distance(transform.position, player.transform.position) > distanciaParar)
             {
-                rb.velocity = dir * velocidad *100 *Time.fixedDeltaTime;
+                rb.velocity = dir * velocidad *100 *Time.fixedDeltaTime;        //se acerca
             }
             else if (Vector2.Distance(transform.position, player.transform.position) < distanciaParar && Vector2.Distance(transform.position, player.transform.position) > distanciaCerca)
             {
-                rb.velocity = dir * 0;
+                rb.velocity = dir * 0;          //se para
             }
         }
 

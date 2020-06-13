@@ -37,7 +37,7 @@ public class FlechasCayendo : MonoBehaviour
         {
             
             cayendo = true;
-            Invoke("Advertencia", 0f);
+            Invoke("Advertencia", 0f);          //advierte del ataque
             Invoke("Ataque", 1.5f);
             
         }
@@ -55,7 +55,7 @@ public class FlechasCayendo : MonoBehaviour
         anim.SetBool("caeFlechas", true);
         if (playerDentro) 
         {
-            GameManager.instance.TakeDamage(30);
+            GameManager.instance.TakeDamage(30);                //quita daño
             cayendo = false;
             
         }
@@ -66,6 +66,6 @@ public class FlechasCayendo : MonoBehaviour
     void Destruir()
     {   
         
-        Destroy(this.gameObject);
+        Destroy(this.gameObject);           //destruye la lluvia
     }
 }

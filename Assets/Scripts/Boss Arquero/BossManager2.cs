@@ -21,7 +21,7 @@ public class BossManager2 : MonoBehaviour
         flechasCayendo = GetComponent<FlechasCayendo>();
         CambiaEstado("Normal");
 
-        //Invoke("embestir", 0f);
+
         lluviaAct = false;
 
 
@@ -58,7 +58,7 @@ public class BossManager2 : MonoBehaviour
 
         switch (a)
         {
-            case "Normal":
+            case "Normal":          //movimiento y disparo
                 estado = Estados.Normal;
                 if(lluvia!=null)lluvia.enabled=false;
                 if(movAtqBoss!=null)movAtqBoss.enabled = true;
@@ -66,7 +66,7 @@ public class BossManager2 : MonoBehaviour
                 break;
 
 
-            case "Lluvia":
+            case "Lluvia":              // lluvia flechas
                 estado = Estados.Lluvia;
                 if(lluvia!=null)lluvia.enabled = true;
                 if(movAtqBoss!=null)movAtqBoss.enabled = false;

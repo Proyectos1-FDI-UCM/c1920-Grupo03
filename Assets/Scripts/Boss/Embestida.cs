@@ -44,7 +44,7 @@ public class Embestida : MonoBehaviour
             anim.SetBool("embiste", true);
             mirarJugador.enabled = false;
             pos = new Vector2(player.transform.position.x, player.transform.position.y);
-            dir = new Vector2(pos.x - transform.position.x, pos.y - transform.position.y);
+            dir = new Vector2(pos.x - transform.position.x, pos.y - transform.position.y);          //direccion embestida
             dir.Normalize();
             rb.freezeRotation = true;
             rb.velocity = dir * vel;

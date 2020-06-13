@@ -17,7 +17,7 @@ public class Flecha : MonoBehaviour
         
         if (collision.gameObject.GetComponent<Movimiento8D>() != null)
         {
-            GameManager.instance.TakeDamage(danyo);
+            GameManager.instance.TakeDamage(danyo);         //quita la mitad de daño del enemigo al jugador que del jugador al enemigo
             DestruirFlecha();
 
         }

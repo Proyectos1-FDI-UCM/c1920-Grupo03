@@ -35,7 +35,7 @@ public class BossManager : MonoBehaviour
         if(estado == Estados.Normal &&!cargaembestir)
           {
             cargaembestir = true;
-              Invoke("embestir", Random.Range(10f, 15f)) ;
+              Invoke("embestir", Random.Range(10f, 15f));           //el tiempo de embestida será aleatorio
           }
           
     }

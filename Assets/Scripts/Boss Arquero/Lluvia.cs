@@ -66,7 +66,7 @@ public class Lluvia : MonoBehaviour
     {
         
         //  padre.transform.position +- (padre.transform.localscale.x/2 - prefab.transform.localscale.x/2)
-        if (enabled)//si el script está activa, para que no ataque si está embistiendo
+        if (enabled)
         {
             Transform salatransform = sala.transform;
             Debug.Log(salatransform.position);
@@ -75,7 +75,7 @@ public class Lluvia : MonoBehaviour
                 GameObject clon;
                 float spawnPosX =  (salatransform.transform.localScale.x / 2 - prefabLluvia.transform.localScale.x / 2);
                 float spawnPosY = (salatransform.transform.localScale.y / 2 - prefabLluvia.transform.localScale.y / 2);
-                clon = Instantiate(prefabLluvia, new Vector3(Random.Range(salatransform.position.x - spawnPosX, salatransform.position.x + spawnPosX), Random.Range(salatransform.position.y -spawnPosY, salatransform.position.y + spawnPosY), -8), Quaternion.identity);
+                clon = Instantiate(prefabLluvia, new Vector3(Random.Range(salatransform.position.x - spawnPosX, salatransform.position.x + spawnPosX), Random.Range(salatransform.position.y -spawnPosY, salatransform.position.y + spawnPosY), -8), Quaternion.identity);      //crea flechas
                 clon.transform.localScale *= 4;
             }
             

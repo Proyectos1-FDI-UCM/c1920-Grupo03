@@ -17,7 +17,7 @@ public class MirarJugador : MonoBehaviour
     {
         if (player != null)
         {
-            dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
+            dir = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);      //direccion a la que mira el boss
             dir.Normalize();
             transform.up = dir;
         }
