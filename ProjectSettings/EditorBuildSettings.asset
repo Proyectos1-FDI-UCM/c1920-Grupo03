@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FinalGameScenes/Nivel1HUD.unity
-    guid: fe4cf6444ff170744a9e4fbe4bbfbfe4
-  - enabled: 0
-    path: Assets/Scenes/TestScenes/Menu/MenuVictoria.unity
-    guid: bdbb57f8433146d4fb46819817421c7c
-  - enabled: 1
     path: Assets/Scenes/FinalGameScenes/MainMenu.unity
     guid: 633bbf5167d69a3459a0182e84ec46f6
+  - enabled: 1
+    path: Assets/Scenes/FinalGameScenes/Nivel1HUD.unity
+    guid: fe4cf6444ff170744a9e4fbe4bbfbfe4
   - enabled: 1
     path: Assets/Scenes/FinalGameScenes/Nivel2HUD.unity
     guid: e03e5158635903f428a1ea0645d1d31c
