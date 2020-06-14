@@ -9,6 +9,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/[Dd]ocs/
+/[Ee]jecutables/
 
 
 # MemoryCaptures can get excessive in size.
